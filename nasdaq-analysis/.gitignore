@@ -48,14 +48,13 @@ Thumbs.db
 
 # Project specific
 fmp_cache/
+fmp_cache_corrected/
+yahoo_cache/
 data/
 *.log
 
-# Jupyter
-.ipynb_checkpoints
-
-# matplotlib
-.matplotlib/
+# Configuration files with API keys
+config.py
 
 # API keys (if any config files)
 config.json

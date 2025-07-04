@@ -1,10 +1,6 @@
-nasdaq-analysis
-├── src
-│   ├── main.py
-│   └── utils
-│       └── helpers.py
-├── data
-│   └── .gitkeep
-├── requirements.txt
-├── .gitignore
-└── README.md
+# Nasdaq Analysis Dependencies - Using FMP API
+pandas>=1.3.0
+numpy>=1.21.0
+matplotlib>=3.4.0
+requests>=2.25.0
+tqdm>=4.62.0
