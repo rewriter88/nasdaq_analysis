@@ -41,7 +41,7 @@ warnings.filterwarnings('ignore')
 
 # ========================== CONFIGURATION ==========================
 try:
-    from config import FMP_API_KEY, START_DATE, END_DATE, PORTFOLIO_SIZES, CACHE_DIR, REQUEST_DELAY, BENCHMARKS
+    from config import FMP_API_KEY, START_DATE, END_DATE, PORTFOLIO_SIZES, CACHE_DIR, REQUEST_DELAY, BENCHMARKS, CHART_DISPLAY_MODE
     print("Configuration loaded from config.py")
 except ImportError:
     print("config.py not found, using default configuration")
@@ -52,6 +52,7 @@ except ImportError:
     BENCHMARKS = ["QQQ", "SPY"]
     CACHE_DIR = "fmp_cache"
     REQUEST_DELAY = 0.1
+    CHART_DISPLAY_MODE = "simple"
 
 class CorrectedFMPDataProvider:
     """Corrected FMP data provider with proper historical market cap calculation"""
@@ -743,11 +744,18 @@ class CorrectedMomentumAnalyzer:
         return results
     
     def plot_results(self, results: Dict[str, pd.Series]):
-        """Plot corrected backtest results with proper benchmark colors and final balances"""
+        """Plot corrected backtest results with configurable chart layouts"""
         if not results:
             print("No results to plot!")
             return
         
+        if CHART_DISPLAY_MODE.lower() == "full":
+            self._plot_full_analysis(results)
+        else:
+            self._plot_simple_chart(results)
+    
+    def _plot_simple_chart(self, results: Dict[str, pd.Series]):
+        """Plot simple single performance chart"""
         plt.figure(figsize=(16, 10))
         
         # Define colors: dark colors for benchmarks, bright colors for strategies
@@ -812,6 +820,147 @@ class CorrectedMomentumAnalyzer:
         
         # Save plot
         plt.savefig('corrected_nasdaq_performance.png', dpi=300, bbox_inches='tight')
+        plt.show()
+    
+    def _plot_full_analysis(self, results: Dict[str, pd.Series]):
+        """Plot comprehensive 4-chart analysis layout"""
+        # Define colors for consistency
+        colors = {
+            "QQQ": "#000000",      # Black
+            "SPY": "#333333",      # Dark gray
+            "Top-1": "#1f77b4",    # Blue
+            "Top-2": "#ff7f0e",    # Orange
+            "Top-3": "#2ca02c",    # Green
+            "Top-4": "#d62728",    # Red
+            "Top-5": "#9467bd",    # Purple
+            "Top-6": "#8c564b",    # Brown
+            "Top-7": "#e377c2",    # Pink
+            "Top-8": "#7f7f7f",    # Gray
+            "Top-9": "#bcbd22",    # Olive
+            "Top-10": "#17becf",   # Cyan
+        }
+        
+        # Calculate metrics for each strategy
+        metrics = {}
+        for strategy, series in results.items():
+            if not series.empty and len(series) > 1:
+                daily_returns = series.pct_change().dropna()
+                
+                # Calculate CAGR
+                years = (series.index[-1] - series.index[0]).days / 365.25
+                cagr = ((series.iloc[-1] / series.iloc[0]) ** (1 / years) - 1) if years > 0 else 0
+                
+                # Calculate volatility (annualized)
+                volatility = daily_returns.std() * np.sqrt(252)
+                
+                metrics[strategy] = {
+                    'CAGR': cagr,
+                    'Volatility': volatility,
+                    'Final_Value': series.iloc[-1],
+                    'Total_Return': (series.iloc[-1] / series.iloc[0] - 1) * 100
+                }
+        
+        # Main performance chart
+        plt.figure(figsize=(18, 12))
+        
+        # Subplot 1: Portfolio Value Growth
+        plt.subplot(2, 2, 1)
+        
+        final_values = {}
+        for strategy, series in results.items():
+            if not series.empty:
+                line_width = 3.0 if strategy in BENCHMARKS else 2.0
+                
+                final_value = series.iloc[-1]
+                initial_value = series.iloc[0]
+                final_profit = final_value - initial_value
+                final_values[strategy] = {
+                    'final_value': final_value,
+                    'profit': final_profit,
+                    'profit_pct': (final_profit / initial_value) * 100
+                }
+                
+                label = f"{strategy}: ${final_value:,.0f} (+${final_profit:,.0f})"
+                
+                plt.plot(series.index, series.values, 
+                        label=label, linewidth=line_width, linestyle='-',
+                        color=colors.get(strategy, None))
+        
+        plt.yscale('log')
+        plt.title(f'Portfolio Value Growth - Initial Investment\n{START_DATE} to {END_DATE}', 
+                 fontsize=14, fontweight='bold')
+        plt.ylabel('Portfolio Value (USD)', fontsize=12)
+        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=10)
+        plt.grid(True, alpha=0.3)
+        
+        # Add text showing best performer
+        if final_values:
+            best_strategy = max(final_values.keys(), key=lambda x: final_values[x]['final_value'])
+            best_profit = final_values[best_strategy]['profit']
+            plt.text(0.02, 0.98, f"Best Performer: {best_strategy}\nProfit: +${best_profit:,.0f}", 
+                    transform=plt.gca().transAxes, fontsize=11, fontweight='bold',
+                    verticalalignment='top', bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8))
+        
+        # Subplot 2: Rolling 252-day (1-year) returns
+        plt.subplot(2, 2, 2)
+        for strategy, series in results.items():
+            if not series.empty:
+                daily_returns = series.pct_change()
+                rolling_returns = daily_returns.rolling(252).mean() * 252  # Annualized
+                
+                plt.plot(rolling_returns.index, rolling_returns * 100,
+                        label=strategy, linewidth=1.5,
+                        color=colors.get(strategy, None))
+        
+        plt.title('Rolling 1-Year Annualized Returns', fontsize=14, fontweight='bold')
+        plt.ylabel('Annualized Return (%)', fontsize=12)
+        plt.legend()
+        plt.grid(True, alpha=0.3)
+        
+        # Subplot 3: Drawdown analysis
+        plt.subplot(2, 2, 3)
+        for strategy, series in results.items():
+            if not series.empty:
+                running_max = series.expanding().max()
+                drawdown = (series - running_max) / running_max * 100
+                
+                plt.fill_between(drawdown.index, drawdown, 0, alpha=0.3, 
+                               color=colors.get(strategy, None), label=strategy)
+        
+        plt.title('Drawdown Analysis', fontsize=14, fontweight='bold')
+        plt.ylabel('Drawdown (%)', fontsize=12)
+        plt.legend()
+        plt.grid(True, alpha=0.3)
+        
+        # Subplot 4: Risk-Return scatter
+        plt.subplot(2, 2, 4)
+        if metrics:
+            cagr_values = [metrics[s]['CAGR'] * 100 for s in results.keys() if s in metrics]
+            vol_values = [metrics[s]['Volatility'] * 100 for s in results.keys() if s in metrics]
+            strategy_names = [s for s in results.keys() if s in metrics]
+            
+            for i, strategy in enumerate(strategy_names):
+                marker = 'o' if strategy in BENCHMARKS else 's'
+                size = 120 if strategy in BENCHMARKS else 100
+                
+                plt.scatter(vol_values[i], cagr_values[i], 
+                           color=colors.get(strategy, None), 
+                           marker=marker, s=size, alpha=0.8, 
+                           edgecolors='black', linewidth=1)
+                
+                # Add strategy labels
+                plt.annotate(strategy, (vol_values[i], cagr_values[i]), 
+                           xytext=(5, 5), textcoords='offset points', fontsize=9)
+        
+        plt.title('Risk-Return Analysis', fontsize=14, fontweight='bold')
+        plt.xlabel('Annualized Volatility (%)', fontsize=12)
+        plt.ylabel('CAGR (%)', fontsize=12)
+        plt.grid(True, alpha=0.3)
+        
+        plt.tight_layout()
+        
+        # Save plot with different filename for full analysis
+        plt.savefig('corrected_nasdaq_performance_full.png', dpi=300, bbox_inches='tight')
         plt.show()
     
     def print_performance_summary(self, results: Dict[str, pd.Series]):
