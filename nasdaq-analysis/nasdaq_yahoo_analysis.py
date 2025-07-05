@@ -40,14 +40,28 @@ from tqdm import tqdm
 
 # Load configuration
 try:
-    from config import START_DATE, END_DATE, PORTFOLIO_SIZES, CACHE_DIR, REQUEST_DELAY
+    from config import (START_DATE, END_DATE, PORTFOLIO_SIZES, CACHE_DIR, 
+                       REQUEST_DELAY, BENCHMARKS, CHART_DISPLAY_MODE, DATA_SOURCE)
     print("Configuration loaded from config.py")
+    print(f"Data Source: {DATA_SOURCE}")
+    
+    # Set cache directory for Yahoo data
+    if DATA_SOURCE.upper() == "YAHOO":
+        CACHE_DIR = "yahoo_cache"
+    else:
+        print(f"Warning: This script is for Yahoo data, but DATA_SOURCE is set to {DATA_SOURCE}")
+        print("Consider using run_analysis.py to automatically select the correct script")
+        CACHE_DIR = "yahoo_cache"  # Default for this script
+        
 except ImportError:
     print("config.py not found, using default configuration")
     
     START_DATE = "2005-01-01"  # Start date for analysis
     END_DATE = "2025-01-01"    # End date for analysis
     PORTFOLIO_SIZES = [1, 2, 3, 4, 5, 6, 8, 9, 10]  # Portfolio sizes to test
+    BENCHMARKS = ["QQQ", "SPY"]
+    CHART_DISPLAY_MODE = "simple"
+    DATA_SOURCE = "YAHOO"
     
     CACHE_DIR = "yahoo_cache"  # Directory for caching Yahoo responses
     REQUEST_DELAY = 0.1        # Delay between requests (seconds)

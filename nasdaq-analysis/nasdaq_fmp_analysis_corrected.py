@@ -41,8 +41,19 @@ warnings.filterwarnings('ignore')
 
 # ========================== CONFIGURATION ==========================
 try:
-    from config import FMP_API_KEY, START_DATE, END_DATE, PORTFOLIO_SIZES, CACHE_DIR, REQUEST_DELAY, BENCHMARKS, CHART_DISPLAY_MODE
+    from config import (FMP_API_KEY, START_DATE, END_DATE, PORTFOLIO_SIZES, 
+                       CACHE_DIR, REQUEST_DELAY, BENCHMARKS, CHART_DISPLAY_MODE, 
+                       DATA_SOURCE)
     print("Configuration loaded from config.py")
+    print(f"Data Source: {DATA_SOURCE}")
+    
+    # Set cache directory based on data source
+    if DATA_SOURCE.upper() == "FMP":
+        CACHE_DIR = "fmp_cache_corrected"
+    else:
+        print(f"Warning: This script is for FMP data, but DATA_SOURCE is set to {DATA_SOURCE}")
+        print("Consider using run_analysis.py to automatically select the correct script")
+        
 except ImportError:
     print("config.py not found, using default configuration")
     FMP_API_KEY = "YOUR_API_KEY_HERE"
@@ -50,9 +61,10 @@ except ImportError:
     END_DATE = "2025-01-01"
     PORTFOLIO_SIZES = [1, 2, 3, 4, 5, 6, 8, 9, 10]
     BENCHMARKS = ["QQQ", "SPY"]
-    CACHE_DIR = "fmp_cache"
+    CACHE_DIR = "fmp_cache_corrected"
     REQUEST_DELAY = 0.1
     CHART_DISPLAY_MODE = "simple"
+    DATA_SOURCE = "FMP"
 
 class CorrectedFMPDataProvider:
     """Corrected FMP data provider with proper historical market cap calculation"""
