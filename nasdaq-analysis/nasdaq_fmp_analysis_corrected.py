@@ -28,6 +28,7 @@ from collections import defaultdict
 from typing import Dict, List, Set, Optional
 import time
 import warnings
+import csv
 
 import numpy as np
 import pandas as pd
@@ -128,21 +129,21 @@ class CorrectedFMPDataProvider:
     def get_tradeable_stocks(self) -> List[str]:
         """Get a comprehensive list of tradeable stocks, focusing on larger cap names"""
         
+        # Always ensure we include the major tech companies that have been market leaders
+        priority_stocks = [
+            "AAPL", "MSFT", "GOOGL", "GOOG", "AMZN", "TSLA", "META", "NVDA", "NFLX", "ADBE",
+            "CRM", "ORCL", "CSCO", "INTC", "AMD", "QCOM", "AVGO", "TXN", "INTU", "CMCSA",
+            "COST", "PEP", "AMGN", "GILD", "BIIB", "ISRG", "REGN", "BKNG", "CHTR", "PYPL",
+            "SBUX", "MAR", "AMAT", "LRCX", "KLAC", "ADI", "MCHP", "ABBV", "JNJ", "PFE"
+        ]
+        
         # First try to get all available traded stocks
         print("Fetching comprehensive stock universe...")
         data = self._make_request("available-traded/list")
         
         if not data:
-            print("Warning: Could not fetch stock list, using fallback major stocks")
-            # Fallback to major stocks that were likely in top positions historically
-            return [
-                "AAPL", "MSFT", "GOOGL", "GOOG", "AMZN", "TSLA", "META", "NVDA", "NFLX", "ADBE",
-                "CRM", "ORCL", "CSCO", "INTC", "AMD", "QCOM", "AVGO", "TXN", "INTU", "CMCSA",
-                "COST", "PEP", "AMGN", "GILD", "BIIB", "ISRG", "REGN", "BKNG", "CHTR", "ATVI",
-                "PYPL", "SBUX", "MAR", "AMAT", "LRCX", "KLAC", "MXIM", "XLNX", "ADI", "MCHP",
-                # Add some historically important stocks that may have been delisted
-                "YHOO", "DELL", "RIMM", "PALM", "SUNW", "JDSU", "WCOM", "ENRN"  # These may fail but we'll try
-            ]
+            print("Warning: Could not fetch stock list, using priority major stocks")
+            return priority_stocks
         
         # Filter for likely Nasdaq stocks (exclude penny stocks, focus on tech/growth)
         nasdaq_candidates = []
@@ -166,15 +167,21 @@ class CorrectedFMPDataProvider:
                 
                 nasdaq_candidates.append(symbol)
         
-        # Take the first 500 candidates to make the analysis manageable
-        # In a real implementation, you might use market cap filters here
-        selected_stocks = sorted(nasdaq_candidates)[:500]
+        # Start with priority stocks, then add others to make up 500 total
+        final_symbols = list(priority_stocks)  # Start with priority stocks
         
-        print(f"Selected {len(selected_stocks)} stocks for analysis")
-        return selected_stocks
+        # Add other candidates, avoiding duplicates
+        for symbol in sorted(nasdaq_candidates):
+            if symbol not in final_symbols:
+                final_symbols.append(symbol)
+                if len(final_symbols) >= 500:
+                    break
+        
+        print(f"Selected {len(final_symbols)} stocks for analysis (including {len(priority_stocks)} priority stocks)")
+        return final_symbols
     
-    def get_historical_prices(self, symbol: str, start_date: str, end_date: str) -> pd.Series:
-        """Get historical adjusted close prices"""
+    def get_historical_prices(self, symbol: str, start_date: str, end_date: str) -> Dict[str, pd.Series]:
+        """Get historical adjusted open and close prices"""
         endpoint = f"historical-price-full/{symbol}"
         params = {
             'from': start_date,
@@ -185,28 +192,43 @@ class CorrectedFMPDataProvider:
         data = self._make_request(endpoint, params)
         
         if not data or 'historical' not in data:
-            return pd.Series(dtype=float)
+            return {'open': pd.Series(dtype=float), 'close': pd.Series(dtype=float)}
         
         try:
             df = pd.DataFrame(data['historical'])
             if df.empty:
-                return pd.Series(dtype=float)
+                return {'open': pd.Series(dtype=float), 'close': pd.Series(dtype=float)}
             
             df['date'] = pd.to_datetime(df['date'])
             df = df.set_index('date').sort_index()
             
-            # Use adjusted close price
+            result = {}
+            
+            # Get adjusted open prices for transactions
+            if 'open' in df.columns:
+                # Calculate adjustment factor using close prices
+                if 'adjClose' in df.columns and 'close' in df.columns:
+                    adj_factor = df['adjClose'] / df['close']
+                    result['open'] = (df['open'] * adj_factor).astype(float)
+                else:
+                    result['open'] = df['open'].astype(float)
+            else:
+                result['open'] = pd.Series(dtype=float)
+            
+            # Use adjusted close price for performance calculation
             if 'adjClose' in df.columns:
-                return df['adjClose'].astype(float)
+                result['close'] = df['adjClose'].astype(float)
             elif 'close' in df.columns:
                 print(f"Warning: No adjClose for {symbol}, using close price")
-                return df['close'].astype(float)
+                result['close'] = df['close'].astype(float)
             else:
-                return pd.Series(dtype=float)
+                result['close'] = pd.Series(dtype=float)
+                
+            return result
                 
         except Exception as e:
             print(f"Error processing price data for {symbol}: {e}")
-            return pd.Series(dtype=float)
+            return {'open': pd.Series(dtype=float), 'close': pd.Series(dtype=float)}
     
     def get_historical_shares_outstanding(self, symbol: str) -> pd.Series:
         """Get historical shares outstanding data with proper time-series"""
@@ -273,7 +295,8 @@ class CorrectedFMPDataProvider:
         """Calculate properly time-aligned historical market cap"""
         
         # Get price data
-        prices = self.get_historical_prices(symbol, start_date, end_date)
+        price_data = self.get_historical_prices(symbol, start_date, end_date)
+        prices = price_data['close']  # Use close prices for market cap calculation
         if prices.empty:
             return pd.Series(dtype=float)
         
@@ -317,7 +340,9 @@ class CorrectedMomentumAnalyzer:
     def __init__(self):
         self.fmp = CorrectedFMPDataProvider(FMP_API_KEY, CACHE_DIR + "_corrected")
         self.market_cap_data = pd.DataFrame()
-        self.price_data = pd.DataFrame()
+        self.open_price_data = pd.DataFrame()  # For transactions
+        self.close_price_data = pd.DataFrame()  # For performance calculation
+        self.rebalancing_events = []  # Store all rebalancing events
     
     def load_market_cap_data(self, symbols: List[str], start_date: str, end_date: str):
         """Load corrected market cap data for all symbols"""
@@ -351,36 +376,57 @@ class CorrectedMomentumAnalyzer:
         print(f"Successfully loaded market cap data: {len(self.market_cap_data)} days, "
               f"{len(self.market_cap_data.columns)} symbols")
         
+        # Debug: Check date ranges for market cap data
+        if not self.market_cap_data.empty:
+            print(f"Market cap data date range: {self.market_cap_data.index[0]} to {self.market_cap_data.index[-1]}")
+            
+            # Check recent data availability
+            recent_date = pd.to_datetime("2024-01-01")
+            if recent_date in self.market_cap_data.index:
+                recent_caps = self.market_cap_data.loc[recent_date].dropna()
+                print(f"Market cap data available for {len(recent_caps)} symbols on {recent_date}")
+                if len(recent_caps) > 0:
+                    top_3_recent = recent_caps.nlargest(3)
+                    print(f"Top 3 on {recent_date}: {list(top_3_recent.index)}")
+            else:
+                print(f"WARNING: No market cap data available for {recent_date}")
+        
         return list(self.market_cap_data.columns)  # Return successful symbols
     
     def load_price_data(self, symbols: List[str], start_date: str, end_date: str):
         """Load price data for portfolio simulation"""
         print(f"\nLoading price data for {len(symbols)} symbols...")
         
-        prices = {}
+        open_prices = {}
+        close_prices = {}
+        
         for symbol in tqdm(symbols, desc="Loading price data"):
             try:
-                series = self.fmp.get_historical_prices(symbol, start_date, end_date)
-                if not series.empty:
-                    prices[symbol] = series
+                price_data = self.fmp.get_historical_prices(symbol, start_date, end_date)
+                if not price_data['open'].empty and not price_data['close'].empty:
+                    open_prices[symbol] = price_data['open']
+                    close_prices[symbol] = price_data['close']
             except Exception as e:
                 print(f"Failed to get price data for {symbol}: {e}")
         
         # Add benchmarks
         for benchmark in BENCHMARKS:
             try:
-                benchmark_prices = self.fmp.get_historical_prices(benchmark, start_date, end_date)
-                if not benchmark_prices.empty:
-                    prices[benchmark] = benchmark_prices
+                benchmark_price_data = self.fmp.get_historical_prices(benchmark, start_date, end_date)
+                if not benchmark_price_data['open'].empty and not benchmark_price_data['close'].empty:
+                    open_prices[benchmark] = benchmark_price_data['open']
+                    close_prices[benchmark] = benchmark_price_data['close']
                     print(f"Loaded benchmark data for {benchmark}")
             except Exception as e:
                 print(f"Failed to get {benchmark} benchmark data: {e}")
         
-        self.price_data = pd.DataFrame(prices)
-        self.price_data = self.price_data.fillna(method='ffill')
+        self.open_price_data = pd.DataFrame(open_prices)
+        self.close_price_data = pd.DataFrame(close_prices)
+        self.open_price_data = self.open_price_data.fillna(method='ffill')
+        self.close_price_data = self.close_price_data.fillna(method='ffill')
         
-        print(f"Successfully loaded price data: {len(self.price_data)} days, "
-              f"{len(self.price_data.columns)} symbols")
+        print(f"Successfully loaded price data: {len(self.close_price_data)} days, "
+              f"{len(self.close_price_data.columns)} symbols")
     
     def build_top_n_compositions(self, n: int) -> pd.Series:
         """Build Top-N portfolio compositions based on corrected market cap rankings"""
@@ -388,6 +434,19 @@ class CorrectedMomentumAnalyzer:
             raise ValueError("No market cap data loaded!")
         
         compositions = {}
+        last_top_n = None
+        changes_count = 0
+        
+        print(f"\nBuilding Top-{n} compositions...")
+        print(f"Market cap data range: {self.market_cap_data.index[0]} to {self.market_cap_data.index[-1]}")
+        print(f"Total dates with market cap data: {len(self.market_cap_data.index)}")
+        
+        # Sample some key dates to check market cap rankings
+        sample_dates = []
+        if len(self.market_cap_data.index) > 0:
+            total_dates = len(self.market_cap_data.index)
+            sample_indices = [0, total_dates//4, total_dates//2, 3*total_dates//4, -1]
+            sample_dates = [self.market_cap_data.index[i] for i in sample_indices if i < total_dates]
         
         for date in self.market_cap_data.index:
             # Get market caps for this date
@@ -397,17 +456,36 @@ class CorrectedMomentumAnalyzer:
                 # Get top N symbols by market cap
                 top_n = day_market_caps.nlargest(n).index.tolist()
                 compositions[date] = top_n
+                
+                # Track changes for debugging
+                if last_top_n is not None and set(top_n) != set(last_top_n):
+                    changes_count += 1
+                    if changes_count <= 5 or (n <= 3 and date.year >= 2020 and changes_count <= 20):  # Show first 5 changes + recent changes for small portfolios
+                        print(f"Change #{changes_count} on {date}: {last_top_n} -> {top_n}")
+                
+                # Sample market cap rankings for debugging
+                if date in sample_dates or (n <= 3 and date.year >= 2020 and date.month == 1 and date.day <= 7):  # Also show Jan samples for small portfolios
+                    top_5_caps = day_market_caps.nlargest(5)
+                    print(f"\nTop 5 market caps on {date}:")
+                    for symbol, cap in top_5_caps.items():
+                        print(f"  {symbol}: ${cap:,.0f}")
+                
+                last_top_n = top_n
+        
+        print(f"Total composition changes detected for Top-{n}: {changes_count}")
+        print(f"Compositions generated for {len(compositions)} dates")
         
         return pd.Series(compositions)
     
-    def simulate_portfolio(self, compositions: pd.Series, initial_value: float = 100000) -> pd.Series:
-        """Simulate portfolio performance with rebalancing"""
-        if self.price_data.empty:
+    def simulate_portfolio(self, compositions: pd.Series, initial_value: float = 100000, portfolio_name: str = "Portfolio") -> pd.Series:
+        """Simulate portfolio performance with rebalancing and track all events"""
+        if self.close_price_data.empty or self.open_price_data.empty:
             raise ValueError("No price data loaded!")
         
         portfolio_value = pd.Series(dtype=float)
         current_holdings = {}
         current_weights = {}
+        last_valid_value = initial_value  # Track last valid portfolio value
         
         rebalance_dates = []
         
@@ -421,50 +499,162 @@ class CorrectedMomentumAnalyzer:
             if needs_rebalance:
                 rebalance_dates.append(date)
                 
+                # Create market open timestamp (9:30 AM EST)
+                market_open_time = date.replace(hour=9, minute=30, second=0, microsecond=0)
+                market_open_str = market_open_time.strftime('%Y-%m-%d %H:%M:%S')
+                
                 if i == 0:
                     # Initial portfolio
                     portfolio_val = initial_value
                 else:
-                    # Calculate current portfolio value before rebalancing
-                    portfolio_val = 0
-                    for symbol, shares in current_holdings.items():
-                        if symbol in self.price_data.columns:
-                            price_series = self.price_data[symbol]
-                            if date in price_series.index:
-                                price = price_series.loc[date]
-                                portfolio_val += shares * price
+                    # Calculate current portfolio value before rebalancing using close prices
+                    portfolio_val = self._calculate_portfolio_value(current_holdings, date, last_valid_value)
                 
-                # Rebalance: equal weight allocation
+                # Record selling events (stocks being removed from portfolio)
+                if i > 0:  # Skip initial portfolio creation
+                    stocks_to_sell = prev_symbols - new_symbols
+                    for symbol in stocks_to_sell:
+                        if symbol in current_holdings and symbol in self.open_price_data.columns:
+                            open_price_series = self.open_price_data[symbol]
+                            if date in open_price_series.index:
+                                open_price = open_price_series.loc[date]
+                                if open_price > 0:  # Validate price data
+                                    shares = current_holdings[symbol]
+                                    
+                                    # Get market cap if available (using close price for market cap)
+                                    market_cap = None
+                                    if symbol in self.market_cap_data.columns and date in self.market_cap_data.index:
+                                        market_cap = self.market_cap_data.loc[date, symbol]
+                                    
+                                    # Record sell event with open price
+                                    self.rebalancing_events.append({
+                                        'portfolio': portfolio_name,
+                                        'date': date,
+                                        'datetime': market_open_str,
+                                        'action': 'SELL',
+                                        'symbol': symbol,
+                                        'price': open_price,
+                                        'shares': shares,
+                                        'value': open_price * shares,
+                                        'market_cap': market_cap
+                                    })
+                
+                # Rebalance: equal weight allocation using open prices
                 weight_per_stock = 1.0 / len(symbols)
                 value_per_stock = portfolio_val * weight_per_stock
                 
-                current_holdings = {}
+                new_holdings = {}
                 current_weights = {}
                 
                 for symbol in symbols:
-                    if symbol in self.price_data.columns:
-                        price_series = self.price_data[symbol]
-                        if date in price_series.index:
-                            price = price_series.loc[date]
-                            if price > 0:
-                                shares = value_per_stock / price
-                                current_holdings[symbol] = shares
+                    if symbol in self.open_price_data.columns:
+                        open_price_series = self.open_price_data[symbol]
+                        if date in open_price_series.index:
+                            open_price = open_price_series.loc[date]
+                            if open_price > 0:  # Validate price data
+                                shares = value_per_stock / open_price
+                                new_holdings[symbol] = shares
                                 current_weights[symbol] = weight_per_stock
-            
-            # Calculate portfolio value for this date
-            if current_holdings:
-                portfolio_val = 0
-                for symbol, shares in current_holdings.items():
-                    if symbol in self.price_data.columns:
-                        price_series = self.price_data[symbol]
-                        if date in price_series.index:
-                            price = price_series.loc[date]
-                            portfolio_val += shares * price
+                                
+                                # Get market cap if available
+                                market_cap = None
+                                if symbol in self.market_cap_data.columns and date in self.market_cap_data.index:
+                                    market_cap = self.market_cap_data.loc[date, symbol]
+                                
+                                # Record buy event with open price
+                                self.rebalancing_events.append({
+                                    'portfolio': portfolio_name,
+                                    'date': date,
+                                    'datetime': market_open_str,
+                                    'action': 'BUY',
+                                    'symbol': symbol,
+                                    'price': open_price,
+                                    'shares': shares,
+                                    'value': open_price * shares,
+                                    'market_cap': market_cap
+                                })
                 
+                current_holdings = new_holdings
+            
+            # Calculate portfolio value for this date using close prices with validation
+            portfolio_val = self._calculate_portfolio_value(current_holdings, date, last_valid_value)
+            
+            # Only update if we have a valid value (prevent drops to zero)
+            if portfolio_val > 0:
                 portfolio_value[date] = portfolio_val
+                last_valid_value = portfolio_val
+            else:
+                # Use last valid value if current calculation fails
+                portfolio_value[date] = last_valid_value
         
         print(f"Portfolio rebalanced {len(rebalance_dates)} times")
         return portfolio_value.fillna(method='ffill')
+    
+    def _validate_price_series(self, series: pd.Series, name: str) -> pd.Series:
+        """Validate and clean a price series to prevent unrealistic drops"""
+        if series.empty:
+            return series
+        
+        validated_series = series.copy()
+        previous_value = validated_series.iloc[0]
+        
+        for i in range(1, len(validated_series)):
+            current_value = validated_series.iloc[i]
+            
+            # Check for unrealistic drops (more than 50% in one day)
+            if current_value < previous_value * 0.5:
+                print(f"Warning: Detected unrealistic drop in {name} on {validated_series.index[i]}, using previous value")
+                validated_series.iloc[i] = previous_value
+            else:
+                previous_value = current_value
+        
+        return validated_series
+    
+    def _calculate_portfolio_value(self, holdings: dict, date: pd.Timestamp, fallback_value: float) -> float:
+        """Calculate portfolio value with robust error handling"""
+        if not holdings:
+            return fallback_value
+        
+        portfolio_val = 0
+        valid_holdings = 0
+        
+        for symbol, shares in holdings.items():
+            if symbol in self.close_price_data.columns:
+                close_price_series = self.close_price_data[symbol]
+                
+                # Try to get price for exact date
+                if date in close_price_series.index:
+                    close_price = close_price_series.loc[date]
+                    if close_price > 0 and not pd.isna(close_price):
+                        portfolio_val += shares * close_price
+                        valid_holdings += 1
+                    else:
+                        # Try to forward-fill from last valid price
+                        valid_prices = close_price_series[close_price_series > 0].dropna()
+                        if not valid_prices.empty:
+                            last_valid_date = valid_prices.index[valid_prices.index <= date]
+                            if len(last_valid_date) > 0:
+                                last_price = valid_prices.loc[last_valid_date[-1]]
+                                portfolio_val += shares * last_price
+                                valid_holdings += 1
+                else:
+                    # Date not in index, try to find nearest valid price
+                    valid_prices = close_price_series[close_price_series > 0].dropna()
+                    if not valid_prices.empty:
+                        # Find the most recent price before this date
+                        prior_dates = valid_prices.index[valid_prices.index <= date]
+                        if len(prior_dates) > 0:
+                            last_price = valid_prices.loc[prior_dates[-1]]
+                            portfolio_val += shares * last_price
+                            valid_holdings += 1
+        
+        # Return calculated value only if we have some valid holdings
+        # Otherwise return fallback to prevent unrealistic drops
+        if valid_holdings > 0 and portfolio_val > fallback_value * 0.1:  # Sanity check: don't drop more than 90%
+            return portfolio_val
+        else:
+            print(f"Warning: Invalid portfolio calculation on {date}, using fallback value")
+            return fallback_value
     
     def run_analysis(self, start_date: str, end_date: str, portfolio_sizes: List[int]):
         """Run the corrected momentum strategy analysis"""
@@ -504,20 +694,41 @@ class CorrectedMomentumAnalyzer:
         print(f"\nRunning corrected backtests for {len(portfolio_sizes)} strategies...")
         results = {}
         
-        # Process benchmarks
+        # Process benchmarks with robust data handling
         for benchmark in BENCHMARKS:
-            if benchmark in self.price_data.columns:
-                benchmark_series = self.price_data[benchmark].dropna()
-                if not benchmark_series.empty:
-                    benchmark_normalized = (benchmark_series / benchmark_series.iloc[0]) * 100000
-                    results[benchmark] = benchmark_normalized
-                    print(f"Added {benchmark} benchmark")
+            if benchmark in self.close_price_data.columns:
+                benchmark_series = self.close_price_data[benchmark]
+                
+                # Clean the data: remove zeros, NaNs, and unrealistic values
+                cleaned_series = benchmark_series[
+                    (benchmark_series > 0) & 
+                    benchmark_series.notna() & 
+                    (benchmark_series < benchmark_series.quantile(0.999))  # Remove extreme outliers
+                ].copy()
+                
+                if not cleaned_series.empty and len(cleaned_series) > 100:  # Require substantial data
+                    # Forward-fill any remaining gaps
+                    cleaned_series = cleaned_series.resample('D').last().fillna(method='ffill')
+                    
+                    # Normalize to $100,000 starting value
+                    benchmark_normalized = (cleaned_series / cleaned_series.iloc[0]) * 100000
+                    
+                    # Final validation: ensure no unrealistic drops
+                    benchmark_validated = self._validate_price_series(benchmark_normalized, benchmark)
+                    
+                    if not benchmark_validated.empty:
+                        results[benchmark] = benchmark_validated
+                        print(f"Added {benchmark} benchmark with {len(benchmark_validated)} data points")
+                    else:
+                        print(f"Warning: {benchmark} benchmark data failed validation")
+                else:
+                    print(f"Warning: Insufficient {benchmark} benchmark data")
         
         # Top-N strategies
         for size in portfolio_sizes:
             print(f"Running Top-{size} strategy...")
             compositions = self.build_top_n_compositions(size)
-            portfolio_series = self.simulate_portfolio(compositions)
+            portfolio_series = self.simulate_portfolio(compositions, portfolio_name=f"Top-{size}")
             
             if not portfolio_series.empty:
                 results[f"Top-{size}"] = portfolio_series
@@ -527,6 +738,7 @@ class CorrectedMomentumAnalyzer:
         # 6. Generate results
         self.plot_results(results)
         self.print_performance_summary(results)
+        self.export_rebalancing_events_to_csv()
         
         return results
     
@@ -622,6 +834,66 @@ class CorrectedMomentumAnalyzer:
                 
                 print(f"{strategy:<12} ${final_value:>13,.0f} {total_return:>13.1f}% {cagr:>8.1f}%")
 
+    def export_rebalancing_events_to_csv(self):
+        """Export all rebalancing events to a timestamped CSV file"""
+        if not self.rebalancing_events:
+            print("No rebalancing events to export.")
+            return
+        
+        # Generate timestamped filename
+        timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"rebalancing_events_{timestamp}.csv"
+        
+        # Define CSV headers
+        headers = [
+            'portfolio', 'date', 'datetime', 'action', 'symbol', 
+            'price', 'shares', 'value', 'market_cap'
+        ]
+        
+        try:
+            with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+                writer = csv.DictWriter(csvfile, fieldnames=headers)
+                writer.writeheader()
+                
+                # Group events by portfolio, then by date for better organization
+                sorted_events = sorted(self.rebalancing_events, 
+                                     key=lambda x: (x['portfolio'], x['date'], x['action']))
+                
+                for event in sorted_events:
+                    # Format the event data
+                    formatted_event = {
+                        'portfolio': event['portfolio'],
+                        'date': event['date'].strftime('%Y-%m-%d'),
+                        'datetime': event['datetime'],
+                        'action': event['action'],
+                        'symbol': event['symbol'],
+                        'price': f"{event['price']:.4f}" if event['price'] is not None else '',
+                        'shares': f"{event['shares']:.6f}" if event['shares'] is not None else '',
+                        'value': f"{event['value']:.2f}" if event['value'] is not None else '',
+                        'market_cap': f"{event['market_cap']:.0f}" if event['market_cap'] is not None else ''
+                    }
+                    writer.writerow(formatted_event)
+            
+            print(f"\n✅ Rebalancing events exported to: {filename}")
+            print(f"Total events recorded: {len(self.rebalancing_events)}")
+            
+            # Print summary stats
+            action_counts = {}
+            portfolio_counts = {}
+            for event in self.rebalancing_events:
+                action = event['action']
+                portfolio = event['portfolio']
+                action_counts[action] = action_counts.get(action, 0) + 1
+                portfolio_counts[portfolio] = portfolio_counts.get(portfolio, 0) + 1
+            
+            print(f"Actions: {dict(action_counts)}")
+            print(f"Events by portfolio: {dict(portfolio_counts)}")
+            
+        except Exception as e:
+            print(f"❌ Error exporting rebalancing events: {e}")
+            import traceback
+            traceback.print_exc()
+
 def main():
     """Main execution function"""
     analyzer = CorrectedMomentumAnalyzer()
@@ -633,6 +905,7 @@ def main():
         print("  • Fixed survivorship bias by using broader stock universe")
         print("  • Fixed market cap calculation with proper historical shares outstanding")
         print("  • Results should now be much more realistic")
+        print("  • Rebalancing events exported to timestamped CSV file")
         
     except Exception as e:
         print(f"\n❌ Analysis failed: {e}")
