@@ -1,0 +1,22 @@
+[
+  {
+    "symbol": "AFJK",
+    "date": "2024-12-31",
+    "stockPrice": 10.7,
+    "numberOfShares": 9026000,
+    "marketCapitalization": 96578200,
+    "minusCashAndCashEquivalents": 28208,
+    "addTotalDebt": 227700,
+    "enterpriseValue": 96777692
+  },
+  {
+    "symbol": "AFJK",
+    "date": "2023-12-31",
+    "stockPrice": 10.15,
+    "numberOfShares": 9026000,
+    "marketCapitalization": 91613900,
+    "minusCashAndCashEquivalents": 580717,
+    "addTotalDebt": 0,
+    "enterpriseValue": 91033183
+  }
+]

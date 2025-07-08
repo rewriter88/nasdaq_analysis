@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "AADBX",
+    "date": "2023-12-31",
+    "stockPrice": 14.45,
+    "numberOfShares": 16152077,
+    "marketCapitalization": 233397512,
+    "minusCashAndCashEquivalents": 36740000,
+    "addTotalDebt": 159384000,
+    "enterpriseValue": 356041512
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2022-12-31",
+    "stockPrice": 13.18,
+    "numberOfShares": 16155300,
+    "marketCapitalization": 212926854,
+    "minusCashAndCashEquivalents": 113445000,
+    "addTotalDebt": 220550000,
+    "enterpriseValue": 320031854
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2021-12-31",
+    "stockPrice": 15.77,
+    "numberOfShares": 16152071,
+    "marketCapitalization": 254718159,
+    "minusCashAndCashEquivalents": 50748000,
+    "addTotalDebt": 372844000,
+    "enterpriseValue": 576814159
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2020-12-31",
+    "stockPrice": 14.8,
+    "numberOfShares": 16045802,
+    "marketCapitalization": 237477869,
+    "minusCashAndCashEquivalents": 36814000,
+    "addTotalDebt": 480599000,
+    "enterpriseValue": 681262869
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2019-12-31",
+    "stockPrice": 15.82,
+    "numberOfShares": 15959000,
+    "marketCapitalization": 252471380,
+    "minusCashAndCashEquivalents": 51228000,
+    "addTotalDebt": 473119000,
+    "enterpriseValue": 674362380
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2018-12-31",
+    "stockPrice": 14.09,
+    "numberOfShares": 16695460,
+    "marketCapitalization": 235239031,
+    "minusCashAndCashEquivalents": 36428000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 198811031
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2017-12-31",
+    "stockPrice": 16.89,
+    "numberOfShares": 15514360,
+    "marketCapitalization": 262037540,
+    "minusCashAndCashEquivalents": 33778000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 228259540
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2016-12-31",
+    "stockPrice": 16.11,
+    "numberOfShares": 15328000,
+    "marketCapitalization": 246934080,
+    "minusCashAndCashEquivalents": 17522000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 229412080
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2015-12-31",
+    "stockPrice": 14.6,
+    "numberOfShares": 15081481,
+    "marketCapitalization": 220189622,
+    "minusCashAndCashEquivalents": 15232000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 204957622
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2014-12-31",
+    "stockPrice": 16.26,
+    "numberOfShares": 12683956,
+    "marketCapitalization": 206241124,
+    "minusCashAndCashEquivalents": 12299000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 193942124
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2013-12-31",
+    "stockPrice": 15.97,
+    "numberOfShares": 11488894,
+    "marketCapitalization": 183477637,
+    "minusCashAndCashEquivalents": 16437000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 167040637
+  },
+  {
+    "symbol": "AADBX",
+    "date": "2012-12-31",
+    "stockPrice": 14.19,
+    "numberOfShares": 11525389,
+    "marketCapitalization": 163545269,
+    "minusCashAndCashEquivalents": 13399000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 150146269
+  }
+]

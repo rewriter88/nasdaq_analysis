@@ -1,0 +1,362 @@
+[
+  {
+    "symbol": "AMCR",
+    "date": "2024-06-30",
+    "stockPrice": 9.6,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 13814400000,
+    "minusCashAndCashEquivalents": 588000000,
+    "addTotalDebt": 7187000000,
+    "enterpriseValue": 20413400000
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2023-06-30",
+    "stockPrice": 9.98,
+    "numberOfShares": 1468000000,
+    "marketCapitalization": 14650640000,
+    "minusCashAndCashEquivalents": 689000000,
+    "addTotalDebt": 6746000000,
+    "enterpriseValue": 20707640000
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2022-06-30",
+    "stockPrice": 12.43,
+    "numberOfShares": 1514000000,
+    "marketCapitalization": 18819020000,
+    "minusCashAndCashEquivalents": 775000000,
+    "addTotalDebt": 6490000000,
+    "enterpriseValue": 24534020000
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2021-06-30",
+    "stockPrice": 11.46,
+    "numberOfShares": 1551000000,
+    "marketCapitalization": 17774460000,
+    "minusCashAndCashEquivalents": 850000000,
+    "addTotalDebt": 6289000000,
+    "enterpriseValue": 23213460000
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2020-06-30",
+    "stockPrice": 10.21,
+    "numberOfShares": 1600000000,
+    "marketCapitalization": 16336000000,
+    "minusCashAndCashEquivalents": 743000000,
+    "addTotalDebt": 6234000000,
+    "enterpriseValue": 21827000000
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2019-06-30",
+    "stockPrice": 11.43,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16447770000,
+    "minusCashAndCashEquivalents": 601600000,
+    "addTotalDebt": 6103200000,
+    "enterpriseValue": 21949370000
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2018-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 617013493,
+    "addTotalDebt": 4459135046,
+    "enterpriseValue": 19930141553
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2017-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 561500000,
+    "addTotalDebt": 4611000000,
+    "enterpriseValue": 20137520000
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2016-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 518603762,
+    "addTotalDebt": 4355889461,
+    "enterpriseValue": 19925305699
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2015-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 703982682,
+    "addTotalDebt": 3575141447,
+    "enterpriseValue": 18959178765
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2014-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 509443199,
+    "addTotalDebt": 3521663810,
+    "enterpriseValue": 19100240611
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2013-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 360385847,
+    "addTotalDebt": 3971271343,
+    "enterpriseValue": 19698905496
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2012-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 366557880,
+    "addTotalDebt": 4011738185,
+    "enterpriseValue": 19733200305
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2011-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 240242640,
+    "addTotalDebt": 3661237880,
+    "enterpriseValue": 19509015240
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2010-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 225606015,
+    "addTotalDebt": 2796805080,
+    "enterpriseValue": 18659219065
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2009-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 152473670,
+    "addTotalDebt": 2289368710,
+    "enterpriseValue": 18224915040
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2008-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 247877595,
+    "addTotalDebt": 2409393255,
+    "enterpriseValue": 18249535660
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2007-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 97285835,
+    "addTotalDebt": 2500763358,
+    "enterpriseValue": 18491497523
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2006-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 84622005,
+    "addTotalDebt": 2406786525,
+    "enterpriseValue": 18410184520
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2005-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 160734437,
+    "addTotalDebt": 2059734040,
+    "enterpriseValue": 17987019603
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2004-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 91588536,
+    "addTotalDebt": 1913641098,
+    "enterpriseValue": 17910072562
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2003-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 95342694,
+    "addTotalDebt": 1555669352,
+    "enterpriseValue": 17548346658
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2002-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 1298896520,
+    "addTotalDebt": 1122170926,
+    "enterpriseValue": 15911294406
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2001-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 164622913,
+    "addTotalDebt": 1237274383,
+    "enterpriseValue": 17160671470
+  },
+  {
+    "symbol": "AMCR",
+    "date": "2000-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 117917487,
+    "addTotalDebt": 973311839,
+    "enterpriseValue": 16943414352
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1999-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 125899520,
+    "addTotalDebt": 1341771137,
+    "enterpriseValue": 17303891617
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1998-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 164014824,
+    "addTotalDebt": 1527473414,
+    "enterpriseValue": 17451478590
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1997-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 132558630,
+    "addTotalDebt": 1672770844,
+    "enterpriseValue": 17628232214
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1996-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 74655074,
+    "addTotalDebt": 1622094122,
+    "enterpriseValue": 17635459048
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1995-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 61716558,
+    "addTotalDebt": 1412875963,
+    "enterpriseValue": 17439179405
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1994-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 63396295,
+    "addTotalDebt": 1111728471,
+    "enterpriseValue": 17136352176
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1993-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 26671832,
+    "addTotalDebt": 783230572,
+    "enterpriseValue": 16844578740
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1992-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 33124173,
+    "addTotalDebt": 794616378,
+    "enterpriseValue": 16849512205
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1991-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 9117680,
+    "addTotalDebt": 575203036,
+    "enterpriseValue": 16654105356
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1990-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 11449013,
+    "addTotalDebt": 919977473,
+    "enterpriseValue": 16996548460
+  },
+  {
+    "symbol": "AMCR",
+    "date": "1989-06-30",
+    "stockPrice": 11.18,
+    "numberOfShares": 1439000000,
+    "marketCapitalization": 16088020000,
+    "minusCashAndCashEquivalents": 1733484,
+    "addTotalDebt": 773778029,
+    "enterpriseValue": 16860064545
+  }
+]

@@ -39,13 +39,46 @@ from tqdm import tqdm
 # Suppress warnings for cleaner output
 warnings.filterwarnings('ignore')
 
+# ========================== CHART FILENAME HELPER ==========================
+def generate_chart_filename(chart_type="performance", config_params=None):
+    """Generate descriptive filename for charts with timestamp and config params"""
+    import os
+    
+    # Create timestamp
+    timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    # Extract key config parameters
+    if config_params is None:
+        config_params = {
+            'threshold': REBALANCING_THRESHOLD,
+            'max_top_n': max(PORTFOLIO_SIZES),
+            'data_source': DATA_SOURCE,
+            'chart_mode': CHART_DISPLAY_MODE
+        }
+    
+    # Create descriptive filename components
+    threshold_pct = f"{config_params['threshold']:.0%}"
+    max_n = config_params['max_top_n']
+    source = config_params['data_source'].lower()
+    mode = config_params['chart_mode']
+    
+    # Build filename
+    filename = f"nasdaq_{chart_type}_{timestamp}_top{max_n}_{threshold_pct}thresh_{source}_{mode}.png"
+    
+    # Ensure results/charts directory exists
+    results_dir = "results/charts"
+    os.makedirs(results_dir, exist_ok=True)
+    
+    return os.path.join(results_dir, filename)
+
 # ========================== CONFIGURATION ==========================
 try:
     from config import (FMP_API_KEY, START_DATE, END_DATE, PORTFOLIO_SIZES, 
                        CACHE_DIR, REQUEST_DELAY, BENCHMARKS, CHART_DISPLAY_MODE, 
-                       DATA_SOURCE)
+                       DATA_SOURCE, REBALANCING_THRESHOLD)
     print("Configuration loaded from config.py")
     print(f"Data Source: {DATA_SOURCE}")
+    print(f"Rebalancing Threshold: {REBALANCING_THRESHOLD:.1%}")
     
     # Set cache directory based on data source
     if DATA_SOURCE.upper() == "FMP":
@@ -442,15 +475,16 @@ class CorrectedMomentumAnalyzer:
               f"{len(self.close_price_data.columns)} symbols")
     
     def build_top_n_compositions(self, n: int) -> pd.Series:
-        """Build Top-N portfolio compositions based on corrected market cap rankings"""
+        """Build Top-N portfolio compositions based on corrected market cap rankings with threshold-based rebalancing"""
         if self.market_cap_data.empty:
             raise ValueError("No market cap data loaded!")
         
         compositions = {}
-        last_top_n = None
+        current_portfolio = None  # Track current portfolio holdings
         changes_count = 0
+        threshold_blocked_count = 0  # Track how many times threshold prevented rebalancing
         
-        print(f"\nBuilding Top-{n} compositions...")
+        print(f"\nBuilding Top-{n} compositions with {REBALANCING_THRESHOLD:.1%} rebalancing threshold...")
         print(f"Market cap data range: {self.market_cap_data.index[0]} to {self.market_cap_data.index[-1]}")
         print(f"Total dates with market cap data: {len(self.market_cap_data.index)}")
         
@@ -466,26 +500,71 @@ class CorrectedMomentumAnalyzer:
             day_market_caps = self.market_cap_data.loc[date].dropna()
             
             if len(day_market_caps) >= n:
-                # Get top N symbols by market cap
-                top_n = day_market_caps.nlargest(n).index.tolist()
-                compositions[date] = top_n
+                # Get top N symbols by market cap (natural ranking)
+                top_n_natural = day_market_caps.nlargest(n).index.tolist()
                 
-                # Track changes for debugging
-                if last_top_n is not None and set(top_n) != set(last_top_n):
+                # First date - initialize portfolio
+                if current_portfolio is None:
+                    current_portfolio = top_n_natural
+                    compositions[date] = current_portfolio.copy()
                     changes_count += 1
-                    if changes_count <= 5 or (n <= 3 and date.year >= 2020 and changes_count <= 20):  # Show first 5 changes + recent changes for small portfolios
-                        print(f"Change #{changes_count} on {date}: {last_top_n} -> {top_n}")
+                    if changes_count <= 5 or (n <= 3 and date.year >= 2020 and changes_count <= 20):
+                        print(f"Initial portfolio on {date}: {current_portfolio}")
+                else:
+                    # Check if rebalancing is needed using threshold logic
+                    needs_rebalancing = False
+                    
+                    # Get current portfolio market caps
+                    current_portfolio_caps = {}
+                    for symbol in current_portfolio:
+                        if symbol in day_market_caps.index:
+                            current_portfolio_caps[symbol] = day_market_caps[symbol]
+                    
+                    # Find the lowest market cap in current portfolio
+                    if current_portfolio_caps:
+                        lowest_current_cap = min(current_portfolio_caps.values())
+                        lowest_current_symbol = min(current_portfolio_caps, key=current_portfolio_caps.get)
+                        
+                        # Check if any stock outside portfolio should trigger rebalancing
+                        for symbol in top_n_natural:
+                            if symbol not in current_portfolio:
+                                outsider_cap = day_market_caps[symbol]
+                                # Check if outsider's market cap exceeds threshold
+                                if outsider_cap > lowest_current_cap * (1 + REBALANCING_THRESHOLD):
+                                    needs_rebalancing = True
+                                    break
+                    
+                    # Apply rebalancing decision
+                    if needs_rebalancing:
+                        old_portfolio = current_portfolio.copy()
+                        current_portfolio = top_n_natural
+                        compositions[date] = current_portfolio.copy()
+                        changes_count += 1
+                        
+                        if changes_count <= 5 or (n <= 3 and date.year >= 2020 and changes_count <= 20):
+                            print(f"Rebalancing #{changes_count} on {date}: {old_portfolio} -> {current_portfolio}")
+                            print(f"  Trigger: Stock outside portfolio exceeded {REBALANCING_THRESHOLD:.1%} threshold")
+                    else:
+                        # No rebalancing - keep current portfolio
+                        compositions[date] = current_portfolio.copy()
+                        
+                        # Check if we would have rebalanced without threshold (for debugging)
+                        if set(top_n_natural) != set(current_portfolio):
+                            threshold_blocked_count += 1
+                            if threshold_blocked_count <= 3:  # Show first few blocked rebalances
+                                print(f"Threshold blocked rebalancing on {date}: would change {current_portfolio} -> {top_n_natural}")
                 
                 # Sample market cap rankings for debugging
-                if date in sample_dates or (n <= 3 and date.year >= 2020 and date.month == 1 and date.day <= 7):  # Also show Jan samples for small portfolios
+                if date in sample_dates or (n <= 3 and date.year >= 2020 and date.month == 1 and date.day <= 7):
                     top_5_caps = day_market_caps.nlargest(5)
                     print(f"\nTop 5 market caps on {date}:")
                     for symbol, cap in top_5_caps.items():
-                        print(f"  {symbol}: ${cap:,.0f}")
-                
-                last_top_n = top_n
+                        in_portfolio = symbol in current_portfolio if current_portfolio else False
+                        status = " (IN PORTFOLIO)" if in_portfolio else ""
+                        print(f"  {symbol}: ${cap:,.0f}{status}")
         
-        print(f"Total composition changes detected for Top-{n}: {changes_count}")
+        print(f"Total rebalancing events for Top-{n}: {changes_count}")
+        print(f"Threshold blocked potential rebalances: {threshold_blocked_count}")
         print(f"Compositions generated for {len(compositions)} dates")
         
         return pd.Series(compositions)
@@ -809,7 +888,7 @@ class CorrectedMomentumAnalyzer:
                         label=label_with_final, linewidth=2, color=color, 
                         solid_capstyle='round', alpha=0.8)
         
-        plt.title('Corrected Nasdaq Top-N Momentum Strategy Performance\n(Fixed: Survivorship Bias + Data Quality)', 
+        plt.title(f'Corrected Nasdaq Top-N Momentum Strategy Performance\n(Fixed: Survivorship Bias + Data Quality)\nInitial Investment: $100,000 | Rebalancing Threshold: {REBALANCING_THRESHOLD:.1%}', 
                  fontsize=16, fontweight='bold', pad=20)
         plt.xlabel('Date', fontsize=14)
         plt.ylabel('Portfolio Value ($)', fontsize=14)
@@ -823,14 +902,24 @@ class CorrectedMomentumAnalyzer:
         # Add text box with key statistics
         total_strategies = len(strategy_results)
         total_benchmarks = len(benchmark_results)
-        textstr = f'Strategies: {total_strategies}\nBenchmarks: {total_benchmarks}\nPeriod: 20 years'
+        textstr = f'Initial Investment: $100,000\nRebalancing Threshold: {REBALANCING_THRESHOLD:.1%}\nStrategies: {total_strategies}\nBenchmarks: {total_benchmarks}\nPeriod: 20 years'
         props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
         plt.text(0.02, 0.98, textstr, transform=plt.gca().transAxes, fontsize=10,
                 verticalalignment='top', bbox=props)
         
         plt.tight_layout()
         
-        # Save plot
+        # Save plot with descriptive filename in results folder
+        chart_filename = generate_chart_filename("simple", {
+            'threshold': REBALANCING_THRESHOLD,
+            'max_top_n': max(PORTFOLIO_SIZES),
+            'data_source': DATA_SOURCE,
+            'chart_mode': 'simple'
+        })
+        plt.savefig(chart_filename, dpi=300, bbox_inches='tight')
+        print(f"✅ Simple chart saved: {chart_filename}")
+        
+        # Also save with simple name for backwards compatibility
         plt.savefig('corrected_nasdaq_performance.png', dpi=300, bbox_inches='tight')
         plt.show()
     
@@ -899,7 +988,7 @@ class CorrectedMomentumAnalyzer:
                         color=colors.get(strategy, None))
         
         plt.yscale('log')
-        plt.title(f'Portfolio Value Growth - Initial Investment\n{START_DATE} to {END_DATE}', 
+        plt.title(f'Portfolio Value Growth - Initial Investment: $100,000\nRebalancing Threshold: {REBALANCING_THRESHOLD:.1%} | {START_DATE} to {END_DATE}', 
                  fontsize=14, fontweight='bold')
         plt.ylabel('Portfolio Value (USD)', fontsize=12)
         plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=10)
@@ -971,7 +1060,17 @@ class CorrectedMomentumAnalyzer:
         
         plt.tight_layout()
         
-        # Save plot with different filename for full analysis
+        # Save plot with descriptive filename in results folder
+        chart_filename = generate_chart_filename("full_analysis", {
+            'threshold': REBALANCING_THRESHOLD,
+            'max_top_n': max(PORTFOLIO_SIZES),
+            'data_source': DATA_SOURCE,
+            'chart_mode': 'full'
+        })
+        plt.savefig(chart_filename, dpi=300, bbox_inches='tight')
+        print(f"✅ Full analysis chart saved: {chart_filename}")
+        
+        # Also save with simple name for backwards compatibility
         plt.savefig('corrected_nasdaq_performance_full.png', dpi=300, bbox_inches='tight')
         plt.show()
     
@@ -1001,9 +1100,19 @@ class CorrectedMomentumAnalyzer:
             print("No rebalancing events to export.")
             return
         
-        # Generate timestamped filename
+        # Generate descriptive filename with config params
         timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"rebalancing_events_{timestamp}.csv"
+        threshold_pct = f"{REBALANCING_THRESHOLD:.0%}"
+        max_n = max(PORTFOLIO_SIZES)
+        source = DATA_SOURCE.lower()
+        
+        filename = f"rebalancing_events_{timestamp}_top{max_n}_{threshold_pct}thresh_{source}.csv"
+        
+        # Ensure results/csv directory exists
+        import os
+        results_dir = "results/csv"
+        os.makedirs(results_dir, exist_ok=True)
+        full_path = os.path.join(results_dir, filename)
         
         # Define CSV headers
         headers = [
@@ -1012,7 +1121,7 @@ class CorrectedMomentumAnalyzer:
         ]
         
         try:
-            with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+            with open(full_path, 'w', newline='', encoding='utf-8') as csvfile:
                 writer = csv.DictWriter(csvfile, fieldnames=headers)
                 writer.writeheader()
                 
@@ -1035,7 +1144,7 @@ class CorrectedMomentumAnalyzer:
                     }
                     writer.writerow(formatted_event)
             
-            print(f"\n✅ Rebalancing events exported to: {filename}")
+            print(f"\n✅ Rebalancing events exported to: {full_path}")
             print(f"Total events recorded: {len(self.rebalancing_events)}")
             
             # Print summary stats

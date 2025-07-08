@@ -1,0 +1,272 @@
+[
+  {
+    "symbol": "AKO-B",
+    "date": "2024-12-31",
+    "stockPrice": 18363.2,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 17382065278646,
+    "minusCashAndCashEquivalents": 248899004000,
+    "addTotalDebt": 1120588070000,
+    "enterpriseValue": 18253754344646
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2023-12-31",
+    "stockPrice": 13148.09,
+    "numberOfShares": 946600002,
+    "marketCapitalization": 12445977571276,
+    "minusCashAndCashEquivalents": 303683683000,
+    "addTotalDebt": 1030782515000,
+    "enterpriseValue": 13173076403276
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2022-12-31",
+    "stockPrice": 12359.47,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 11699113703355,
+    "minusCashAndCashEquivalents": 291681987000,
+    "addTotalDebt": 1141184359000,
+    "enterpriseValue": 12548616075355
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2021-12-31",
+    "stockPrice": 10970.68,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 10384522225378,
+    "minusCashAndCashEquivalents": 304312020000,
+    "addTotalDebt": 1074650463000,
+    "enterpriseValue": 11154860668378
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2020-12-31",
+    "stockPrice": 10603.67,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 10037117562456,
+    "minusCashAndCashEquivalents": 309530699000,
+    "addTotalDebt": 963483286000,
+    "enterpriseValue": 10691070149456
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2019-12-31",
+    "stockPrice": 13151.25,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 12448586629552,
+    "minusCashAndCashEquivalents": 157567986000,
+    "addTotalDebt": 772383354000,
+    "enterpriseValue": 13063401997552
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2018-12-31",
+    "stockPrice": 15814.26,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 14969313608384,
+    "minusCashAndCashEquivalents": 137538613000,
+    "addTotalDebt": 760305462000,
+    "enterpriseValue": 15592080457384
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2017-12-31",
+    "stockPrice": 18613.59,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 17619077091681,
+    "minusCashAndCashEquivalents": 136242116000,
+    "addTotalDebt": 729453824000,
+    "enterpriseValue": 18212288799681
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2016-12-31",
+    "stockPrice": 15038.95,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 14235424452636,
+    "minusCashAndCashEquivalents": 141263880000,
+    "addTotalDebt": 771695726000,
+    "enterpriseValue": 14865856298636
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2015-12-31",
+    "stockPrice": 12322.8,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 11664398321184,
+    "minusCashAndCashEquivalents": 129160939000,
+    "addTotalDebt": 794105374000,
+    "enterpriseValue": 12329342756184
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2014-12-31",
+    "stockPrice": 10308.8,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 9758007021897,
+    "minusCashAndCashEquivalents": 79514434000,
+    "addTotalDebt": 789604483000,
+    "enterpriseValue": 10468097070897
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2013-12-31",
+    "stockPrice": 14834.47,
+    "numberOfShares": 946570602,
+    "marketCapitalization": 14041875091392,
+    "minusCashAndCashEquivalents": 79976126000,
+    "addTotalDebt": 695675788000,
+    "enterpriseValue": 14657574753392
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2012-12-31",
+    "stockPrice": 18161.05,
+    "numberOfShares": 801618762,
+    "marketCapitalization": 14558239219238,
+    "minusCashAndCashEquivalents": 55522255000,
+    "addTotalDebt": 265882152000,
+    "enterpriseValue": 14768599116238
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2011-12-31",
+    "stockPrice": 13514.78,
+    "numberOfShares": 760274544,
+    "marketCapitalization": 10274940160662,
+    "minusCashAndCashEquivalents": 31297922000,
+    "addTotalDebt": 86757995000,
+    "enterpriseValue": 10330400233662
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2010-12-31",
+    "stockPrice": 14126.05,
+    "numberOfShares": 760274544,
+    "marketCapitalization": 10739676222271,
+    "minusCashAndCashEquivalents": 96219208000,
+    "addTotalDebt": 80511329000,
+    "enterpriseValue": 10723968343271
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2009-12-31",
+    "stockPrice": 10346.88,
+    "numberOfShares": 760274544,
+    "marketCapitalization": 7866469473822,
+    "minusCashAndCashEquivalents": 20217244000,
+    "addTotalDebt": 99243976000,
+    "enterpriseValue": 7945496205822
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2008-12-31",
+    "stockPrice": 8616.38,
+    "numberOfShares": 760274544,
+    "marketCapitalization": 6550810574058,
+    "minusCashAndCashEquivalents": 21250102000,
+    "addTotalDebt": 86257192000,
+    "enterpriseValue": 6615817664058
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2007-12-31",
+    "stockPrice": 9356.76,
+    "numberOfShares": 760273998,
+    "marketCapitalization": 7113701333526,
+    "minusCashAndCashEquivalents": 24753984156,
+    "addTotalDebt": 107903386859,
+    "enterpriseValue": 7196850736229
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2006-12-31",
+    "stockPrice": 9006.76,
+    "numberOfShares": 760274544,
+    "marketCapitalization": 6847610351917,
+    "minusCashAndCashEquivalents": 16350905121,
+    "addTotalDebt": 109403087744,
+    "enterpriseValue": 6940662534540
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2005-12-31",
+    "stockPrice": 7186.77,
+    "numberOfShares": 760274544,
+    "marketCapitalization": 5463916003759,
+    "minusCashAndCashEquivalents": 14420185412,
+    "addTotalDebt": 144435118798,
+    "enterpriseValue": 5593930937145
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2004-12-31",
+    "stockPrice": 7471.17,
+    "numberOfShares": 760273998,
+    "marketCapitalization": 5680136285637,
+    "minusCashAndCashEquivalents": 13773333443,
+    "addTotalDebt": 190108334854,
+    "enterpriseValue": 5856471287048
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2003-12-31",
+    "stockPrice": 6496.54,
+    "numberOfShares": 760274544,
+    "marketCapitalization": 4939153986077,
+    "minusCashAndCashEquivalents": 9346016630,
+    "addTotalDebt": 191759214882,
+    "enterpriseValue": 5121567184329
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2002-12-31",
+    "stockPrice": 4968,
+    "numberOfShares": 760272000,
+    "marketCapitalization": 3777031296000,
+    "minusCashAndCashEquivalents": 24085014573,
+    "addTotalDebt": 213304036032,
+    "enterpriseValue": 3966250317459
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2001-12-31",
+    "stockPrice": 5221.9,
+    "numberOfShares": 760278000,
+    "marketCapitalization": 3970095688200,
+    "minusCashAndCashEquivalents": 13868473174,
+    "addTotalDebt": 236994711517,
+    "enterpriseValue": 4193221926543
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "2000-12-31",
+    "stockPrice": 5483.62,
+    "numberOfShares": 760272000,
+    "marketCapitalization": 4169039703552,
+    "minusCashAndCashEquivalents": 12153978345,
+    "addTotalDebt": 176403550343,
+    "enterpriseValue": 4333289275550
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "1999-12-31",
+    "stockPrice": 7743.66,
+    "numberOfShares": 760272000,
+    "marketCapitalization": 5887287115248,
+    "minusCashAndCashEquivalents": 7637903729,
+    "addTotalDebt": 201645317012,
+    "enterpriseValue": 6081294528531
+  },
+  {
+    "symbol": "AKO-B",
+    "date": "1998-12-31",
+    "stockPrice": 6149,
+    "numberOfShares": 760272000,
+    "marketCapitalization": 4674912528000,
+    "minusCashAndCashEquivalents": 8531265072,
+    "addTotalDebt": 181143963489,
+    "enterpriseValue": 4847525226417
+  }
+]

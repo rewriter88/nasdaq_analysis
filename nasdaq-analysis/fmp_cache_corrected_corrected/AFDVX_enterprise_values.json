@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "AFDVX",
+    "date": "2023-12-31",
+    "stockPrice": 20.22,
+    "numberOfShares": 52231451,
+    "marketCapitalization": 1056119939,
+    "minusCashAndCashEquivalents": 51247063,
+    "addTotalDebt": 1193430978,
+    "enterpriseValue": 2198303854
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2022-12-31",
+    "stockPrice": 16.76,
+    "numberOfShares": 48342799,
+    "marketCapitalization": 810225311,
+    "minusCashAndCashEquivalents": 43858515,
+    "addTotalDebt": 876281540,
+    "enterpriseValue": 1642648336
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2021-12-31",
+    "stockPrice": 19.79,
+    "numberOfShares": 24945907,
+    "marketCapitalization": 493679499,
+    "minusCashAndCashEquivalents": 14749046,
+    "addTotalDebt": 873628045,
+    "enterpriseValue": 1352558498
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2020-12-31",
+    "stockPrice": 13.88,
+    "numberOfShares": 24934506,
+    "marketCapitalization": 346090943,
+    "minusCashAndCashEquivalents": 11375960,
+    "addTotalDebt": 502616288,
+    "enterpriseValue": 837331271
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2019-12-31",
+    "stockPrice": 11.67,
+    "numberOfShares": 23687819,
+    "marketCapitalization": 276436847,
+    "minusCashAndCashEquivalents": 10942115,
+    "addTotalDebt": 545314106,
+    "enterpriseValue": 810808838
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2018-12-31",
+    "stockPrice": 9.38,
+    "numberOfShares": 23613687,
+    "marketCapitalization": 221496384,
+    "minusCashAndCashEquivalents": 7882862,
+    "addTotalDebt": 523210249,
+    "enterpriseValue": 736823771
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2017-12-31",
+    "stockPrice": 11.94,
+    "numberOfShares": 20048135,
+    "marketCapitalization": 239374731,
+    "minusCashAndCashEquivalents": 34347339,
+    "addTotalDebt": 2458145061,
+    "enterpriseValue": 2663172453
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2016-12-31",
+    "stockPrice": 10.38,
+    "numberOfShares": 14641702,
+    "marketCapitalization": 151980866,
+    "minusCashAndCashEquivalents": 27534374,
+    "addTotalDebt": 2144241026,
+    "enterpriseValue": 2268687518
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2015-12-31",
+    "stockPrice": 8.9,
+    "numberOfShares": 14721097,
+    "marketCapitalization": 131017763,
+    "minusCashAndCashEquivalents": 26140718,
+    "addTotalDebt": 2313147892,
+    "enterpriseValue": 2418024937
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2014-12-31",
+    "stockPrice": 9.9,
+    "numberOfShares": 12358804,
+    "marketCapitalization": 122352159,
+    "minusCashAndCashEquivalents": 32274285,
+    "addTotalDebt": 2699776342,
+    "enterpriseValue": 2789854216
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2013-12-31",
+    "stockPrice": 9.9,
+    "numberOfShares": 6132702,
+    "marketCapitalization": 60713749,
+    "minusCashAndCashEquivalents": 33062931,
+    "addTotalDebt": 413011413,
+    "enterpriseValue": 440662231
+  },
+  {
+    "symbol": "AFDVX",
+    "date": "2012-12-31",
+    "stockPrice": 9.9,
+    "numberOfShares": 1656250,
+    "marketCapitalization": 16396875,
+    "minusCashAndCashEquivalents": 3608759,
+    "addTotalDebt": 0,
+    "enterpriseValue": 12788116
+  }
+]

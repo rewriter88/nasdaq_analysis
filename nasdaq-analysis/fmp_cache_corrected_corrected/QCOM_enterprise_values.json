@@ -1,0 +1,352 @@
+[
+  {
+    "symbol": "QCOM",
+    "date": "2024-09-29",
+    "stockPrice": 170.05,
+    "numberOfShares": 1116000000,
+    "marketCapitalization": 189775800000,
+    "minusCashAndCashEquivalents": 7849000000,
+    "addTotalDebt": 14634000000,
+    "enterpriseValue": 196560800000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2023-09-24",
+    "stockPrice": 110.43,
+    "numberOfShares": 1117000000,
+    "marketCapitalization": 123350310000,
+    "minusCashAndCashEquivalents": 8450000000,
+    "addTotalDebt": 15398000000,
+    "enterpriseValue": 130298310000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2022-09-25",
+    "stockPrice": 119.74,
+    "numberOfShares": 1123000000,
+    "marketCapitalization": 134468020000,
+    "minusCashAndCashEquivalents": 2773000000,
+    "addTotalDebt": 15482000000,
+    "enterpriseValue": 147177020000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2021-09-26",
+    "stockPrice": 133.48,
+    "numberOfShares": 1131000000,
+    "marketCapitalization": 150965880000,
+    "minusCashAndCashEquivalents": 7116000000,
+    "addTotalDebt": 15745000000,
+    "enterpriseValue": 159594880000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2020-09-27",
+    "stockPrice": 118.47,
+    "numberOfShares": 1135000000,
+    "marketCapitalization": 134463450000,
+    "minusCashAndCashEquivalents": 6707000000,
+    "addTotalDebt": 15726000000,
+    "enterpriseValue": 143482450000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2019-09-29",
+    "stockPrice": 76.28,
+    "numberOfShares": 1210000000,
+    "marketCapitalization": 92298800000,
+    "minusCashAndCashEquivalents": 11839000000,
+    "addTotalDebt": 15933000000,
+    "enterpriseValue": 96392800000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2018-09-30",
+    "stockPrice": 72.6,
+    "numberOfShares": 1463000000,
+    "marketCapitalization": 106213799999,
+    "minusCashAndCashEquivalents": 11777000000,
+    "addTotalDebt": 16370000000,
+    "enterpriseValue": 110806799999
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2017-09-24",
+    "stockPrice": 51.62,
+    "numberOfShares": 1477000000,
+    "marketCapitalization": 76242740000,
+    "minusCashAndCashEquivalents": 35029000000,
+    "addTotalDebt": 21893000000,
+    "enterpriseValue": 63106740000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2016-09-25",
+    "stockPrice": 62.31,
+    "numberOfShares": 1484000000,
+    "marketCapitalization": 92468040000,
+    "minusCashAndCashEquivalents": 5946000000,
+    "addTotalDebt": 11757000000,
+    "enterpriseValue": 98279040000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2015-09-27",
+    "stockPrice": 52.54,
+    "numberOfShares": 1618000000,
+    "marketCapitalization": 85009720000,
+    "minusCashAndCashEquivalents": 7560000000,
+    "addTotalDebt": 10969000000,
+    "enterpriseValue": 88418720000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2014-09-28",
+    "stockPrice": 74.82,
+    "numberOfShares": 1683000000,
+    "marketCapitalization": 125922059999,
+    "minusCashAndCashEquivalents": 7907000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 118015059999
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2013-09-29",
+    "stockPrice": 67.32,
+    "numberOfShares": 1715000000,
+    "marketCapitalization": 115453799999,
+    "minusCashAndCashEquivalents": 6142000000,
+    "addTotalDebt": 17000000,
+    "enterpriseValue": 109328799999
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2012-09-30",
+    "stockPrice": 61.91,
+    "numberOfShares": 1700000000,
+    "marketCapitalization": 105247000000,
+    "minusCashAndCashEquivalents": 3807000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 101440000000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2011-09-25",
+    "stockPrice": 50.58,
+    "numberOfShares": 1658000000,
+    "marketCapitalization": 83861640000,
+    "minusCashAndCashEquivalents": 5462000000,
+    "addTotalDebt": 994000000,
+    "enterpriseValue": 79393640000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2010-09-26",
+    "stockPrice": 44.59,
+    "numberOfShares": 1643000000,
+    "marketCapitalization": 73261370000,
+    "minusCashAndCashEquivalents": 3547000000,
+    "addTotalDebt": 1086000000,
+    "enterpriseValue": 70800370000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2009-09-27",
+    "stockPrice": 45.97,
+    "numberOfShares": 1656000000,
+    "marketCapitalization": 76126320000,
+    "minusCashAndCashEquivalents": 2717000000,
+    "addTotalDebt": 170000000,
+    "enterpriseValue": 73579320000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2008-09-28",
+    "stockPrice": 39.88,
+    "numberOfShares": 1632000000,
+    "marketCapitalization": 65084160000,
+    "minusCashAndCashEquivalents": 1840000000,
+    "addTotalDebt": 173000000,
+    "enterpriseValue": 63417160000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2007-09-30",
+    "stockPrice": 42.09,
+    "numberOfShares": 1660000000,
+    "marketCapitalization": 69869400000,
+    "minusCashAndCashEquivalents": 2411000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 67458400000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2006-09-24",
+    "stockPrice": 38.67,
+    "numberOfShares": 1659000000,
+    "marketCapitalization": 64153530000,
+    "minusCashAndCashEquivalents": 1607000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 62546530000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2005-09-25",
+    "stockPrice": 44.4,
+    "numberOfShares": 1638000000,
+    "marketCapitalization": 72727200000,
+    "minusCashAndCashEquivalents": 2070000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 70657200000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2004-09-26",
+    "stockPrice": 38.01,
+    "numberOfShares": 1616000000,
+    "marketCapitalization": 61424160000,
+    "minusCashAndCashEquivalents": 1214000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 60210160000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2003-09-28",
+    "stockPrice": 21.67,
+    "numberOfShares": 1590384615,
+    "marketCapitalization": 34463634607,
+    "minusCashAndCashEquivalents": 2045094000,
+    "addTotalDebt": 225927000,
+    "enterpriseValue": 32644467607
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2002-09-29",
+    "stockPrice": 13.81,
+    "numberOfShares": 1541774000,
+    "marketCapitalization": 21291898940,
+    "minusCashAndCashEquivalents": 1406704000,
+    "addTotalDebt": 94288000,
+    "enterpriseValue": 19979482940
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2001-09-30",
+    "stockPrice": 22.4,
+    "numberOfShares": 1511938000,
+    "marketCapitalization": 33867411199,
+    "minusCashAndCashEquivalents": 1388602000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 32478809199
+  },
+  {
+    "symbol": "QCOM",
+    "date": "2000-09-24",
+    "stockPrice": 35,
+    "numberOfShares": 1434410000,
+    "marketCapitalization": 50204350000,
+    "minusCashAndCashEquivalents": 716871000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 49487479000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1999-09-26",
+    "stockPrice": 24.16,
+    "numberOfShares": 1189428000,
+    "marketCapitalization": 28736580480,
+    "minusCashAndCashEquivalents": 660016000,
+    "addTotalDebt": 115894000,
+    "enterpriseValue": 28192458480
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1998-09-27",
+    "stockPrice": 3.06,
+    "numberOfShares": 1107248000,
+    "marketCapitalization": 3388178880,
+    "minusCashAndCashEquivalents": 175846000,
+    "addTotalDebt": 157921000,
+    "enterpriseValue": 3370253880
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1997-09-28",
+    "stockPrice": 3.79,
+    "numberOfShares": 1158880000,
+    "marketCapitalization": 4392155200,
+    "minusCashAndCashEquivalents": 248837000,
+    "addTotalDebt": 120967000,
+    "enterpriseValue": 4264285200
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1996-09-29",
+    "stockPrice": 2.61,
+    "numberOfShares": 1050000000,
+    "marketCapitalization": 2740500000,
+    "minusCashAndCashEquivalents": 110100000,
+    "addTotalDebt": 93800000,
+    "enterpriseValue": 2724200000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1995-09-30",
+    "stockPrice": 2.82,
+    "numberOfShares": 862857143,
+    "marketCapitalization": 2433257143,
+    "minusCashAndCashEquivalents": 500600000,
+    "addTotalDebt": 34500000,
+    "enterpriseValue": 1967157143
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1994-09-30",
+    "stockPrice": 1.56,
+    "numberOfShares": 760000000,
+    "marketCapitalization": 1185600000,
+    "minusCashAndCashEquivalents": 45000000,
+    "addTotalDebt": 27400000,
+    "enterpriseValue": 1168000000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1993-09-30",
+    "stockPrice": 2.54,
+    "numberOfShares": 806666667,
+    "marketCapitalization": 2048933334,
+    "minusCashAndCashEquivalents": 97500000,
+    "addTotalDebt": 30500000,
+    "enterpriseValue": 1981933334
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1992-09-30",
+    "stockPrice": 0.55359,
+    "numberOfShares": 700000000,
+    "marketCapitalization": 387513000,
+    "minusCashAndCashEquivalents": 40200000,
+    "addTotalDebt": 10100000,
+    "enterpriseValue": 357413000
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1991-09-30",
+    "stockPrice": 0.55359,
+    "numberOfShares": 650640000,
+    "marketCapitalization": 360187797,
+    "minusCashAndCashEquivalents": 100000,
+    "addTotalDebt": 17500000,
+    "enterpriseValue": 377587797
+  },
+  {
+    "symbol": "QCOM",
+    "date": "1990-09-30",
+    "stockPrice": 0.55359,
+    "numberOfShares": 488571429,
+    "marketCapitalization": 270468257,
+    "minusCashAndCashEquivalents": 3800000,
+    "addTotalDebt": 10000000,
+    "enterpriseValue": 276668257
+  }
+]

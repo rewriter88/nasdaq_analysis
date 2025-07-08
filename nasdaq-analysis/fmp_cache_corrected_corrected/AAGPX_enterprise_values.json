@@ -1,0 +1,112 @@
+[
+  {
+    "symbol": "AAGPX",
+    "date": "2023-07-31",
+    "stockPrice": 22.9,
+    "numberOfShares": 187350045,
+    "marketCapitalization": 4290316030,
+    "minusCashAndCashEquivalents": 23020912,
+    "addTotalDebt": 12130635,
+    "enterpriseValue": 4279425753
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2022-07-31",
+    "stockPrice": 23.42,
+    "numberOfShares": 174300005,
+    "marketCapitalization": 4082106117,
+    "minusCashAndCashEquivalents": 46254095,
+    "addTotalDebt": 53359515,
+    "enterpriseValue": 4089211537
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2021-07-31",
+    "stockPrice": 26.66,
+    "numberOfShares": 119250056,
+    "marketCapitalization": 3179206492,
+    "minusCashAndCashEquivalents": 16894405,
+    "addTotalDebt": 252739557,
+    "enterpriseValue": 3415051644
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2020-07-31",
+    "stockPrice": 21.21,
+    "numberOfShares": 82500239,
+    "marketCapitalization": 1749830069,
+    "minusCashAndCashEquivalents": 26329628,
+    "addTotalDebt": 118722918,
+    "enterpriseValue": 1842223359
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2019-07-31",
+    "stockPrice": 25.56,
+    "numberOfShares": 121050045,
+    "marketCapitalization": 3094039150,
+    "minusCashAndCashEquivalents": 37373221,
+    "addTotalDebt": 250105632,
+    "enterpriseValue": 3306771561
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2018-07-31",
+    "stockPrice": 28.09,
+    "numberOfShares": 94950000,
+    "marketCapitalization": 2667145500,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2667145500
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2017-07-31",
+    "stockPrice": 27.7,
+    "numberOfShares": 78600000,
+    "marketCapitalization": 2177220000,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2177220000
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2016-07-31",
+    "stockPrice": 23.83,
+    "numberOfShares": 102150000,
+    "marketCapitalization": 2434234500,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2434234500
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2015-07-31",
+    "stockPrice": 27.84,
+    "numberOfShares": 162150000,
+    "marketCapitalization": 4514256000,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 4514256000
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2014-07-31",
+    "stockPrice": 28.81,
+    "numberOfShares": 132150000,
+    "marketCapitalization": 3807241500,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 3807241500
+  },
+  {
+    "symbol": "AAGPX",
+    "date": "2013-07-31",
+    "stockPrice": 25.31,
+    "numberOfShares": 149100000,
+    "marketCapitalization": 3773721000,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 3773721000
+  }
+]

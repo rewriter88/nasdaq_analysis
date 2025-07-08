@@ -1,0 +1,112 @@
+[
+  {
+    "symbol": "ACV",
+    "date": "2025-01-31",
+    "stockPrice": 22.92,
+    "numberOfShares": 10374036,
+    "marketCapitalization": 237772905,
+    "minusCashAndCashEquivalents": 6964000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 230808905
+  },
+  {
+    "symbol": "ACV",
+    "date": "2024-01-31",
+    "stockPrice": 22.44,
+    "numberOfShares": 10367192,
+    "marketCapitalization": 232639788,
+    "minusCashAndCashEquivalents": 9710000,
+    "addTotalDebt": 75000000,
+    "enterpriseValue": 297929788
+  },
+  {
+    "symbol": "ACV",
+    "date": "2023-01-31",
+    "stockPrice": 22.62,
+    "numberOfShares": 10380109,
+    "marketCapitalization": 234798065,
+    "minusCashAndCashEquivalents": 101000,
+    "addTotalDebt": 75000000,
+    "enterpriseValue": 309697065
+  },
+  {
+    "symbol": "ACV",
+    "date": "2022-01-31",
+    "stockPrice": 27.75,
+    "numberOfShares": 11337500,
+    "marketCapitalization": 314615625,
+    "minusCashAndCashEquivalents": 100000,
+    "addTotalDebt": 75000000,
+    "enterpriseValue": 389515625
+  },
+  {
+    "symbol": "ACV",
+    "date": "2021-01-31",
+    "stockPrice": 33.2,
+    "numberOfShares": 10352516,
+    "marketCapitalization": 343703531,
+    "minusCashAndCashEquivalents": 127671,
+    "addTotalDebt": 75000000,
+    "enterpriseValue": 418575860
+  },
+  {
+    "symbol": "ACV",
+    "date": "2020-01-31",
+    "stockPrice": 25.22,
+    "numberOfShares": 10344711,
+    "marketCapitalization": 260893611,
+    "minusCashAndCashEquivalents": 219572,
+    "addTotalDebt": 75000000,
+    "enterpriseValue": 335674039
+  },
+  {
+    "symbol": "ACV",
+    "date": "2019-01-31",
+    "stockPrice": 21.29,
+    "numberOfShares": 10028359,
+    "marketCapitalization": 213503763,
+    "minusCashAndCashEquivalents": 2074100,
+    "addTotalDebt": 75000000,
+    "enterpriseValue": 286429663
+  },
+  {
+    "symbol": "ACV",
+    "date": "2018-01-31",
+    "stockPrice": 22.4,
+    "numberOfShares": 10274970,
+    "marketCapitalization": 230159328,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 75000000,
+    "enterpriseValue": 305159328
+  },
+  {
+    "symbol": "ACV",
+    "date": "2017-01-31",
+    "stockPrice": 19.49,
+    "numberOfShares": 10274970,
+    "marketCapitalization": 200259165,
+    "minusCashAndCashEquivalents": -6167733,
+    "addTotalDebt": 105000000,
+    "enterpriseValue": 311426898
+  },
+  {
+    "symbol": "ACV",
+    "date": "2016-01-31",
+    "stockPrice": 16.7,
+    "numberOfShares": 10661039,
+    "marketCapitalization": 178039351,
+    "minusCashAndCashEquivalents": -2839041,
+    "addTotalDebt": 105000000,
+    "enterpriseValue": 285878392
+  },
+  {
+    "symbol": "ACV",
+    "date": "2010-09-30",
+    "stockPrice": 25,
+    "numberOfShares": 99852000,
+    "marketCapitalization": 2496300000,
+    "minusCashAndCashEquivalents": 301978000,
+    "addTotalDebt": 150422000,
+    "enterpriseValue": 2344744000
+  }
+]

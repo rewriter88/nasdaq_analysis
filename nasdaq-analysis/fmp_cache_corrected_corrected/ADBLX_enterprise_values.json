@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "ADBLX",
+    "date": "2023-12-31",
+    "stockPrice": 8.92,
+    "numberOfShares": 54010733,
+    "marketCapitalization": 481775738,
+    "minusCashAndCashEquivalents": 1969924,
+    "addTotalDebt": 301028412,
+    "enterpriseValue": 780834226
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2022-12-31",
+    "stockPrice": 8.83,
+    "numberOfShares": 54010711,
+    "marketCapitalization": 476914578,
+    "minusCashAndCashEquivalents": 701595,
+    "addTotalDebt": 388042928,
+    "enterpriseValue": 864255911
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2021-12-31",
+    "stockPrice": 10.67,
+    "numberOfShares": 53993525,
+    "marketCapitalization": 576110911,
+    "minusCashAndCashEquivalents": 901484,
+    "addTotalDebt": 412755249,
+    "enterpriseValue": 987964676
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2020-12-31",
+    "stockPrice": 10.92,
+    "numberOfShares": 53935133,
+    "marketCapitalization": 588971652,
+    "minusCashAndCashEquivalents": 1582153,
+    "addTotalDebt": 304837070,
+    "enterpriseValue": 892226569
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2019-12-31",
+    "stockPrice": 10.71,
+    "numberOfShares": 9046995,
+    "marketCapitalization": 96893316,
+    "minusCashAndCashEquivalents": 996335,
+    "addTotalDebt": 282427032,
+    "enterpriseValue": 378324013
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2018-08-31",
+    "stockPrice": 10.37,
+    "numberOfShares": 53935126,
+    "marketCapitalization": 559307256,
+    "minusCashAndCashEquivalents": 1835789,
+    "addTotalDebt": 0,
+    "enterpriseValue": 557471467
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2017-08-31",
+    "stockPrice": 10.76,
+    "numberOfShares": 53935126,
+    "marketCapitalization": 580341955,
+    "minusCashAndCashEquivalents": 1336637,
+    "addTotalDebt": 0,
+    "enterpriseValue": 579005318
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2016-08-31",
+    "stockPrice": 10.87,
+    "numberOfShares": 53935126,
+    "marketCapitalization": 586274819,
+    "minusCashAndCashEquivalents": 482475,
+    "addTotalDebt": 0,
+    "enterpriseValue": 585792344
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2015-08-31",
+    "stockPrice": 10.63,
+    "numberOfShares": 53935126,
+    "marketCapitalization": 573330389,
+    "minusCashAndCashEquivalents": 371446,
+    "addTotalDebt": 0,
+    "enterpriseValue": 572958943
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2014-08-31",
+    "stockPrice": 10.9,
+    "numberOfShares": 27041847,
+    "marketCapitalization": 294756132,
+    "minusCashAndCashEquivalents": 54781,
+    "addTotalDebt": 0,
+    "enterpriseValue": 294701351
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2013-08-31",
+    "stockPrice": 10.41,
+    "numberOfShares": 27041847,
+    "marketCapitalization": 281505627,
+    "minusCashAndCashEquivalents": 52785,
+    "addTotalDebt": 0,
+    "enterpriseValue": 281452842
+  },
+  {
+    "symbol": "ADBLX",
+    "date": "2012-08-31",
+    "stockPrice": 11.04,
+    "numberOfShares": 27027431,
+    "marketCapitalization": 298382838,
+    "minusCashAndCashEquivalents": 1779246,
+    "addTotalDebt": 0,
+    "enterpriseValue": 296603592
+  }
+]

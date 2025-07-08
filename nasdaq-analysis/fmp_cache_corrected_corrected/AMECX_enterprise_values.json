@@ -1,0 +1,132 @@
+[
+  {
+    "symbol": "AMECX",
+    "date": "2024-12-31",
+    "stockPrice": 24.42,
+    "numberOfShares": 8452336448,
+    "marketCapitalization": 206406056060,
+    "minusCashAndCashEquivalents": 284014000000,
+    "addTotalDebt": 257612000000,
+    "enterpriseValue": 180004056060
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2023-12-31",
+    "stockPrice": 23.44,
+    "numberOfShares": 8608766233,
+    "marketCapitalization": 201789480501,
+    "minusCashAndCashEquivalents": 327473000000,
+    "addTotalDebt": 275467000000,
+    "enterpriseValue": 149783480501
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2022-12-31",
+    "stockPrice": 22.63,
+    "numberOfShares": 8155172413,
+    "marketCapitalization": 184551551706,
+    "minusCashAndCashEquivalents": 222603000000,
+    "addTotalDebt": 275982000000,
+    "enterpriseValue": 237930551706
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2021-12-31",
+    "stockPrice": 25.85,
+    "numberOfShares": 8559383753,
+    "marketCapitalization": 221260070015,
+    "minusCashAndCashEquivalents": 342321000000,
+    "addTotalDebt": 280117000000,
+    "enterpriseValue": 159056070015
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2020-12-31",
+    "stockPrice": 23.55,
+    "numberOfShares": 8809090909,
+    "marketCapitalization": 207454090906,
+    "minusCashAndCashEquivalents": 373463000000,
+    "addTotalDebt": 262934000000,
+    "enterpriseValue": 96925090906
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2019-12-31",
+    "stockPrice": 23.24,
+    "numberOfShares": 9453818181,
+    "marketCapitalization": 219706734526,
+    "minusCashAndCashEquivalents": 137160000000,
+    "addTotalDebt": 240856000000,
+    "enterpriseValue": 323402734526
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2018-12-31",
+    "stockPrice": 20.63,
+    "numberOfShares": 10228352490,
+    "marketCapitalization": 211010911868,
+    "minusCashAndCashEquivalents": 156526000000,
+    "addTotalDebt": 229392000000,
+    "enterpriseValue": 283876911868
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2017-12-31",
+    "stockPrice": 23.44,
+    "numberOfShares": 10659096215,
+    "marketCapitalization": 249849215279,
+    "minusCashAndCashEquivalents": 138634000000,
+    "addTotalDebt": 227402000000,
+    "enterpriseValue": 338617215279
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2016-12-31",
+    "stockPrice": 21.67,
+    "numberOfShares": 10845221752,
+    "marketCapitalization": 235015955365,
+    "minusCashAndCashEquivalents": 147738000000,
+    "addTotalDebt": 216823000000,
+    "enterpriseValue": 304100955365
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2015-12-31",
+    "stockPrice": 20.23,
+    "numberOfShares": 11007347387,
+    "marketCapitalization": 222678637639,
+    "minusCashAndCashEquivalents": 159353000000,
+    "addTotalDebt": 236764000000,
+    "enterpriseValue": 300089637639
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2014-12-31",
+    "stockPrice": 21.58,
+    "numberOfShares": 10657142857,
+    "marketCapitalization": 229981142854,
+    "minusCashAndCashEquivalents": 138589000000,
+    "addTotalDebt": 243139000000,
+    "enterpriseValue": 334531142854
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2013-12-31",
+    "stockPrice": 20.65,
+    "numberOfShares": 11128080720,
+    "marketCapitalization": 229794866867,
+    "minusCashAndCashEquivalents": 131322000000,
+    "addTotalDebt": 249674000000,
+    "enterpriseValue": 348146866867
+  },
+  {
+    "symbol": "AMECX",
+    "date": "2012-12-31",
+    "stockPrice": 18.06,
+    "numberOfShares": 11032000000,
+    "marketCapitalization": 199237920000,
+    "minusCashAndCashEquivalents": 111352000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 87885920000
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "AEDVX",
+    "date": "2023-12-31",
+    "stockPrice": 8.96,
+    "numberOfShares": 58443607,
+    "marketCapitalization": 523654718,
+    "minusCashAndCashEquivalents": 241,
+    "addTotalDebt": 250000000,
+    "enterpriseValue": 773654477
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2022-12-31",
+    "stockPrice": 8.68,
+    "numberOfShares": 60246029,
+    "marketCapitalization": 522935531,
+    "minusCashAndCashEquivalents": 3109048,
+    "addTotalDebt": 235000000,
+    "enterpriseValue": 754826483
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2021-12-31",
+    "stockPrice": 10.25,
+    "numberOfShares": 60746091,
+    "marketCapitalization": 622647432,
+    "minusCashAndCashEquivalents": 2804473,
+    "addTotalDebt": 339984063,
+    "enterpriseValue": 959827022
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2020-12-31",
+    "stockPrice": 10.81,
+    "numberOfShares": 60746035,
+    "marketCapitalization": 656664638,
+    "minusCashAndCashEquivalents": 1423219,
+    "addTotalDebt": 361671311,
+    "enterpriseValue": 1016912730
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2019-12-31",
+    "stockPrice": 10.52,
+    "numberOfShares": 60746013,
+    "marketCapitalization": 639048056,
+    "minusCashAndCashEquivalents": 1330851,
+    "addTotalDebt": 381420413,
+    "enterpriseValue": 1019137618
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2018-12-31",
+    "stockPrice": 9.75,
+    "numberOfShares": 60746012,
+    "marketCapitalization": 592273617,
+    "minusCashAndCashEquivalents": 6695663,
+    "addTotalDebt": 0,
+    "enterpriseValue": 585577954
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2017-12-31",
+    "stockPrice": 10.39,
+    "numberOfShares": 60746012,
+    "marketCapitalization": 631151064,
+    "minusCashAndCashEquivalents": 9226330,
+    "addTotalDebt": 0,
+    "enterpriseValue": 621924734
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2016-12-31",
+    "stockPrice": 10.06,
+    "numberOfShares": 60746012,
+    "marketCapitalization": 611104880,
+    "minusCashAndCashEquivalents": 939671,
+    "addTotalDebt": 0,
+    "enterpriseValue": 610165209
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2015-12-31",
+    "stockPrice": 9.56,
+    "numberOfShares": 30794143,
+    "marketCapitalization": 294392007,
+    "minusCashAndCashEquivalents": 760880,
+    "addTotalDebt": 0,
+    "enterpriseValue": 293631127
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2014-12-31",
+    "stockPrice": 9.76,
+    "numberOfShares": 30794143,
+    "marketCapitalization": 300550835,
+    "minusCashAndCashEquivalents": 1767519,
+    "addTotalDebt": 0,
+    "enterpriseValue": 298783316
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2013-12-31",
+    "stockPrice": 10,
+    "numberOfShares": 30794143,
+    "marketCapitalization": 307941430,
+    "minusCashAndCashEquivalents": 3888455,
+    "addTotalDebt": 0,
+    "enterpriseValue": 304052975
+  },
+  {
+    "symbol": "AEDVX",
+    "date": "2012-12-31",
+    "stockPrice": 10,
+    "numberOfShares": 30757194,
+    "marketCapitalization": 307571940,
+    "minusCashAndCashEquivalents": 5952310,
+    "addTotalDebt": 0,
+    "enterpriseValue": 301619630
+  }
+]

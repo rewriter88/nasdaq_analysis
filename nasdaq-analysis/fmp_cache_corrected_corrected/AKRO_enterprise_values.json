@@ -1,0 +1,82 @@
+[
+  {
+    "symbol": "AKRO",
+    "date": "2024-12-31",
+    "stockPrice": 27.82,
+    "numberOfShares": 67136772,
+    "marketCapitalization": 1867744997,
+    "minusCashAndCashEquivalents": 340238000,
+    "addTotalDebt": 36457000,
+    "enterpriseValue": 1563963997
+  },
+  {
+    "symbol": "AKRO",
+    "date": "2023-12-31",
+    "stockPrice": 23.35,
+    "numberOfShares": 52568000,
+    "marketCapitalization": 1227462800,
+    "minusCashAndCashEquivalents": 234207000,
+    "addTotalDebt": 26305000,
+    "enterpriseValue": 1019560800
+  },
+  {
+    "symbol": "AKRO",
+    "date": "2022-12-31",
+    "stockPrice": 54.8,
+    "numberOfShares": 38984772,
+    "marketCapitalization": 2136365505,
+    "minusCashAndCashEquivalents": 249773000,
+    "addTotalDebt": 10945000,
+    "enterpriseValue": 1897537505
+  },
+  {
+    "symbol": "AKRO",
+    "date": "2021-12-31",
+    "stockPrice": 21.15,
+    "numberOfShares": 34827385,
+    "marketCapitalization": 736599192,
+    "minusCashAndCashEquivalents": 150483000,
+    "addTotalDebt": 1516000,
+    "enterpriseValue": 587632192
+  },
+  {
+    "symbol": "AKRO",
+    "date": "2020-12-31",
+    "stockPrice": 25.8,
+    "numberOfShares": 31463248,
+    "marketCapitalization": 811751798,
+    "minusCashAndCashEquivalents": 187242000,
+    "addTotalDebt": 1810000,
+    "enterpriseValue": 626319798
+  },
+  {
+    "symbol": "AKRO",
+    "date": "2019-12-31",
+    "stockPrice": 22.2,
+    "numberOfShares": 15070728,
+    "marketCapitalization": 334570161,
+    "minusCashAndCashEquivalents": 136400000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 198170161
+  },
+  {
+    "symbol": "AKRO",
+    "date": "2018-12-31",
+    "stockPrice": 18.32,
+    "numberOfShares": 21224207,
+    "marketCapitalization": 388827472,
+    "minusCashAndCashEquivalents": 75975000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 312852472
+  },
+  {
+    "symbol": "AKRO",
+    "date": "2017-12-31",
+    "stockPrice": 18.32,
+    "numberOfShares": 28555379,
+    "marketCapitalization": 523134543,
+    "minusCashAndCashEquivalents": 598000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 522536543
+  }
+]

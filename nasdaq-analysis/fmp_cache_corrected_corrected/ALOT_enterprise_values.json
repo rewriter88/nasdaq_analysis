@@ -1,0 +1,402 @@
+[
+  {
+    "symbol": "ALOT",
+    "date": "2025-01-31",
+    "stockPrice": 11.6,
+    "numberOfShares": 7509000,
+    "marketCapitalization": 87104400,
+    "minusCashAndCashEquivalents": 5050000,
+    "addTotalDebt": 44283000,
+    "enterpriseValue": 126337400
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2024-01-31",
+    "stockPrice": 17.63,
+    "numberOfShares": 7415000,
+    "marketCapitalization": 130726450,
+    "minusCashAndCashEquivalents": 4527000,
+    "addTotalDebt": 22440000,
+    "enterpriseValue": 148639450
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2023-01-31",
+    "stockPrice": 13.25,
+    "numberOfShares": 7307000,
+    "marketCapitalization": 96817750,
+    "minusCashAndCashEquivalents": 3946000,
+    "addTotalDebt": 30120000,
+    "enterpriseValue": 122991750
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2022-01-31",
+    "stockPrice": 13.74,
+    "numberOfShares": 7207000,
+    "marketCapitalization": 99024180,
+    "minusCashAndCashEquivalents": 5276000,
+    "addTotalDebt": 9962000,
+    "enterpriseValue": 103710180
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2021-01-31",
+    "stockPrice": 10.78,
+    "numberOfShares": 7104000,
+    "marketCapitalization": 76581120,
+    "minusCashAndCashEquivalents": 11439000,
+    "addTotalDebt": 17922000,
+    "enterpriseValue": 83064120
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2020-01-31",
+    "stockPrice": 12.44,
+    "numberOfShares": 7024000,
+    "marketCapitalization": 87378560,
+    "minusCashAndCashEquivalents": 4249000,
+    "addTotalDebt": 20702000,
+    "enterpriseValue": 103831560
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2019-01-31",
+    "stockPrice": 19.98,
+    "numberOfShares": 6881000,
+    "marketCapitalization": 137482380,
+    "minusCashAndCashEquivalents": 7534000,
+    "addTotalDebt": 19578000,
+    "enterpriseValue": 149526380
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2018-01-31",
+    "stockPrice": 13.5,
+    "numberOfShares": 6911000,
+    "marketCapitalization": 93298500,
+    "minusCashAndCashEquivalents": 10177000,
+    "addTotalDebt": 23146000,
+    "enterpriseValue": 106267500
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2017-01-31",
+    "stockPrice": 13.86,
+    "numberOfShares": 7421000,
+    "marketCapitalization": 102891422,
+    "minusCashAndCashEquivalents": 18098000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 84793422
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2016-01-31",
+    "stockPrice": 15.4,
+    "numberOfShares": 7288000,
+    "marketCapitalization": 112235200,
+    "minusCashAndCashEquivalents": 10043000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 102192200
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2015-01-31",
+    "stockPrice": 14.95,
+    "numberOfShares": 7612000,
+    "marketCapitalization": 113799400,
+    "minusCashAndCashEquivalents": 7958000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 105841400
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2014-01-31",
+    "stockPrice": 13.66,
+    "numberOfShares": 7470000,
+    "marketCapitalization": 102040200,
+    "minusCashAndCashEquivalents": 8341000,
+    "addTotalDebt": 250000,
+    "enterpriseValue": 93949200
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2013-01-31",
+    "stockPrice": 10,
+    "numberOfShares": 7396000,
+    "marketCapitalization": 73960000,
+    "minusCashAndCashEquivalents": 30999000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 42961000
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2012-01-31",
+    "stockPrice": 8.05,
+    "numberOfShares": 7325000,
+    "marketCapitalization": 58966250,
+    "minusCashAndCashEquivalents": 11703621,
+    "addTotalDebt": 0,
+    "enterpriseValue": 47262629
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2011-01-31",
+    "stockPrice": 7.85,
+    "numberOfShares": 7271403,
+    "marketCapitalization": 57080513,
+    "minusCashAndCashEquivalents": 7720135,
+    "addTotalDebt": 0,
+    "enterpriseValue": 49360378
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2010-01-31",
+    "stockPrice": 7.5,
+    "numberOfShares": 7135293,
+    "marketCapitalization": 53514697,
+    "minusCashAndCashEquivalents": 14155096,
+    "addTotalDebt": 0,
+    "enterpriseValue": 39359601
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2009-01-31",
+    "stockPrice": 6.99,
+    "numberOfShares": 6987531,
+    "marketCapitalization": 48842841,
+    "minusCashAndCashEquivalents": 10978553,
+    "addTotalDebt": 0,
+    "enterpriseValue": 37864288
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2008-01-31",
+    "stockPrice": 9.7,
+    "numberOfShares": 6884972,
+    "marketCapitalization": 66784228,
+    "minusCashAndCashEquivalents": 5747937,
+    "addTotalDebt": 0,
+    "enterpriseValue": 61036291
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2007-01-31",
+    "stockPrice": 10.42,
+    "numberOfShares": 6721140,
+    "marketCapitalization": 70034278,
+    "minusCashAndCashEquivalents": 4595570,
+    "addTotalDebt": 0,
+    "enterpriseValue": 65438708
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2006-01-31",
+    "stockPrice": 8.24,
+    "numberOfShares": 6613576,
+    "marketCapitalization": 54495866,
+    "minusCashAndCashEquivalents": 4599000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 49896866
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2005-01-31",
+    "stockPrice": 7.58,
+    "numberOfShares": 6612751,
+    "marketCapitalization": 50098201,
+    "minusCashAndCashEquivalents": 6225122,
+    "addTotalDebt": 0,
+    "enterpriseValue": 43873079
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2004-01-31",
+    "stockPrice": 10.87,
+    "numberOfShares": 6046291,
+    "marketCapitalization": 65695974,
+    "minusCashAndCashEquivalents": 4998643,
+    "addTotalDebt": 0,
+    "enterpriseValue": 60697331
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2003-01-31",
+    "stockPrice": 2.58,
+    "numberOfShares": 5869195,
+    "marketCapitalization": 15153193,
+    "minusCashAndCashEquivalents": 3217035,
+    "addTotalDebt": 8290,
+    "enterpriseValue": 11944448
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2002-01-31",
+    "stockPrice": 2.73,
+    "numberOfShares": 5856706,
+    "marketCapitalization": 15972836,
+    "minusCashAndCashEquivalents": 2569721,
+    "addTotalDebt": 24755,
+    "enterpriseValue": 13427870
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2001-01-31",
+    "stockPrice": 3.27,
+    "numberOfShares": 6301854,
+    "marketCapitalization": 20624247,
+    "minusCashAndCashEquivalents": 806069,
+    "addTotalDebt": 71587,
+    "enterpriseValue": 19889765
+  },
+  {
+    "symbol": "ALOT",
+    "date": "2000-01-31",
+    "stockPrice": 4.55,
+    "numberOfShares": 6096898,
+    "marketCapitalization": 27713175,
+    "minusCashAndCashEquivalents": 4035867,
+    "addTotalDebt": 132040,
+    "enterpriseValue": 23809348
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1999-01-31",
+    "stockPrice": 4.27,
+    "numberOfShares": 6396102,
+    "marketCapitalization": 27328797,
+    "minusCashAndCashEquivalents": 4900000,
+    "addTotalDebt": 200000,
+    "enterpriseValue": 22628797
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1998-01-31",
+    "stockPrice": 5.64,
+    "numberOfShares": 6672582,
+    "marketCapitalization": 37609100,
+    "minusCashAndCashEquivalents": 5700000,
+    "addTotalDebt": 400000,
+    "enterpriseValue": 32309100
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1997-01-31",
+    "stockPrice": 6,
+    "numberOfShares": 6899946,
+    "marketCapitalization": 41399676,
+    "minusCashAndCashEquivalents": 6600000,
+    "addTotalDebt": 400000,
+    "enterpriseValue": 35199676
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1996-01-31",
+    "stockPrice": 6.55,
+    "numberOfShares": 7006533,
+    "marketCapitalization": 45860946,
+    "minusCashAndCashEquivalents": 2000000,
+    "addTotalDebt": 300000,
+    "enterpriseValue": 44160946
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1995-01-31",
+    "stockPrice": 8.55,
+    "numberOfShares": 7011130,
+    "marketCapitalization": 59913295,
+    "minusCashAndCashEquivalents": 1100000,
+    "addTotalDebt": 300000,
+    "enterpriseValue": 59113295
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1994-01-31",
+    "stockPrice": 8.18,
+    "numberOfShares": 6992225,
+    "marketCapitalization": 57209112,
+    "minusCashAndCashEquivalents": 1300000,
+    "addTotalDebt": 700000,
+    "enterpriseValue": 56609112
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1993-01-31",
+    "stockPrice": 11.09,
+    "numberOfShares": 7174631,
+    "marketCapitalization": 79573179,
+    "minusCashAndCashEquivalents": 2000000,
+    "addTotalDebt": 1000000,
+    "enterpriseValue": 78573179
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1992-01-31",
+    "stockPrice": 10.06,
+    "numberOfShares": 7007912,
+    "marketCapitalization": 70503841,
+    "minusCashAndCashEquivalents": 1800000,
+    "addTotalDebt": 2000000,
+    "enterpriseValue": 70703841
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1991-01-31",
+    "stockPrice": 4.24,
+    "numberOfShares": 6589201,
+    "marketCapitalization": 27954184,
+    "minusCashAndCashEquivalents": 2500000,
+    "addTotalDebt": 2500000,
+    "enterpriseValue": 27954184
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1990-01-31",
+    "stockPrice": 4.61,
+    "numberOfShares": 6667333,
+    "marketCapitalization": 30710142,
+    "minusCashAndCashEquivalents": 2300000,
+    "addTotalDebt": 3000000,
+    "enterpriseValue": 31410142
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1989-01-31",
+    "stockPrice": 4.85,
+    "numberOfShares": 6715788,
+    "marketCapitalization": 32561397,
+    "minusCashAndCashEquivalents": 2300000,
+    "addTotalDebt": 3000000,
+    "enterpriseValue": 33261397
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1988-01-31",
+    "stockPrice": 3.23,
+    "numberOfShares": 6638595,
+    "marketCapitalization": 21458083,
+    "minusCashAndCashEquivalents": 1900000,
+    "addTotalDebt": 2800000,
+    "enterpriseValue": 22358083
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1987-01-31",
+    "stockPrice": 3.35,
+    "numberOfShares": 6875688,
+    "marketCapitalization": 23057860,
+    "minusCashAndCashEquivalents": 2700000,
+    "addTotalDebt": 3200000,
+    "enterpriseValue": 23557860
+  },
+  {
+    "symbol": "ALOT",
+    "date": "1986-01-31",
+    "stockPrice": 3.07,
+    "numberOfShares": 6513809,
+    "marketCapitalization": 20001998,
+    "minusCashAndCashEquivalents": 2600000,
+    "addTotalDebt": 3600000,
+    "enterpriseValue": 21001998
+  }
+]

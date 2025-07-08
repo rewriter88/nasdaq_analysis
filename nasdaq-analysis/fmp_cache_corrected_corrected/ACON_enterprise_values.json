@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "ACON",
+    "date": "2024-12-31",
+    "stockPrice": 130.25,
+    "numberOfShares": 942.8388015907,
+    "marketCapitalization": 122802.87,
+    "minusCashAndCashEquivalents": 453661,
+    "addTotalDebt": 0,
+    "enterpriseValue": -330858
+  },
+  {
+    "symbol": "ACON",
+    "date": "2023-12-31",
+    "stockPrice": 28943.73,
+    "numberOfShares": 61.55976,
+    "marketCapitalization": 1781769.07,
+    "minusCashAndCashEquivalents": 1021069,
+    "addTotalDebt": 1125724,
+    "enterpriseValue": 1886424
+  },
+  {
+    "symbol": "ACON",
+    "date": "2022-12-31",
+    "stockPrice": 83936.79,
+    "numberOfShares": 42.18884,
+    "marketCapitalization": 3541195.8,
+    "minusCashAndCashEquivalents": 1472806,
+    "addTotalDebt": 4644,
+    "enterpriseValue": 2073033
+  },
+  {
+    "symbol": "ACON",
+    "date": "2021-12-31",
+    "stockPrice": 393634.89,
+    "numberOfShares": 49.617960000000004,
+    "marketCapitalization": 19531360,
+    "minusCashAndCashEquivalents": 452530,
+    "addTotalDebt": 2000000,
+    "enterpriseValue": 21078830
+  },
+  {
+    "symbol": "ACON",
+    "date": "2020-12-31",
+    "stockPrice": 393634.89,
+    "numberOfShares": 49.617960000000004,
+    "marketCapitalization": 19531360,
+    "minusCashAndCashEquivalents": 14984,
+    "addTotalDebt": 2376836,
+    "enterpriseValue": 21893212
+  },
+  {
+    "symbol": "ACON",
+    "date": "2019-12-31",
+    "stockPrice": 393634.89,
+    "numberOfShares": 49.617960000000004,
+    "marketCapitalization": 19531360,
+    "minusCashAndCashEquivalents": 128165,
+    "addTotalDebt": 515553,
+    "enterpriseValue": 19918748
+  }
+]

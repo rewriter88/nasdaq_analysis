@@ -1,0 +1,32 @@
+[
+  {
+    "symbol": "ACTU",
+    "date": "2024-12-31",
+    "stockPrice": 7.96,
+    "numberOfShares": 8372741,
+    "marketCapitalization": 66647018,
+    "minusCashAndCashEquivalents": 8641622,
+    "addTotalDebt": 0,
+    "enterpriseValue": 58005396
+  },
+  {
+    "symbol": "ACTU",
+    "date": "2023-12-31",
+    "stockPrice": 8.61,
+    "numberOfShares": 15033731,
+    "marketCapitalization": 129440423,
+    "minusCashAndCashEquivalents": 2958659,
+    "addTotalDebt": 0,
+    "enterpriseValue": 126481764
+  },
+  {
+    "symbol": "ACTU",
+    "date": "2022-12-31",
+    "stockPrice": 8.61,
+    "numberOfShares": 15033731,
+    "marketCapitalization": 129440423,
+    "minusCashAndCashEquivalents": 20449310,
+    "addTotalDebt": 0,
+    "enterpriseValue": 108991113
+  }
+]

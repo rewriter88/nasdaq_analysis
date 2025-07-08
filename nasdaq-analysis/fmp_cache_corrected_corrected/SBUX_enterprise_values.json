@@ -1,0 +1,342 @@
+[
+  {
+    "symbol": "SBUX",
+    "date": "2024-09-29",
+    "stockPrice": 97.49,
+    "numberOfShares": 1137300048,
+    "marketCapitalization": 110875381679,
+    "minusCashAndCashEquivalents": 3286200000,
+    "addTotalDebt": 25803100000,
+    "enterpriseValue": 133392281679
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2023-10-01",
+    "stockPrice": 91.13,
+    "numberOfShares": 1146800000,
+    "marketCapitalization": 104507884000,
+    "minusCashAndCashEquivalents": 3551500000,
+    "addTotalDebt": 24599800000,
+    "enterpriseValue": 125556184000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2022-10-02",
+    "stockPrice": 85.62,
+    "numberOfShares": 1153300000,
+    "marketCapitalization": 98745546000,
+    "minusCashAndCashEquivalents": 2818400000,
+    "addTotalDebt": 23804800000,
+    "enterpriseValue": 119731946000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2021-10-03",
+    "stockPrice": 111.46,
+    "numberOfShares": 1177600000,
+    "marketCapitalization": 131255296000,
+    "minusCashAndCashEquivalents": 6455700000,
+    "addTotalDebt": 23605100000,
+    "enterpriseValue": 148404696000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2020-09-27",
+    "stockPrice": 86.07,
+    "numberOfShares": 1172800000,
+    "marketCapitalization": 100942895999,
+    "minusCashAndCashEquivalents": 4350900000,
+    "addTotalDebt": 25258800000,
+    "enterpriseValue": 121850795999
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2019-09-29",
+    "stockPrice": 88.42,
+    "numberOfShares": 1221200000,
+    "marketCapitalization": 107978504000,
+    "minusCashAndCashEquivalents": 2686600000,
+    "addTotalDebt": 11167000000,
+    "enterpriseValue": 116458904000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2018-09-30",
+    "stockPrice": 55.58,
+    "numberOfShares": 1382700000,
+    "marketCapitalization": 76850466000,
+    "minusCashAndCashEquivalents": 8756300000,
+    "addTotalDebt": 9440100000,
+    "enterpriseValue": 77534266000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2017-10-01",
+    "stockPrice": 53.81,
+    "numberOfShares": 1431600000,
+    "marketCapitalization": 77034396000,
+    "minusCashAndCashEquivalents": 2462300000,
+    "addTotalDebt": 3932600000,
+    "enterpriseValue": 78504696000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2016-10-02",
+    "stockPrice": 53.84,
+    "numberOfShares": 1460500000,
+    "marketCapitalization": 78633320000,
+    "minusCashAndCashEquivalents": 2128800000,
+    "addTotalDebt": 3602200000,
+    "enterpriseValue": 80106720000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2015-09-27",
+    "stockPrice": 55.77,
+    "numberOfShares": 1485100000,
+    "marketCapitalization": 82824027000,
+    "minusCashAndCashEquivalents": 1530100000,
+    "addTotalDebt": 2347500000,
+    "enterpriseValue": 83641427000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2014-09-28",
+    "stockPrice": 37.64,
+    "numberOfShares": 1499000000,
+    "marketCapitalization": 56422360000,
+    "minusCashAndCashEquivalents": 1708400000,
+    "addTotalDebt": 2048300000,
+    "enterpriseValue": 56762260000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2013-09-29",
+    "stockPrice": 38.49,
+    "numberOfShares": 1506400000,
+    "marketCapitalization": 57981336000,
+    "minusCashAndCashEquivalents": 2575700000,
+    "addTotalDebt": 1299400000,
+    "enterpriseValue": 56705036000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2012-09-30",
+    "stockPrice": 25.07,
+    "numberOfShares": 1498600000,
+    "marketCapitalization": 37569902000,
+    "minusCashAndCashEquivalents": 1188600000,
+    "addTotalDebt": 549600000,
+    "enterpriseValue": 36930902000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2011-10-02",
+    "stockPrice": 18.1,
+    "numberOfShares": 1482800000,
+    "marketCapitalization": 26838680000,
+    "minusCashAndCashEquivalents": 1148100000,
+    "addTotalDebt": 549500000,
+    "enterpriseValue": 26240080000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2010-10-03",
+    "stockPrice": 12.85,
+    "numberOfShares": 1485200000,
+    "marketCapitalization": 19084820000,
+    "minusCashAndCashEquivalents": 1164000000,
+    "addTotalDebt": 549400000,
+    "enterpriseValue": 18470220000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2009-09-27",
+    "stockPrice": 10.31,
+    "numberOfShares": 1491800000,
+    "marketCapitalization": 15380458000,
+    "minusCashAndCashEquivalents": 599800000,
+    "addTotalDebt": 549500000,
+    "enterpriseValue": 15330158000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2008-09-28",
+    "stockPrice": 7.09,
+    "numberOfShares": 1463000000,
+    "marketCapitalization": 10372670000,
+    "minusCashAndCashEquivalents": 269800000,
+    "addTotalDebt": 1263300000,
+    "enterpriseValue": 11366170000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2007-09-30",
+    "stockPrice": 13.16,
+    "numberOfShares": 1499600000,
+    "marketCapitalization": 19734736000,
+    "minusCashAndCashEquivalents": 281261000,
+    "addTotalDebt": 1261144000,
+    "enterpriseValue": 20714619000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2006-10-01",
+    "stockPrice": 16.81,
+    "numberOfShares": 1532228000,
+    "marketCapitalization": 25756752679,
+    "minusCashAndCashEquivalents": 312606000,
+    "addTotalDebt": 702720000,
+    "enterpriseValue": 26146866679
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2005-10-02",
+    "stockPrice": 12.6,
+    "numberOfShares": 3158280000,
+    "marketCapitalization": 39794328000,
+    "minusCashAndCashEquivalents": 173809000,
+    "addTotalDebt": 280618000,
+    "enterpriseValue": 39901137000
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2004-10-03",
+    "stockPrice": 11.76,
+    "numberOfShares": 1587412000,
+    "marketCapitalization": 18667965120,
+    "minusCashAndCashEquivalents": 299128000,
+    "addTotalDebt": 4353000,
+    "enterpriseValue": 18373190120
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2003-09-28",
+    "stockPrice": 7.31,
+    "numberOfShares": 1563012000,
+    "marketCapitalization": 11425617720,
+    "minusCashAndCashEquivalents": 200907000,
+    "addTotalDebt": 5076000,
+    "enterpriseValue": 11229786720
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2002-09-29",
+    "stockPrice": 5.16,
+    "numberOfShares": 1537732000,
+    "marketCapitalization": 7934697120,
+    "minusCashAndCashEquivalents": 174572000,
+    "addTotalDebt": 80681000,
+    "enterpriseValue": 7840806120
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2001-09-30",
+    "stockPrice": 3.7,
+    "numberOfShares": 1519472000,
+    "marketCapitalization": 5622046400,
+    "minusCashAndCashEquivalents": 113237000,
+    "addTotalDebt": 68470000,
+    "enterpriseValue": 5577279400
+  },
+  {
+    "symbol": "SBUX",
+    "date": "2000-10-01",
+    "stockPrice": 5.05,
+    "numberOfShares": 1479288000,
+    "marketCapitalization": 7470404400,
+    "minusCashAndCashEquivalents": 70817000,
+    "addTotalDebt": 63500000,
+    "enterpriseValue": 7463087400
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1999-10-03",
+    "stockPrice": 2.91,
+    "numberOfShares": 1461593280,
+    "marketCapitalization": 4253236444,
+    "minusCashAndCashEquivalents": 66400000,
+    "addTotalDebt": 71200000,
+    "enterpriseValue": 4258036444
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1998-09-27",
+    "stockPrice": 2.56,
+    "numberOfShares": 2817760000,
+    "marketCapitalization": 7213465600,
+    "minusCashAndCashEquivalents": 101700000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 7111765600
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1997-09-28",
+    "stockPrice": 2.57,
+    "numberOfShares": 1264944000,
+    "marketCapitalization": 3250906080,
+    "minusCashAndCashEquivalents": 70100000,
+    "addTotalDebt": 167000000,
+    "enterpriseValue": 3347806080
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1996-09-29",
+    "stockPrice": 2.06,
+    "numberOfShares": 1241344000,
+    "marketCapitalization": 2557168640,
+    "minusCashAndCashEquivalents": 126200000,
+    "addTotalDebt": 166700000,
+    "enterpriseValue": 2597668640
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1995-09-30",
+    "stockPrice": 1.18,
+    "numberOfShares": 1135312000,
+    "marketCapitalization": 1339668160,
+    "minusCashAndCashEquivalents": 20900000,
+    "addTotalDebt": 81300000,
+    "enterpriseValue": 1400068160
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1994-09-30",
+    "stockPrice": 0.7207,
+    "numberOfShares": 926976000,
+    "marketCapitalization": 668071603,
+    "minusCashAndCashEquivalents": 8400000,
+    "addTotalDebt": 80500000,
+    "enterpriseValue": 740171603
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1993-09-30",
+    "stockPrice": 0.85547,
+    "numberOfShares": 874720000,
+    "marketCapitalization": 748296718,
+    "minusCashAndCashEquivalents": 16400000,
+    "addTotalDebt": 86700000,
+    "enterpriseValue": 818596718
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1992-09-30",
+    "stockPrice": 0.47266,
+    "numberOfShares": 838400000,
+    "marketCapitalization": 396278144,
+    "minusCashAndCashEquivalents": 20800000,
+    "addTotalDebt": 4600000,
+    "enterpriseValue": 380078144
+  },
+  {
+    "symbol": "SBUX",
+    "date": "1991-09-30",
+    "stockPrice": 0.33594,
+    "numberOfShares": 809344000,
+    "marketCapitalization": 271891023,
+    "minusCashAndCashEquivalents": 1100000,
+    "addTotalDebt": 8200000,
+    "enterpriseValue": 278991023
+  }
+]

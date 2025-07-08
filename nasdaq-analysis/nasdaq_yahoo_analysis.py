@@ -61,6 +61,28 @@ except ImportError:
     PORTFOLIO_SIZES = [1, 2, 3, 4, 5, 6, 8, 9, 10]  # Portfolio sizes to test
     BENCHMARKS = ["QQQ", "SPY"]
     CHART_DISPLAY_MODE = "simple"
+
+# ========================== CHART FILENAME HELPER ==========================
+def generate_chart_filename(chart_type="performance"):
+    """Generate descriptive filename for charts with timestamp and config params"""
+    import os
+    
+    # Create timestamp
+    timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    # Extract key config parameters
+    max_n = max(PORTFOLIO_SIZES)
+    source = DATA_SOURCE.lower() if 'DATA_SOURCE' in globals() else 'yahoo'
+    mode = CHART_DISPLAY_MODE if 'CHART_DISPLAY_MODE' in globals() else 'simple'
+    
+    # Build filename (no threshold for Yahoo version)
+    filename = f"nasdaq_{chart_type}_{timestamp}_top{max_n}_nothresh_{source}_{mode}.png"
+    
+    # Ensure results/charts directory exists
+    results_dir = "results/charts"
+    os.makedirs(results_dir, exist_ok=True)
+    
+    return os.path.join(results_dir, filename)
     DATA_SOURCE = "YAHOO"
     
     CACHE_DIR = "yahoo_cache"  # Directory for caching Yahoo responses
@@ -606,10 +628,17 @@ class NasdaqMomentumAnalyzer:
                     fontsize=16, fontweight='bold')
         plt.tight_layout()
         
-        # Save the plot
+        # Save the plot with descriptive filename in results folder
+        chart_filename = generate_chart_filename("analysis")
+        plt.savefig(chart_filename, dpi=300, bbox_inches='tight')
+        print(f"✅ Yahoo analysis chart saved: {chart_filename}")
+        
+        # Also save with simple name for backwards compatibility
         filename = f'nasdaq_momentum_analysis_yahoo_{start_date}_{end_date}.png'
         plt.savefig(filename, dpi=300, bbox_inches='tight')
-        print(f"\nChart saved as: {filename}")
+        print(f"\nChart also saved as: {filename}")
+        
+        plt.show()
         
         # Print final profit summary
         print(f"\n{'='*80}")

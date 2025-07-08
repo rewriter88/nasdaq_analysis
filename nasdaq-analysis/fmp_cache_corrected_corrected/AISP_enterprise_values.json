@@ -1,0 +1,42 @@
+[
+  {
+    "symbol": "AISP",
+    "date": "2024-12-31",
+    "stockPrice": 6.26,
+    "numberOfShares": 24585955,
+    "marketCapitalization": 153908078,
+    "minusCashAndCashEquivalents": 11415000,
+    "addTotalDebt": 943703000,
+    "enterpriseValue": 1086196078
+  },
+  {
+    "symbol": "AISP",
+    "date": "2023-12-31",
+    "stockPrice": 1.7,
+    "numberOfShares": 13671376,
+    "marketCapitalization": 23241339,
+    "minusCashAndCashEquivalents": 3124000,
+    "addTotalDebt": 3944000,
+    "enterpriseValue": 24061339
+  },
+  {
+    "symbol": "AISP",
+    "date": "2022-12-31",
+    "stockPrice": 10.08,
+    "numberOfShares": 13387344,
+    "marketCapitalization": 134944427,
+    "minusCashAndCashEquivalents": 298614,
+    "addTotalDebt": 1257000,
+    "enterpriseValue": 135902813
+  },
+  {
+    "symbol": "AISP",
+    "date": "2021-12-31",
+    "stockPrice": 9.79,
+    "numberOfShares": 41491564,
+    "marketCapitalization": 406202411,
+    "minusCashAndCashEquivalents": 1345000,
+    "addTotalDebt": 1142000,
+    "enterpriseValue": 405999411
+  }
+]

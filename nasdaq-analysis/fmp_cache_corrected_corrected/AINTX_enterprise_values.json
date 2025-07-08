@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "AINTX",
+    "date": "2023-12-31",
+    "stockPrice": 14.23,
+    "numberOfShares": 63008000,
+    "marketCapitalization": 896603840,
+    "minusCashAndCashEquivalents": 220251000,
+    "addTotalDebt": 433565000,
+    "enterpriseValue": 1109917840
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2022-12-31",
+    "stockPrice": 13.15,
+    "numberOfShares": 63646931,
+    "marketCapitalization": 836957142,
+    "minusCashAndCashEquivalents": 159577000,
+    "addTotalDebt": 448027000,
+    "enterpriseValue": 1125407142
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2021-12-31",
+    "stockPrice": 14.83,
+    "numberOfShares": 62767088,
+    "marketCapitalization": 930835915,
+    "minusCashAndCashEquivalents": 98108000,
+    "addTotalDebt": 496303000,
+    "enterpriseValue": 1329030915
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2020-12-31",
+    "stockPrice": 14.59,
+    "numberOfShares": 60818044,
+    "marketCapitalization": 887335261,
+    "minusCashAndCashEquivalents": 117431000,
+    "addTotalDebt": 481840000,
+    "enterpriseValue": 1251744261
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2019-12-31",
+    "stockPrice": 13.86,
+    "numberOfShares": 59944047,
+    "marketCapitalization": 830824491,
+    "minusCashAndCashEquivalents": 66799000,
+    "addTotalDebt": 517082000,
+    "enterpriseValue": 1281107491
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2018-12-31",
+    "stockPrice": 12.48,
+    "numberOfShares": 59909000,
+    "marketCapitalization": 747664320,
+    "minusCashAndCashEquivalents": 81685000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 665979320
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2017-12-31",
+    "stockPrice": 14.08,
+    "numberOfShares": 59316964,
+    "marketCapitalization": 835182853,
+    "minusCashAndCashEquivalents": 143570000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 691612853
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2016-12-31",
+    "stockPrice": 12.25,
+    "numberOfShares": 53916000,
+    "marketCapitalization": 660471000,
+    "minusCashAndCashEquivalents": 147827000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 512644000
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2015-12-31",
+    "stockPrice": 12.56,
+    "numberOfShares": 53665895,
+    "marketCapitalization": 674043641,
+    "minusCashAndCashEquivalents": 200188000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 473855641
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2014-12-31",
+    "stockPrice": 12.08,
+    "numberOfShares": 53390123,
+    "marketCapitalization": 644952685,
+    "minusCashAndCashEquivalents": 201451000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 443501685
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2013-12-31",
+    "stockPrice": 12.85,
+    "numberOfShares": 55428462,
+    "marketCapitalization": 712255736,
+    "minusCashAndCashEquivalents": 189360000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 522895736
+  },
+  {
+    "symbol": "AINTX",
+    "date": "2012-12-31",
+    "stockPrice": 10.32,
+    "numberOfShares": 52426698,
+    "marketCapitalization": 541043523,
+    "minusCashAndCashEquivalents": 189114000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 351929523
+  }
+]

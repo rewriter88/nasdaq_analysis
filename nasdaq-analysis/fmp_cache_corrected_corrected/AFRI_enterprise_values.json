@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "AFRI",
+    "date": "2024-12-31",
+    "stockPrice": 10.25,
+    "numberOfShares": 26879296,
+    "marketCapitalization": 275512784,
+    "minusCashAndCashEquivalents": 12231000,
+    "addTotalDebt": 165970000,
+    "enterpriseValue": 429251784
+  },
+  {
+    "symbol": "AFRI",
+    "date": "2023-12-31",
+    "stockPrice": 10.59,
+    "numberOfShares": 26879159,
+    "marketCapitalization": 284650293,
+    "minusCashAndCashEquivalents": 24021000,
+    "addTotalDebt": 198767000,
+    "enterpriseValue": 459396293
+  },
+  {
+    "symbol": "AFRI",
+    "date": "2022-12-31",
+    "stockPrice": 11.1,
+    "numberOfShares": 26604710,
+    "marketCapitalization": 295312281,
+    "minusCashAndCashEquivalents": 24827000,
+    "addTotalDebt": 201457000,
+    "enterpriseValue": 471942281
+  },
+  {
+    "symbol": "AFRI",
+    "date": "2021-12-31",
+    "stockPrice": 10.12,
+    "numberOfShares": 20555595,
+    "marketCapitalization": 208022621,
+    "minusCashAndCashEquivalents": 14393000,
+    "addTotalDebt": 191342000,
+    "enterpriseValue": 384971621
+  },
+  {
+    "symbol": "AFRI",
+    "date": "2020-12-31",
+    "stockPrice": 10.2,
+    "numberOfShares": 15050833,
+    "marketCapitalization": 153518496,
+    "minusCashAndCashEquivalents": 12683000,
+    "addTotalDebt": 135348000,
+    "enterpriseValue": 276183496
+  },
+  {
+    "symbol": "AFRI",
+    "date": "2019-12-31",
+    "stockPrice": 10.2,
+    "numberOfShares": 26456844,
+    "marketCapitalization": 269859808,
+    "minusCashAndCashEquivalents": 8994000,
+    "addTotalDebt": 231507000,
+    "enterpriseValue": 492372808
+  }
+]

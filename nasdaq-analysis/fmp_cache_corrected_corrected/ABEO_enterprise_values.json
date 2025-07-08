@@ -1,0 +1,302 @@
+[
+  {
+    "symbol": "ABEO",
+    "date": "2024-12-31",
+    "stockPrice": 5.57,
+    "numberOfShares": 41048206,
+    "marketCapitalization": 228638507,
+    "minusCashAndCashEquivalents": 23357000,
+    "addTotalDebt": 23048000,
+    "enterpriseValue": 228329507
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2023-12-31",
+    "stockPrice": 5.01,
+    "numberOfShares": 21380476,
+    "marketCapitalization": 107116184,
+    "minusCashAndCashEquivalents": 14473000,
+    "addTotalDebt": 5400000,
+    "enterpriseValue": 98043184
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2022-12-31",
+    "stockPrice": 3.08,
+    "numberOfShares": 7861515,
+    "marketCapitalization": 24213466,
+    "minusCashAndCashEquivalents": 14217000,
+    "addTotalDebt": 7627000,
+    "enterpriseValue": 17623466
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2021-12-31",
+    "stockPrice": 8.5,
+    "numberOfShares": 3937676,
+    "marketCapitalization": 33470246,
+    "minusCashAndCashEquivalents": 32938000,
+    "addTotalDebt": 9378000,
+    "enterpriseValue": 9910246
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2020-12-31",
+    "stockPrice": 39.25,
+    "numberOfShares": 3706542,
+    "marketCapitalization": 145481773,
+    "minusCashAndCashEquivalents": 12596000,
+    "addTotalDebt": 8731000,
+    "enterpriseValue": 141616773
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2019-12-31",
+    "stockPrice": 81.75,
+    "numberOfShares": 2014183,
+    "marketCapitalization": 164659460,
+    "minusCashAndCashEquivalents": 129258000,
+    "addTotalDebt": 7950000,
+    "enterpriseValue": 43351460
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2018-12-31",
+    "stockPrice": 178.5,
+    "numberOfShares": 1901129,
+    "marketCapitalization": 339351526,
+    "minusCashAndCashEquivalents": 18750000,
+    "addTotalDebt": 30000000,
+    "enterpriseValue": 350601526
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2017-12-31",
+    "stockPrice": 396.25,
+    "numberOfShares": 1665470,
+    "marketCapitalization": 659942487,
+    "minusCashAndCashEquivalents": 137750000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 522192487
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2016-12-31",
+    "stockPrice": 121.25,
+    "numberOfShares": 1367210,
+    "marketCapitalization": 165774212,
+    "minusCashAndCashEquivalents": 69142000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 96632212
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2015-12-31",
+    "stockPrice": 84,
+    "numberOfShares": 1103897,
+    "marketCapitalization": 92727348,
+    "minusCashAndCashEquivalents": 40138000,
+    "addTotalDebt": 4000000,
+    "enterpriseValue": 56589348
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2014-12-31",
+    "stockPrice": 86.25,
+    "numberOfShares": 409861,
+    "marketCapitalization": 35350511,
+    "minusCashAndCashEquivalents": 11520000,
+    "addTotalDebt": 4400000,
+    "enterpriseValue": 28230511
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2013-12-31",
+    "stockPrice": 312.5,
+    "numberOfShares": 20194,
+    "marketCapitalization": 6310625,
+    "minusCashAndCashEquivalents": 424000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 5886625
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2012-12-31",
+    "stockPrice": 300,
+    "numberOfShares": 19343,
+    "marketCapitalization": 5802900,
+    "minusCashAndCashEquivalents": 396000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 5406900
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2011-12-31",
+    "stockPrice": 1800,
+    "numberOfShares": 15986,
+    "marketCapitalization": 28774800,
+    "minusCashAndCashEquivalents": 2460000,
+    "addTotalDebt": 2750000,
+    "enterpriseValue": 29064800
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2010-12-31",
+    "stockPrice": 3100,
+    "numberOfShares": 12506,
+    "marketCapitalization": 38768600,
+    "minusCashAndCashEquivalents": 7033000,
+    "addTotalDebt": 5500000,
+    "enterpriseValue": 37235600
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2009-12-31",
+    "stockPrice": 4112.5,
+    "numberOfShares": 9454,
+    "marketCapitalization": 38879575,
+    "minusCashAndCashEquivalents": 607000,
+    "addTotalDebt": 5500000,
+    "enterpriseValue": 43772575
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2008-12-31",
+    "stockPrice": 1237.5,
+    "numberOfShares": 6683,
+    "marketCapitalization": 8270212.5,
+    "minusCashAndCashEquivalents": 2677000,
+    "addTotalDebt": 6325000,
+    "enterpriseValue": 11918212
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2007-12-31",
+    "stockPrice": 4062.5,
+    "numberOfShares": 2841,
+    "marketCapitalization": 11541562,
+    "minusCashAndCashEquivalents": 6921000,
+    "addTotalDebt": 5564000,
+    "enterpriseValue": 10184562
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2006-12-31",
+    "stockPrice": 3500,
+    "numberOfShares": 2825,
+    "marketCapitalization": 9887500,
+    "minusCashAndCashEquivalents": 1194000,
+    "addTotalDebt": 14333000,
+    "enterpriseValue": 23026500
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2005-12-31",
+    "stockPrice": 3250,
+    "numberOfShares": 2589,
+    "marketCapitalization": 8414250,
+    "minusCashAndCashEquivalents": 349000,
+    "addTotalDebt": 7742000,
+    "enterpriseValue": 15807250
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2004-12-31",
+    "stockPrice": 22125,
+    "numberOfShares": 2425,
+    "marketCapitalization": 53653125,
+    "minusCashAndCashEquivalents": 1775000,
+    "addTotalDebt": 13944000,
+    "enterpriseValue": 65822125
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2003-12-31",
+    "stockPrice": 32750,
+    "numberOfShares": 2122,
+    "marketCapitalization": 69495500,
+    "minusCashAndCashEquivalents": 727000,
+    "addTotalDebt": 14361000,
+    "enterpriseValue": 83129500
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2002-12-31",
+    "stockPrice": 9375,
+    "numberOfShares": 2096,
+    "marketCapitalization": 19650000,
+    "minusCashAndCashEquivalents": 1444000,
+    "addTotalDebt": 15019000,
+    "enterpriseValue": 33225000
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2001-12-31",
+    "stockPrice": 27750,
+    "numberOfShares": 2057,
+    "marketCapitalization": 57081750,
+    "minusCashAndCashEquivalents": 7426000,
+    "addTotalDebt": 575000,
+    "enterpriseValue": 50230750
+  },
+  {
+    "symbol": "ABEO",
+    "date": "2000-12-31",
+    "stockPrice": 31250,
+    "numberOfShares": 1766,
+    "marketCapitalization": 55187500,
+    "minusCashAndCashEquivalents": 8415000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 46772500
+  },
+  {
+    "symbol": "ABEO",
+    "date": "1999-12-31",
+    "stockPrice": 12500,
+    "numberOfShares": 974,
+    "marketCapitalization": 12175000,
+    "minusCashAndCashEquivalents": 900000,
+    "addTotalDebt": 26000,
+    "enterpriseValue": 11301000
+  },
+  {
+    "symbol": "ABEO",
+    "date": "1998-12-31",
+    "stockPrice": 14062.5,
+    "numberOfShares": 548,
+    "marketCapitalization": 7706250,
+    "minusCashAndCashEquivalents": 1500000,
+    "addTotalDebt": 100000,
+    "enterpriseValue": 6306250
+  },
+  {
+    "symbol": "ABEO",
+    "date": "1997-12-31",
+    "stockPrice": 68359.38,
+    "numberOfShares": 400,
+    "marketCapitalization": 27343752,
+    "minusCashAndCashEquivalents": 438000,
+    "addTotalDebt": 323000,
+    "enterpriseValue": 27228752
+  },
+  {
+    "symbol": "ABEO",
+    "date": "1996-12-31",
+    "stockPrice": 93750,
+    "numberOfShares": 400,
+    "marketCapitalization": 37500000,
+    "minusCashAndCashEquivalents": 4428000,
+    "addTotalDebt": 345000,
+    "enterpriseValue": 33417000
+  },
+  {
+    "symbol": "ABEO",
+    "date": "1995-12-31",
+    "stockPrice": 132812.5,
+    "numberOfShares": 400,
+    "marketCapitalization": 53125000,
+    "minusCashAndCashEquivalents": 1888000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 51237000
+  }
+]

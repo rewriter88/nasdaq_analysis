@@ -1,0 +1,392 @@
+[
+  {
+    "symbol": "KLAC",
+    "date": "2024-06-30",
+    "stockPrice": 827.79,
+    "numberOfShares": 135345000,
+    "marketCapitalization": 112037237550,
+    "minusCashAndCashEquivalents": 1977129000,
+    "addTotalDebt": 6819643000,
+    "enterpriseValue": 116879751550
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2023-06-30",
+    "stockPrice": 485.02,
+    "numberOfShares": 139483000,
+    "marketCapitalization": 67652044660,
+    "minusCashAndCashEquivalents": 1927865000,
+    "addTotalDebt": 5890736000,
+    "enterpriseValue": 71614915660
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2022-06-30",
+    "stockPrice": 319.08,
+    "numberOfShares": 150494000,
+    "marketCapitalization": 48019625520,
+    "minusCashAndCashEquivalents": 1584908000,
+    "addTotalDebt": 6660718000,
+    "enterpriseValue": 53095435520
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2021-06-30",
+    "stockPrice": 324.21,
+    "numberOfShares": 154086000,
+    "marketCapitalization": 49956222060,
+    "minusCashAndCashEquivalents": 1434610000,
+    "addTotalDebt": 3442767000,
+    "enterpriseValue": 51964379060
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2020-06-30",
+    "stockPrice": 194.48,
+    "numberOfShares": 156797000,
+    "marketCapitalization": 30493880560,
+    "minusCashAndCashEquivalents": 1980472000,
+    "addTotalDebt": 3469670000,
+    "enterpriseValue": 31983078560
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2019-06-30",
+    "stockPrice": 121.72,
+    "numberOfShares": 156053000,
+    "marketCapitalization": 18994771160,
+    "minusCashAndCashEquivalents": 1739385000,
+    "addTotalDebt": 3423382000,
+    "enterpriseValue": 20678768160
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2018-06-30",
+    "stockPrice": 102.53,
+    "numberOfShares": 156346000,
+    "marketCapitalization": 16030155380,
+    "minusCashAndCashEquivalents": 2880318000,
+    "addTotalDebt": 2237402000,
+    "enterpriseValue": 15387239380
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2017-06-30",
+    "stockPrice": 91.51,
+    "numberOfShares": 156468000,
+    "marketCapitalization": 14318386680,
+    "minusCashAndCashEquivalents": 3016740000,
+    "addTotalDebt": 2930457000,
+    "enterpriseValue": 14232103680
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2016-06-30",
+    "stockPrice": 73.25,
+    "numberOfShares": 155869000,
+    "marketCapitalization": 11417404250,
+    "minusCashAndCashEquivalents": 2491294000,
+    "addTotalDebt": 3057936000,
+    "enterpriseValue": 11984046250
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2015-06-30",
+    "stockPrice": 56.21,
+    "numberOfShares": 162282000,
+    "marketCapitalization": 9121871220,
+    "minusCashAndCashEquivalents": 2387111000,
+    "addTotalDebt": 3190416000,
+    "enterpriseValue": 9925176220
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2014-06-30",
+    "stockPrice": 72.64,
+    "numberOfShares": 166016000,
+    "marketCapitalization": 12059402240,
+    "minusCashAndCashEquivalents": 3152637000,
+    "addTotalDebt": 747919000,
+    "enterpriseValue": 9654684240
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2013-06-30",
+    "stockPrice": 55.28,
+    "numberOfShares": 166089000,
+    "marketCapitalization": 9181399920,
+    "minusCashAndCashEquivalents": 2918881000,
+    "addTotalDebt": 747376000,
+    "enterpriseValue": 7009894920
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2012-06-30",
+    "stockPrice": 49.25,
+    "numberOfShares": 166795000,
+    "marketCapitalization": 8214653750,
+    "minusCashAndCashEquivalents": 2534444000,
+    "addTotalDebt": 746833000,
+    "enterpriseValue": 6427042750
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2011-06-30",
+    "stockPrice": 40.48,
+    "numberOfShares": 167261000,
+    "marketCapitalization": 6770725279,
+    "minusCashAndCashEquivalents": 711329000,
+    "addTotalDebt": 746290000,
+    "enterpriseValue": 6805686279
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2010-06-30",
+    "stockPrice": 27.88,
+    "numberOfShares": 170652000,
+    "marketCapitalization": 4757777760,
+    "minusCashAndCashEquivalents": 529918000,
+    "addTotalDebt": 745747000,
+    "enterpriseValue": 4973606760
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2009-06-30",
+    "stockPrice": 25.25,
+    "numberOfShares": 170253000,
+    "marketCapitalization": 4298888250,
+    "minusCashAndCashEquivalents": 524967000,
+    "addTotalDebt": 745204000,
+    "enterpriseValue": 4519125250
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2008-06-30",
+    "stockPrice": 40.71,
+    "numberOfShares": 180594000,
+    "marketCapitalization": 7351981740,
+    "minusCashAndCashEquivalents": 1128106000,
+    "addTotalDebt": 744661000,
+    "enterpriseValue": 6968536740
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2007-06-30",
+    "stockPrice": 54.95,
+    "numberOfShares": 197126000,
+    "marketCapitalization": 10832073700,
+    "minusCashAndCashEquivalents": 722511000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 10109562700
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2006-06-30",
+    "stockPrice": 41.57,
+    "numberOfShares": 198625000,
+    "marketCapitalization": 8256841250,
+    "minusCashAndCashEquivalents": 1129191000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 7127650250
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2005-06-30",
+    "stockPrice": 43.68,
+    "numberOfShares": 196346000,
+    "marketCapitalization": 8576393280,
+    "minusCashAndCashEquivalents": 874509000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 7701884280
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2004-06-30",
+    "stockPrice": 49.38,
+    "numberOfShares": 194932110,
+    "marketCapitalization": 9625747591,
+    "minusCashAndCashEquivalents": 802678000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 8823069591
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2003-06-30",
+    "stockPrice": 46.46,
+    "numberOfShares": 189511000,
+    "marketCapitalization": 8804681060,
+    "minusCashAndCashEquivalents": 606903000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 8197778060
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2002-06-30",
+    "stockPrice": 41.32,
+    "numberOfShares": 187667000,
+    "marketCapitalization": 7754400440,
+    "minusCashAndCashEquivalents": 429820000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 7324580440
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2001-06-30",
+    "stockPrice": 58.47,
+    "numberOfShares": 185230556,
+    "marketCapitalization": 10830430609,
+    "minusCashAndCashEquivalents": 529674000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 10300756609
+  },
+  {
+    "symbol": "KLAC",
+    "date": "2000-06-30",
+    "stockPrice": 58.56,
+    "numberOfShares": 182177000,
+    "marketCapitalization": 10668285120,
+    "minusCashAndCashEquivalents": 478212000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 10190073120
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1999-06-30",
+    "stockPrice": 32.44,
+    "numberOfShares": 350948000,
+    "marketCapitalization": 11384753120,
+    "minusCashAndCashEquivalents": 271500000,
+    "addTotalDebt": 14600000,
+    "enterpriseValue": 11127853120
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1998-06-30",
+    "stockPrice": 13.84,
+    "numberOfShares": 170194000,
+    "marketCapitalization": 2355484960,
+    "minusCashAndCashEquivalents": 216000000,
+    "addTotalDebt": 21500000,
+    "enterpriseValue": 2160984960
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1997-06-30",
+    "stockPrice": 24.38,
+    "numberOfShares": 212056000,
+    "marketCapitalization": 5169925280,
+    "minusCashAndCashEquivalents": 279200000,
+    "addTotalDebt": 25100000,
+    "enterpriseValue": 4915825280
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1996-06-30",
+    "stockPrice": 11.5,
+    "numberOfShares": 102060000,
+    "marketCapitalization": 1173690000,
+    "minusCashAndCashEquivalents": 109400000,
+    "addTotalDebt": 3100000,
+    "enterpriseValue": 1067390000
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1995-06-30",
+    "stockPrice": 19.31,
+    "numberOfShares": 97740000,
+    "marketCapitalization": 1887359399,
+    "minusCashAndCashEquivalents": 92100000,
+    "addTotalDebt": 24600000,
+    "enterpriseValue": 1819859399
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1994-06-30",
+    "stockPrice": 9.38,
+    "numberOfShares": 88176000,
+    "marketCapitalization": 827090880,
+    "minusCashAndCashEquivalents": 139100000,
+    "addTotalDebt": 24700000,
+    "enterpriseValue": 712690880
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1993-06-30",
+    "stockPrice": 4.31,
+    "numberOfShares": 74784000,
+    "marketCapitalization": 322319040,
+    "minusCashAndCashEquivalents": 52400000,
+    "addTotalDebt": 26500000,
+    "enterpriseValue": 296419040
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1992-06-30",
+    "stockPrice": 2.19,
+    "numberOfShares": 74564000,
+    "marketCapitalization": 163295160,
+    "minusCashAndCashEquivalents": 23700000,
+    "addTotalDebt": 29000000,
+    "enterpriseValue": 168595160
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1991-06-30",
+    "stockPrice": 3.06,
+    "numberOfShares": 73192000,
+    "marketCapitalization": 223967520,
+    "minusCashAndCashEquivalents": 31300000,
+    "addTotalDebt": 28400000,
+    "enterpriseValue": 221067520
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1990-06-30",
+    "stockPrice": 3,
+    "numberOfShares": 71948000,
+    "marketCapitalization": 215844000,
+    "minusCashAndCashEquivalents": 32300000,
+    "addTotalDebt": 3600000,
+    "enterpriseValue": 187144000
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1989-06-30",
+    "stockPrice": 2.91,
+    "numberOfShares": 71424000,
+    "marketCapitalization": 207843840,
+    "minusCashAndCashEquivalents": 26900000,
+    "addTotalDebt": 6700000,
+    "enterpriseValue": 187643840
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1988-06-30",
+    "stockPrice": 4.69,
+    "numberOfShares": 71132000,
+    "marketCapitalization": 333609080,
+    "minusCashAndCashEquivalents": 24400000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 309209080
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1987-06-30",
+    "stockPrice": 5.13,
+    "numberOfShares": 69704000,
+    "marketCapitalization": 357581520,
+    "minusCashAndCashEquivalents": 25900000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 331681520
+  },
+  {
+    "symbol": "KLAC",
+    "date": "1986-06-30",
+    "stockPrice": 4.5,
+    "numberOfShares": 68176000,
+    "marketCapitalization": 306792000,
+    "minusCashAndCashEquivalents": 25500000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 281292000
+  }
+]

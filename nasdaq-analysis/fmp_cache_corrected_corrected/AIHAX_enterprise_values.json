@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "AIHAX",
+    "date": "2023-12-31",
+    "stockPrice": 8.26,
+    "numberOfShares": 26226010,
+    "marketCapitalization": 216626842,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 38453000,
+    "enterpriseValue": 255079842
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2022-12-31",
+    "stockPrice": 8.16,
+    "numberOfShares": 26148007,
+    "marketCapitalization": 213367737,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 35338000,
+    "enterpriseValue": 248705737
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2021-12-31",
+    "stockPrice": 9.74,
+    "numberOfShares": 26028027,
+    "marketCapitalization": 253512982,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 87568000,
+    "enterpriseValue": 341080982
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2020-12-31",
+    "stockPrice": 10,
+    "numberOfShares": 25941042,
+    "marketCapitalization": 259410420,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 77852000,
+    "enterpriseValue": 337262420
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2019-12-31",
+    "stockPrice": 9.45,
+    "numberOfShares": 25842014,
+    "marketCapitalization": 244207032,
+    "minusCashAndCashEquivalents": 1000,
+    "addTotalDebt": 128123000,
+    "enterpriseValue": 372329032
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2018-12-31",
+    "stockPrice": 8.94,
+    "numberOfShares": 25751000,
+    "marketCapitalization": 230213940,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 230213940
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2017-12-31",
+    "stockPrice": 9.67,
+    "numberOfShares": 25680000,
+    "marketCapitalization": 248325600,
+    "minusCashAndCashEquivalents": 545000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 247780600
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2016-12-31",
+    "stockPrice": 9.55,
+    "numberOfShares": 25600000,
+    "marketCapitalization": 244480000,
+    "minusCashAndCashEquivalents": 494000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 243986000
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2015-12-31",
+    "stockPrice": 9.86,
+    "numberOfShares": 18766548,
+    "marketCapitalization": 185038163,
+    "minusCashAndCashEquivalents": 379000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 184659163
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2014-04-30",
+    "stockPrice": 9.86,
+    "numberOfShares": 25395563,
+    "marketCapitalization": 250400251,
+    "minusCashAndCashEquivalents": 468390,
+    "addTotalDebt": 0,
+    "enterpriseValue": 249931861
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2013-04-30",
+    "stockPrice": 9.86,
+    "numberOfShares": 25324015,
+    "marketCapitalization": 249694787,
+    "minusCashAndCashEquivalents": 563835,
+    "addTotalDebt": 0,
+    "enterpriseValue": 249130952
+  },
+  {
+    "symbol": "AIHAX",
+    "date": "2012-04-30",
+    "stockPrice": 9.86,
+    "numberOfShares": 25265935,
+    "marketCapitalization": 249122119,
+    "minusCashAndCashEquivalents": 9661558,
+    "addTotalDebt": 0,
+    "enterpriseValue": 239460561
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "AIRS",
+    "date": "2024-12-31",
+    "stockPrice": 5.19,
+    "numberOfShares": 57689000,
+    "marketCapitalization": 299405910,
+    "minusCashAndCashEquivalents": 8235000,
+    "addTotalDebt": 105053000,
+    "enterpriseValue": 396223910
+  },
+  {
+    "symbol": "AIRS",
+    "date": "2023-12-31",
+    "stockPrice": 7.49,
+    "numberOfShares": 56778793,
+    "marketCapitalization": 425273159,
+    "minusCashAndCashEquivalents": 10262000,
+    "addTotalDebt": 99668000,
+    "enterpriseValue": 514679159
+  },
+  {
+    "symbol": "AIRS",
+    "date": "2022-12-31",
+    "stockPrice": 3.7,
+    "numberOfShares": 55684701,
+    "marketCapitalization": 206033393,
+    "minusCashAndCashEquivalents": 9616000,
+    "addTotalDebt": 107646000,
+    "enterpriseValue": 304063393
+  },
+  {
+    "symbol": "AIRS",
+    "date": "2021-12-31",
+    "stockPrice": 17.19,
+    "numberOfShares": 55640154,
+    "marketCapitalization": 956454247,
+    "minusCashAndCashEquivalents": 25347000,
+    "addTotalDebt": 100583000,
+    "enterpriseValue": 1031690247
+  },
+  {
+    "symbol": "AIRS",
+    "date": "2020-12-31",
+    "stockPrice": 15.89,
+    "numberOfShares": 55640154,
+    "marketCapitalization": 884122047,
+    "minusCashAndCashEquivalents": 10379000,
+    "addTotalDebt": 49767000,
+    "enterpriseValue": 923510047
+  },
+  {
+    "symbol": "AIRS",
+    "date": "2019-12-31",
+    "stockPrice": 15.89,
+    "numberOfShares": 55640154,
+    "marketCapitalization": 884122047,
+    "minusCashAndCashEquivalents": 5128000,
+    "addTotalDebt": 45101000,
+    "enterpriseValue": 924095047
+  }
+]

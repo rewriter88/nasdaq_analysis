@@ -1,0 +1,52 @@
+[
+  {
+    "symbol": "ALTS",
+    "date": "2024-12-31",
+    "stockPrice": 4.65,
+    "numberOfShares": 11148000,
+    "marketCapitalization": 51838200,
+    "minusCashAndCashEquivalents": 7177000,
+    "addTotalDebt": 13068000,
+    "enterpriseValue": 57729200
+  },
+  {
+    "symbol": "ALTS",
+    "date": "2023-12-31",
+    "stockPrice": 1.91,
+    "numberOfShares": 4005334,
+    "marketCapitalization": 7650187.94,
+    "minusCashAndCashEquivalents": 5000,
+    "addTotalDebt": 707000,
+    "enterpriseValue": 8352187
+  },
+  {
+    "symbol": "ALTS",
+    "date": "2022-12-31",
+    "stockPrice": 1.91,
+    "numberOfShares": 3150230,
+    "marketCapitalization": 6016939.3,
+    "minusCashAndCashEquivalents": 61000,
+    "addTotalDebt": 7666000,
+    "enterpriseValue": 13621939
+  },
+  {
+    "symbol": "ALTS",
+    "date": "2021-12-31",
+    "stockPrice": 1.91,
+    "numberOfShares": 2658686,
+    "marketCapitalization": 5078090.26,
+    "minusCashAndCashEquivalents": 705000,
+    "addTotalDebt": 6641000,
+    "enterpriseValue": 11014090
+  },
+  {
+    "symbol": "ALTS",
+    "date": "2020-12-31",
+    "stockPrice": 1.91,
+    "numberOfShares": 1852147,
+    "marketCapitalization": 3537600.77,
+    "minusCashAndCashEquivalents": 379000,
+    "addTotalDebt": 6627000,
+    "enterpriseValue": 9785600
+  }
+]

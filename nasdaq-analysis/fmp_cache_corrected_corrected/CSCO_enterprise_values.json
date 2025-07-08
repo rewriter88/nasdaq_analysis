@@ -1,0 +1,372 @@
+[
+  {
+    "symbol": "CSCO",
+    "date": "2024-07-27",
+    "stockPrice": 47.88,
+    "numberOfShares": 4043000000,
+    "marketCapitalization": 193578840000,
+    "minusCashAndCashEquivalents": 7508000000,
+    "addTotalDebt": 30962000000,
+    "enterpriseValue": 217032840000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2023-07-29",
+    "stockPrice": 52.09,
+    "numberOfShares": 4093000000,
+    "marketCapitalization": 213204370000,
+    "minusCashAndCashEquivalents": 10123000000,
+    "addTotalDebt": 8391000000,
+    "enterpriseValue": 211472370000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2022-07-30",
+    "stockPrice": 45.37,
+    "numberOfShares": 4170000000,
+    "marketCapitalization": 189192900000,
+    "minusCashAndCashEquivalents": 7079000000,
+    "addTotalDebt": 9515000000,
+    "enterpriseValue": 191628900000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2021-07-31",
+    "stockPrice": 55.37,
+    "numberOfShares": 4222000000,
+    "marketCapitalization": 233772140000,
+    "minusCashAndCashEquivalents": 9175000000,
+    "addTotalDebt": 11526000000,
+    "enterpriseValue": 236123140000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2020-07-25",
+    "stockPrice": 46.4,
+    "numberOfShares": 4236000000,
+    "marketCapitalization": 196550400000,
+    "minusCashAndCashEquivalents": 11809000000,
+    "addTotalDebt": 14583000000,
+    "enterpriseValue": 199324400000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2019-07-27",
+    "stockPrice": 56.53,
+    "numberOfShares": 4419000000,
+    "marketCapitalization": 249806070000,
+    "minusCashAndCashEquivalents": 11750000000,
+    "addTotalDebt": 24666000000,
+    "enterpriseValue": 262722070000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2018-07-28",
+    "stockPrice": 42.57,
+    "numberOfShares": 4837000000,
+    "marketCapitalization": 205911090000,
+    "minusCashAndCashEquivalents": 8934000000,
+    "addTotalDebt": 25569000000,
+    "enterpriseValue": 222546090000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2017-07-29",
+    "stockPrice": 31.52,
+    "numberOfShares": 5010000000,
+    "marketCapitalization": 157915200000,
+    "minusCashAndCashEquivalents": 11708000000,
+    "addTotalDebt": 33717000000,
+    "enterpriseValue": 179924200000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2016-07-30",
+    "stockPrice": 30.53,
+    "numberOfShares": 5053000000,
+    "marketCapitalization": 154268090000,
+    "minusCashAndCashEquivalents": 7631000000,
+    "addTotalDebt": 28643000000,
+    "enterpriseValue": 175280090000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2015-07-25",
+    "stockPrice": 28.4,
+    "numberOfShares": 5104000000,
+    "marketCapitalization": 144953600000,
+    "minusCashAndCashEquivalents": 6877000000,
+    "addTotalDebt": 25354000000,
+    "enterpriseValue": 163430600000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2014-07-26",
+    "stockPrice": 25.97,
+    "numberOfShares": 5234000000,
+    "marketCapitalization": 135926980000,
+    "minusCashAndCashEquivalents": 6726000000,
+    "addTotalDebt": 20845000000,
+    "enterpriseValue": 150045980000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2013-07-27",
+    "stockPrice": 25.5,
+    "numberOfShares": 5329000000,
+    "marketCapitalization": 135889500000,
+    "minusCashAndCashEquivalents": 7925000000,
+    "addTotalDebt": 16211000000,
+    "enterpriseValue": 144175500000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2012-07-28",
+    "stockPrice": 15.69,
+    "numberOfShares": 5370000000,
+    "marketCapitalization": 84255300000,
+    "minusCashAndCashEquivalents": 9799000000,
+    "addTotalDebt": 16328000000,
+    "enterpriseValue": 90784300000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2011-07-30",
+    "stockPrice": 15.97,
+    "numberOfShares": 5529000000,
+    "marketCapitalization": 88298130000,
+    "minusCashAndCashEquivalents": 7662000000,
+    "addTotalDebt": 16822000000,
+    "enterpriseValue": 97458130000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2010-07-31",
+    "stockPrice": 23.07,
+    "numberOfShares": 5732000000,
+    "marketCapitalization": 132237240000,
+    "minusCashAndCashEquivalents": 4581000000,
+    "addTotalDebt": 15284000000,
+    "enterpriseValue": 142940240000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2009-07-25",
+    "stockPrice": 21.88,
+    "numberOfShares": 5828000000,
+    "marketCapitalization": 127516640000,
+    "minusCashAndCashEquivalents": 5718000000,
+    "addTotalDebt": 10295000000,
+    "enterpriseValue": 132093640000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2008-07-26",
+    "stockPrice": 22.43,
+    "numberOfShares": 5986000000,
+    "marketCapitalization": 134265980000,
+    "minusCashAndCashEquivalents": 5191000000,
+    "addTotalDebt": 6893000000,
+    "enterpriseValue": 135967980000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2007-07-28",
+    "stockPrice": 28.97,
+    "numberOfShares": 6055000000,
+    "marketCapitalization": 175413350000,
+    "minusCashAndCashEquivalents": 3728000000,
+    "addTotalDebt": 6408000000,
+    "enterpriseValue": 178093350000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2006-07-29",
+    "stockPrice": 18.08,
+    "numberOfShares": 6158000000,
+    "marketCapitalization": 111336639999,
+    "minusCashAndCashEquivalents": 3297000000,
+    "addTotalDebt": 6332000000,
+    "enterpriseValue": 114371639999
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2005-07-30",
+    "stockPrice": 19.15,
+    "numberOfShares": 6487000000,
+    "marketCapitalization": 124226049999,
+    "minusCashAndCashEquivalents": 4742000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 119484049999
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2004-07-31",
+    "stockPrice": 20.92,
+    "numberOfShares": 6840000000,
+    "marketCapitalization": 143092800000,
+    "minusCashAndCashEquivalents": 3722000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 139370800000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2003-07-26",
+    "stockPrice": 19.08,
+    "numberOfShares": 7124000000,
+    "marketCapitalization": 135925919999,
+    "minusCashAndCashEquivalents": 3925000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 132000919999
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2002-07-27",
+    "stockPrice": 11.82,
+    "numberOfShares": 7301000000,
+    "marketCapitalization": 86297820000,
+    "minusCashAndCashEquivalents": 9484000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 76813820000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2001-07-28",
+    "stockPrice": 19.06,
+    "numberOfShares": 7196000000,
+    "marketCapitalization": 137155759999,
+    "minusCashAndCashEquivalents": 4873000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 132282759999
+  },
+  {
+    "symbol": "CSCO",
+    "date": "2000-07-29",
+    "stockPrice": 62.81,
+    "numberOfShares": 6917000000,
+    "marketCapitalization": 434456770000,
+    "minusCashAndCashEquivalents": 4234000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 430222770000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1999-07-31",
+    "stockPrice": 31.06,
+    "numberOfShares": 6646000000,
+    "marketCapitalization": 206424760000,
+    "minusCashAndCashEquivalents": 913000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 205511760000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1998-07-25",
+    "stockPrice": 16.29,
+    "numberOfShares": 6312000000,
+    "marketCapitalization": 102822480000,
+    "minusCashAndCashEquivalents": 580000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 102242480000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1997-07-26",
+    "stockPrice": 8.85,
+    "numberOfShares": 5980000000,
+    "marketCapitalization": 52923000000,
+    "minusCashAndCashEquivalents": 269608000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 52653392000
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1996-07-28",
+    "stockPrice": 5.56,
+    "numberOfShares": 5748120000,
+    "marketCapitalization": 31959547199,
+    "minusCashAndCashEquivalents": 279695000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 31679852199
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1995-07-31",
+    "stockPrice": 3.1,
+    "numberOfShares": 2838199500,
+    "marketCapitalization": 8798418450,
+    "minusCashAndCashEquivalents": 284388000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 8514030450
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1994-07-31",
+    "stockPrice": 1.22,
+    "numberOfShares": 5368851000,
+    "marketCapitalization": 6549998220,
+    "minusCashAndCashEquivalents": 53600000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 6496398220
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1993-07-31",
+    "stockPrice": 1.44,
+    "numberOfShares": 4646394000,
+    "marketCapitalization": 6690807360,
+    "minusCashAndCashEquivalents": 27200000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 6663607360
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1992-07-31",
+    "stockPrice": 0.74133,
+    "numberOfShares": 4220000000,
+    "marketCapitalization": 3128412600,
+    "minusCashAndCashEquivalents": 40000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 3088412600
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1991-07-31",
+    "stockPrice": 0.27257,
+    "numberOfShares": 4320000000,
+    "marketCapitalization": 1177502400,
+    "minusCashAndCashEquivalents": 40300000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1137202400
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1990-07-31",
+    "stockPrice": 0.088543,
+    "numberOfShares": 3851316000,
+    "marketCapitalization": 341007072,
+    "minusCashAndCashEquivalents": 35800000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 305207072
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1989-07-31",
+    "stockPrice": 0.077258,
+    "numberOfShares": 3851316000,
+    "marketCapitalization": 297544971,
+    "minusCashAndCashEquivalents": 4200000,
+    "addTotalDebt": 300000,
+    "enterpriseValue": 293644971
+  },
+  {
+    "symbol": "CSCO",
+    "date": "1988-07-31",
+    "stockPrice": 0.077258,
+    "numberOfShares": 40000000,
+    "marketCapitalization": 3090320,
+    "minusCashAndCashEquivalents": 2300000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 790320
+  }
+]

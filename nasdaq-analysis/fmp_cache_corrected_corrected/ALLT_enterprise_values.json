@@ -1,0 +1,242 @@
+[
+  {
+    "symbol": "ALLT",
+    "date": "2024-12-31",
+    "stockPrice": 5.95,
+    "numberOfShares": 38929000,
+    "marketCapitalization": 231627550,
+    "minusCashAndCashEquivalents": 16142000,
+    "addTotalDebt": 46342000,
+    "enterpriseValue": 261827550
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2023-12-31",
+    "stockPrice": 1.65,
+    "numberOfShares": 37911214,
+    "marketCapitalization": 62553503,
+    "minusCashAndCashEquivalents": 14192000,
+    "addTotalDebt": 41928000,
+    "enterpriseValue": 90289503
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2022-12-31",
+    "stockPrice": 3.44,
+    "numberOfShares": 36975424,
+    "marketCapitalization": 127195458,
+    "minusCashAndCashEquivalents": 12295000,
+    "addTotalDebt": 44696000,
+    "enterpriseValue": 159596458
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2021-12-31",
+    "stockPrice": 11.88,
+    "numberOfShares": 36050540,
+    "marketCapitalization": 428280415,
+    "minusCashAndCashEquivalents": 11717000,
+    "addTotalDebt": 8252000,
+    "enterpriseValue": 424815415
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2020-12-31",
+    "stockPrice": 10.52,
+    "numberOfShares": 35007201,
+    "marketCapitalization": 368275754,
+    "minusCashAndCashEquivalents": 23599000,
+    "addTotalDebt": 4648000,
+    "enterpriseValue": 349324754
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2019-12-31",
+    "stockPrice": 8.5,
+    "numberOfShares": 34250582,
+    "marketCapitalization": 291129947,
+    "minusCashAndCashEquivalents": 16930000,
+    "addTotalDebt": 6971000,
+    "enterpriseValue": 281170947
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2018-12-31",
+    "stockPrice": 6.07,
+    "numberOfShares": 33596882,
+    "marketCapitalization": 203933073,
+    "minusCashAndCashEquivalents": 16336000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 187597073
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2017-12-31",
+    "stockPrice": 5.28,
+    "numberOfShares": 33253158,
+    "marketCapitalization": 175576674,
+    "minusCashAndCashEquivalents": 15342000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 160234674
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2016-12-31",
+    "stockPrice": 4.79,
+    "numberOfShares": 33202309,
+    "marketCapitalization": 159039060,
+    "minusCashAndCashEquivalents": 23326000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 135713060
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2015-12-31",
+    "stockPrice": 5.82,
+    "numberOfShares": 33419916,
+    "marketCapitalization": 194503911,
+    "minusCashAndCashEquivalents": 15470000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 179033911
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2014-12-31",
+    "stockPrice": 9.18,
+    "numberOfShares": 33143168,
+    "marketCapitalization": 304254282,
+    "minusCashAndCashEquivalents": 19180000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 285074282
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2013-12-31",
+    "stockPrice": 15.13,
+    "numberOfShares": 32285161,
+    "marketCapitalization": 488474485,
+    "minusCashAndCashEquivalents": 42813000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 445661485
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2012-12-31",
+    "stockPrice": 17.82,
+    "numberOfShares": 31959921,
+    "marketCapitalization": 569525792,
+    "minusCashAndCashEquivalents": 50026000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 519499792
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2011-12-31",
+    "stockPrice": 15.2,
+    "numberOfShares": 25047771,
+    "marketCapitalization": 380726119,
+    "minusCashAndCashEquivalents": 140682000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 240044119
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2010-12-31",
+    "stockPrice": 11.64,
+    "numberOfShares": 22831014,
+    "marketCapitalization": 265753002,
+    "minusCashAndCashEquivalents": 42858000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 222895002
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2009-12-31",
+    "stockPrice": 3.94,
+    "numberOfShares": 22185702,
+    "marketCapitalization": 87411665,
+    "minusCashAndCashEquivalents": 36470000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 50941665
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2008-12-31",
+    "stockPrice": 1.65,
+    "numberOfShares": 22054211,
+    "marketCapitalization": 36389448,
+    "minusCashAndCashEquivalents": 42150000,
+    "addTotalDebt": 0,
+    "enterpriseValue": -5760552
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2007-12-31",
+    "stockPrice": 4.85,
+    "numberOfShares": 21525822,
+    "marketCapitalization": 104400236,
+    "minusCashAndCashEquivalents": 28101000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 76299236
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2006-12-31",
+    "stockPrice": 11.71,
+    "numberOfShares": 14402338,
+    "marketCapitalization": 168651377,
+    "minusCashAndCashEquivalents": 7117000,
+    "addTotalDebt": 6000,
+    "enterpriseValue": 161540377
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2005-12-31",
+    "stockPrice": 13.81,
+    "numberOfShares": 2943500,
+    "marketCapitalization": 40649735,
+    "minusCashAndCashEquivalents": 3677000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 36972735
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2004-12-31",
+    "stockPrice": 13.81,
+    "numberOfShares": 2787554,
+    "marketCapitalization": 38496120,
+    "minusCashAndCashEquivalents": 4095000,
+    "addTotalDebt": 116000,
+    "enterpriseValue": 34517120
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2003-12-31",
+    "stockPrice": 13.81,
+    "numberOfShares": 2774639,
+    "marketCapitalization": 38317764,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 38317764
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2002-12-31",
+    "stockPrice": 13.81,
+    "numberOfShares": 2756954,
+    "marketCapitalization": 38073534,
+    "minusCashAndCashEquivalents": 2832000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 35241534
+  },
+  {
+    "symbol": "ALLT",
+    "date": "2001-12-31",
+    "stockPrice": 13.81,
+    "numberOfShares": 2620442,
+    "marketCapitalization": 36188304,
+    "minusCashAndCashEquivalents": 4953000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 31235304
+  }
+]

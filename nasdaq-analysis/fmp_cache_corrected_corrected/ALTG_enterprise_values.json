@@ -1,0 +1,92 @@
+[
+  {
+    "symbol": "ALTG",
+    "date": "2024-12-31",
+    "stockPrice": 6.54,
+    "numberOfShares": 33179598,
+    "marketCapitalization": 216994570,
+    "minusCashAndCashEquivalents": 13400000,
+    "addTotalDebt": 1198900000,
+    "enterpriseValue": 1402494570
+  },
+  {
+    "symbol": "ALTG",
+    "date": "2023-12-31",
+    "stockPrice": 12.37,
+    "numberOfShares": 32447754,
+    "marketCapitalization": 401378716,
+    "minusCashAndCashEquivalents": 31000000,
+    "addTotalDebt": 1179800000,
+    "enterpriseValue": 1550178716
+  },
+  {
+    "symbol": "ALTG",
+    "date": "2022-12-31",
+    "stockPrice": 13.19,
+    "numberOfShares": 32099247,
+    "marketCapitalization": 423389067,
+    "minusCashAndCashEquivalents": 2700000,
+    "addTotalDebt": 921800000,
+    "enterpriseValue": 1342489067
+  },
+  {
+    "symbol": "ALTG",
+    "date": "2021-12-31",
+    "stockPrice": 14.64,
+    "numberOfShares": 31706329,
+    "marketCapitalization": 464180656,
+    "minusCashAndCashEquivalents": 2300000,
+    "addTotalDebt": 679400000,
+    "enterpriseValue": 1141280656
+  },
+  {
+    "symbol": "ALTG",
+    "date": "2020-12-31",
+    "stockPrice": 9.88,
+    "numberOfShares": 26612982,
+    "marketCapitalization": 262936262,
+    "minusCashAndCashEquivalents": 1200000,
+    "addTotalDebt": 461000000,
+    "enterpriseValue": 722736262
+  },
+  {
+    "symbol": "ALTG",
+    "date": "2019-12-31",
+    "stockPrice": 10.01,
+    "numberOfShares": 7300000,
+    "marketCapitalization": 73073000,
+    "minusCashAndCashEquivalents": 654488,
+    "addTotalDebt": 381100000,
+    "enterpriseValue": 453518512
+  },
+  {
+    "symbol": "ALTG",
+    "date": "2018-12-31",
+    "stockPrice": 9.7,
+    "numberOfShares": 18387500,
+    "marketCapitalization": 178358750,
+    "minusCashAndCashEquivalents": 49658,
+    "addTotalDebt": 50000,
+    "enterpriseValue": 178359092
+  },
+  {
+    "symbol": "ALTG",
+    "date": "2017-12-31",
+    "stockPrice": 9.7,
+    "numberOfShares": 18387500,
+    "marketCapitalization": 178358750,
+    "minusCashAndCashEquivalents": 164000,
+    "addTotalDebt": 200716000,
+    "enterpriseValue": 378910750
+  },
+  {
+    "symbol": "ALTG",
+    "date": "2016-12-31",
+    "stockPrice": 9.7,
+    "numberOfShares": 16050000,
+    "marketCapitalization": 155685000,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 155685000
+  }
+]

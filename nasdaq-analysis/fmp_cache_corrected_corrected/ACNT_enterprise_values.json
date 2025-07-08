@@ -1,0 +1,402 @@
+[
+  {
+    "symbol": "ACNT",
+    "date": "2024-12-31",
+    "stockPrice": 11.18,
+    "numberOfShares": 10106000,
+    "marketCapitalization": 112985080,
+    "minusCashAndCashEquivalents": 16108000,
+    "addTotalDebt": 33270000,
+    "enterpriseValue": 130147080
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2023-12-31",
+    "stockPrice": 9.56,
+    "numberOfShares": 10133827,
+    "marketCapitalization": 96879386,
+    "minusCashAndCashEquivalents": 1851000,
+    "addTotalDebt": 31396000,
+    "enterpriseValue": 126424386
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2022-12-31",
+    "stockPrice": 8.67,
+    "numberOfShares": 10230000,
+    "marketCapitalization": 88694100,
+    "minusCashAndCashEquivalents": 1441000,
+    "addTotalDebt": 105425000,
+    "enterpriseValue": 192678100
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2021-12-31",
+    "stockPrice": 16.43,
+    "numberOfShares": 9340000,
+    "marketCapitalization": 153456200,
+    "minusCashAndCashEquivalents": 2021000,
+    "addTotalDebt": 105202000,
+    "enterpriseValue": 256637200
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2020-12-31",
+    "stockPrice": 7.8,
+    "numberOfShares": 9099000,
+    "marketCapitalization": 70972200,
+    "minusCashAndCashEquivalents": 236000,
+    "addTotalDebt": 95064000,
+    "enterpriseValue": 165800200
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2019-12-31",
+    "stockPrice": 12.91,
+    "numberOfShares": 8983000,
+    "marketCapitalization": 115970530,
+    "minusCashAndCashEquivalents": 626000,
+    "addTotalDebt": 113428000,
+    "enterpriseValue": 228772530
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2018-12-31",
+    "stockPrice": 16.59,
+    "numberOfShares": 8806000,
+    "marketCapitalization": 146091540,
+    "minusCashAndCashEquivalents": 2220000,
+    "addTotalDebt": 76405000,
+    "enterpriseValue": 220276540
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2017-12-31",
+    "stockPrice": 13.45,
+    "numberOfShares": 8705000,
+    "marketCapitalization": 117082250,
+    "minusCashAndCashEquivalents": 14706,
+    "addTotalDebt": 25913557,
+    "enterpriseValue": 142981101
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2016-12-31",
+    "stockPrice": 10.95,
+    "numberOfShares": 8634537,
+    "marketCapitalization": 94548180,
+    "minusCashAndCashEquivalents": 62873,
+    "addTotalDebt": 8804206,
+    "enterpriseValue": 103289513
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2015-12-31",
+    "stockPrice": 6.88,
+    "numberOfShares": 8702777,
+    "marketCapitalization": 59875105,
+    "minusCashAndCashEquivalents": 391000,
+    "addTotalDebt": 28080000,
+    "enterpriseValue": 87564105
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2014-12-31",
+    "stockPrice": 17.61,
+    "numberOfShares": 8669841,
+    "marketCapitalization": 152675908,
+    "minusCashAndCashEquivalents": 27000,
+    "addTotalDebt": 31789000,
+    "enterpriseValue": 184437908
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2013-12-31",
+    "stockPrice": 15.36,
+    "numberOfShares": 6942000,
+    "marketCapitalization": 106629120,
+    "minusCashAndCashEquivalents": 1777000,
+    "addTotalDebt": 23439000,
+    "enterpriseValue": 128291120
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2012-12-31",
+    "stockPrice": 14.31,
+    "numberOfShares": 6356733,
+    "marketCapitalization": 90964849,
+    "minusCashAndCashEquivalents": 1085000,
+    "addTotalDebt": 39867000,
+    "enterpriseValue": 129746849
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2011-12-31",
+    "stockPrice": 10.27,
+    "numberOfShares": 6313418,
+    "marketCapitalization": 64838802,
+    "minusCashAndCashEquivalents": 110138,
+    "addTotalDebt": 8650431,
+    "enterpriseValue": 73379095
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2010-12-31",
+    "stockPrice": 12.12,
+    "numberOfShares": 6282497,
+    "marketCapitalization": 76143863,
+    "minusCashAndCashEquivalents": 108902,
+    "addTotalDebt": 219275,
+    "enterpriseValue": 76254236
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2009-12-31",
+    "stockPrice": 9.42,
+    "numberOfShares": 6261805,
+    "marketCapitalization": 58986203,
+    "minusCashAndCashEquivalents": 14096557,
+    "addTotalDebt": 1125000,
+    "enterpriseValue": 46014646
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2008-12-31",
+    "stockPrice": 4.8,
+    "numberOfShares": 6245344,
+    "marketCapitalization": 29977651,
+    "minusCashAndCashEquivalents": 97215,
+    "addTotalDebt": 11789648,
+    "enterpriseValue": 41670084
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2007-12-31",
+    "stockPrice": 17.19,
+    "numberOfShares": 6211639,
+    "marketCapitalization": 106778080,
+    "minusCashAndCashEquivalents": 28269,
+    "addTotalDebt": 10712682,
+    "enterpriseValue": 117462493
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2006-12-31",
+    "stockPrice": 18.54,
+    "numberOfShares": 6135608,
+    "marketCapitalization": 113754178,
+    "minusCashAndCashEquivalents": 21413,
+    "addTotalDebt": 18198098,
+    "enterpriseValue": 131930863
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2005-12-31",
+    "stockPrice": 10.46,
+    "numberOfShares": 6066608,
+    "marketCapitalization": 63456719,
+    "minusCashAndCashEquivalents": 2379,
+    "addTotalDebt": 8661420,
+    "enterpriseValue": 72115760
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2004-12-31",
+    "stockPrice": 9.9,
+    "numberOfShares": 5870590,
+    "marketCapitalization": 58118841,
+    "minusCashAndCashEquivalents": 292350,
+    "addTotalDebt": 22325820,
+    "enterpriseValue": 80152311
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2003-12-31",
+    "stockPrice": 6.92,
+    "numberOfShares": 5919367,
+    "marketCapitalization": 40962019,
+    "minusCashAndCashEquivalents": 2110,
+    "addTotalDebt": 19417669,
+    "enterpriseValue": 60377578
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2002-12-31",
+    "stockPrice": 4.16,
+    "numberOfShares": 5964304,
+    "marketCapitalization": 24811504,
+    "minusCashAndCashEquivalents": 48656,
+    "addTotalDebt": 13863088,
+    "enterpriseValue": 38625936
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2001-12-31",
+    "stockPrice": 3.47,
+    "numberOfShares": 6362680,
+    "marketCapitalization": 22078499,
+    "minusCashAndCashEquivalents": 4989,
+    "addTotalDebt": 17186000,
+    "enterpriseValue": 39259510
+  },
+  {
+    "symbol": "ACNT",
+    "date": "2000-12-31",
+    "stockPrice": 4.75,
+    "numberOfShares": 6018522,
+    "marketCapitalization": 28587979,
+    "minusCashAndCashEquivalents": 467,
+    "addTotalDebt": 19682700,
+    "enterpriseValue": 48270212
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1999-12-31",
+    "stockPrice": 7.5,
+    "numberOfShares": 6548109,
+    "marketCapitalization": 49110817,
+    "minusCashAndCashEquivalents": 120549,
+    "addTotalDebt": 10373500,
+    "enterpriseValue": 59363768
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1998-12-31",
+    "stockPrice": 8.75,
+    "numberOfShares": 7058824,
+    "marketCapitalization": 61764710,
+    "minusCashAndCashEquivalents": 100000,
+    "addTotalDebt": 10900000,
+    "enterpriseValue": 72564710
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1997-12-31",
+    "stockPrice": 14.75,
+    "numberOfShares": 6904762,
+    "marketCapitalization": 101845239,
+    "minusCashAndCashEquivalents": 1600000,
+    "addTotalDebt": 10900000,
+    "enterpriseValue": 111145239
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1996-12-31",
+    "stockPrice": 15.75,
+    "numberOfShares": 7000000,
+    "marketCapitalization": 110250000,
+    "minusCashAndCashEquivalents": 100000,
+    "addTotalDebt": 14300000,
+    "enterpriseValue": 124450000
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1995-12-31",
+    "stockPrice": 21.13,
+    "numberOfShares": 7323232,
+    "marketCapitalization": 154703276,
+    "minusCashAndCashEquivalents": 300000,
+    "addTotalDebt": 17600000,
+    "enterpriseValue": 172003276
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1994-12-31",
+    "stockPrice": 11.83,
+    "numberOfShares": 10961538,
+    "marketCapitalization": 129711529,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 13000000,
+    "enterpriseValue": 142711529
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1993-12-31",
+    "stockPrice": 9.5,
+    "numberOfShares": 10909091,
+    "marketCapitalization": 103636364,
+    "minusCashAndCashEquivalents": 500000,
+    "addTotalDebt": 11600000,
+    "enterpriseValue": 114736364
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1992-12-31",
+    "stockPrice": 17.33,
+    "numberOfShares": 10789474,
+    "marketCapitalization": 187017534,
+    "minusCashAndCashEquivalents": 100000,
+    "addTotalDebt": 13100000,
+    "enterpriseValue": 200017534
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1991-12-31",
+    "stockPrice": 5.78,
+    "numberOfShares": 7009000,
+    "marketCapitalization": 40496446,
+    "minusCashAndCashEquivalents": 100000,
+    "addTotalDebt": 7500000,
+    "enterpriseValue": 47896446
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1990-12-31",
+    "stockPrice": 3.28,
+    "numberOfShares": 7573000,
+    "marketCapitalization": 24839440,
+    "minusCashAndCashEquivalents": 400000,
+    "addTotalDebt": 7200000,
+    "enterpriseValue": 31639440
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1989-12-31",
+    "stockPrice": 4.56,
+    "numberOfShares": 8673000,
+    "marketCapitalization": 39548880,
+    "minusCashAndCashEquivalents": 200000,
+    "addTotalDebt": 7200000,
+    "enterpriseValue": 46548880
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1988-12-31",
+    "stockPrice": 2.61,
+    "numberOfShares": 8658000,
+    "marketCapitalization": 22597380,
+    "minusCashAndCashEquivalents": 300000,
+    "addTotalDebt": 4300000,
+    "enterpriseValue": 26597380
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1987-12-31",
+    "stockPrice": 1.61,
+    "numberOfShares": 8639000,
+    "marketCapitalization": 13908790,
+    "minusCashAndCashEquivalents": 1000000,
+    "addTotalDebt": 7000000,
+    "enterpriseValue": 19908790
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1986-12-31",
+    "stockPrice": 2.06,
+    "numberOfShares": 8586000,
+    "marketCapitalization": 17687160,
+    "minusCashAndCashEquivalents": 800000,
+    "addTotalDebt": 3300000,
+    "enterpriseValue": 20187160
+  },
+  {
+    "symbol": "ACNT",
+    "date": "1985-12-31",
+    "stockPrice": 1.89,
+    "numberOfShares": 8630000,
+    "marketCapitalization": 16310700,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 7700000,
+    "enterpriseValue": 24010700
+  }
+]

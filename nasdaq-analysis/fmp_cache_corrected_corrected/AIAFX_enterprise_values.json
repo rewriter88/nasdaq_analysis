@@ -1,0 +1,102 @@
+[
+  {
+    "symbol": "AIAFX",
+    "date": "2023-10-31",
+    "stockPrice": 19.81,
+    "numberOfShares": 52110035,
+    "marketCapitalization": 1032299793,
+    "minusCashAndCashEquivalents": 21506,
+    "addTotalDebt": 105000000,
+    "enterpriseValue": 1137278287
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2022-10-31",
+    "stockPrice": 20.62,
+    "numberOfShares": 24817386,
+    "marketCapitalization": 511734499,
+    "minusCashAndCashEquivalents": 1160420,
+    "addTotalDebt": 88000000,
+    "enterpriseValue": 598574079
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2021-10-31",
+    "stockPrice": 24.41,
+    "numberOfShares": 23261849,
+    "marketCapitalization": 567821734,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 118000000,
+    "enterpriseValue": 685821734
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2020-10-31",
+    "stockPrice": 19.03,
+    "numberOfShares": 17432104,
+    "marketCapitalization": 331732939,
+    "minusCashAndCashEquivalents": 1593990,
+    "addTotalDebt": 81200000,
+    "enterpriseValue": 411338949
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2019-10-31",
+    "stockPrice": 21.93,
+    "numberOfShares": 13074132,
+    "marketCapitalization": 286715714,
+    "minusCashAndCashEquivalents": 1034505,
+    "addTotalDebt": 72000000,
+    "enterpriseValue": 357681209
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2018-10-31",
+    "stockPrice": 18.82,
+    "numberOfShares": 13074072,
+    "marketCapitalization": 246054035,
+    "minusCashAndCashEquivalents": 298816,
+    "addTotalDebt": 0,
+    "enterpriseValue": 245755219
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2016-10-31",
+    "stockPrice": 17.55,
+    "numberOfShares": 13074081,
+    "marketCapitalization": 229450121,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 83000000,
+    "enterpriseValue": 312450121
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2015-10-31",
+    "stockPrice": 17.63,
+    "numberOfShares": 13074072,
+    "marketCapitalization": 230495889,
+    "minusCashAndCashEquivalents": 26250,
+    "addTotalDebt": 0,
+    "enterpriseValue": 230469639
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2014-10-31",
+    "stockPrice": 20.11,
+    "numberOfShares": 13074073,
+    "marketCapitalization": 262919608,
+    "minusCashAndCashEquivalents": 78649,
+    "addTotalDebt": 100032716,
+    "enterpriseValue": 362873675
+  },
+  {
+    "symbol": "AIAFX",
+    "date": "2013-10-31",
+    "stockPrice": 19.22,
+    "numberOfShares": 13074076,
+    "marketCapitalization": 251283740,
+    "minusCashAndCashEquivalents": 24596,
+    "addTotalDebt": 104903629,
+    "enterpriseValue": 356162773
+  }
+]

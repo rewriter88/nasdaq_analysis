@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "AENT",
+    "date": "2024-06-30",
+    "stockPrice": 3.15,
+    "numberOfShares": 50837148,
+    "marketCapitalization": 160137016,
+    "minusCashAndCashEquivalents": 1129000,
+    "addTotalDebt": 109833000,
+    "enterpriseValue": 268841016
+  },
+  {
+    "symbol": "AENT",
+    "date": "2023-06-30",
+    "stockPrice": 2.55,
+    "numberOfShares": 48138393,
+    "marketCapitalization": 122752902,
+    "minusCashAndCashEquivalents": 865000,
+    "addTotalDebt": 148678000,
+    "enterpriseValue": 270565902
+  },
+  {
+    "symbol": "AENT",
+    "date": "2022-06-30",
+    "stockPrice": 9.89,
+    "numberOfShares": 14375000,
+    "marketCapitalization": 142168750,
+    "minusCashAndCashEquivalents": 1469000,
+    "addTotalDebt": 148662000,
+    "enterpriseValue": 289361750
+  },
+  {
+    "symbol": "AENT",
+    "date": "2021-06-30",
+    "stockPrice": 9.72,
+    "numberOfShares": 14375000,
+    "marketCapitalization": 139725000,
+    "minusCashAndCashEquivalents": 4028000,
+    "addTotalDebt": 72040000,
+    "enterpriseValue": 207737000
+  },
+  {
+    "symbol": "AENT",
+    "date": "2020-06-30",
+    "stockPrice": 9.75,
+    "numberOfShares": 47500000,
+    "marketCapitalization": 463125000,
+    "minusCashAndCashEquivalents": 1334000,
+    "addTotalDebt": 56312000,
+    "enterpriseValue": 518103000
+  },
+  {
+    "symbol": "AENT",
+    "date": "2019-06-30",
+    "stockPrice": 9.75,
+    "numberOfShares": 900000,
+    "marketCapitalization": 8775000,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 8775000
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "ADKSX",
+    "date": "2023-12-31",
+    "stockPrice": 23658.1,
+    "numberOfShares": 824503934,
+    "marketCapitalization": 19506193222949,
+    "minusCashAndCashEquivalents": 4996425000,
+    "addTotalDebt": 47789000,
+    "enterpriseValue": 19501244586949
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2022-12-31",
+    "stockPrice": 10157.66,
+    "numberOfShares": 814748118,
+    "marketCapitalization": 8275932227777,
+    "minusCashAndCashEquivalents": 3761078000,
+    "addTotalDebt": 742984000,
+    "enterpriseValue": 8272914133777
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2021-12-31",
+    "stockPrice": 9463.68,
+    "numberOfShares": 788260457,
+    "marketCapitalization": 7459844721701,
+    "minusCashAndCashEquivalents": 2571991000,
+    "addTotalDebt": 14044000,
+    "enterpriseValue": 7457286774701
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2020-12-31",
+    "stockPrice": 6851.25,
+    "numberOfShares": 700000000,
+    "marketCapitalization": 4795875000000,
+    "minusCashAndCashEquivalents": 5748369000,
+    "addTotalDebt": 82979000,
+    "enterpriseValue": 4790209610000
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2019-12-31",
+    "stockPrice": 6181.82,
+    "numberOfShares": 700000040,
+    "marketCapitalization": 4327272163003,
+    "minusCashAndCashEquivalents": 4322987000,
+    "addTotalDebt": 5334000,
+    "enterpriseValue": 4322954510003
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2018-12-31",
+    "stockPrice": 5398.12,
+    "numberOfShares": 700000000,
+    "marketCapitalization": 3778686209061,
+    "minusCashAndCashEquivalents": 4339294000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 3774346915061
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2017-12-31",
+    "stockPrice": 6970.74,
+    "numberOfShares": 700000000,
+    "marketCapitalization": 4879519464553,
+    "minusCashAndCashEquivalents": 2820459000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 4876699005553
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2016-12-31",
+    "stockPrice": 5493.74,
+    "numberOfShares": 700000000,
+    "marketCapitalization": 3845618008759,
+    "minusCashAndCashEquivalents": 2325540000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 3843292468759
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2015-12-31",
+    "stockPrice": 2876.32,
+    "numberOfShares": 700000000,
+    "marketCapitalization": 2013422845565,
+    "minusCashAndCashEquivalents": 1864445000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2011558400565
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2014-12-31",
+    "stockPrice": 2838.3,
+    "numberOfShares": 700000000,
+    "marketCapitalization": 1986809758827,
+    "minusCashAndCashEquivalents": 1091337000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1985718421827
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2013-12-31",
+    "stockPrice": 2476.28,
+    "numberOfShares": 700000000,
+    "marketCapitalization": 1733397621506,
+    "minusCashAndCashEquivalents": 1457585000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1731940036506
+  },
+  {
+    "symbol": "ADKSX",
+    "date": "2012-12-31",
+    "stockPrice": 1630.15,
+    "numberOfShares": 701606289,
+    "marketCapitalization": 1143722407229,
+    "minusCashAndCashEquivalents": 1267337000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1142455070229
+  }
+]
