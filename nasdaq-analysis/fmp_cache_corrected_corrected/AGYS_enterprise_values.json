@@ -5,9 +5,9 @@
     "stockPrice": 72.54,
     "numberOfShares": 27518000,
     "marketCapitalization": 1996155720,
-    "minusCashAndCashEquivalents": 0,
-    "addTotalDebt": 0,
-    "enterpriseValue": 1996155720
+    "minusCashAndCashEquivalents": 73041000,
+    "addTotalDebt": 46962000,
+    "enterpriseValue": 1970076720
   },
   {
     "symbol": "AGYS",

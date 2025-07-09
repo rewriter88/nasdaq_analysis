@@ -25,31 +25,17 @@ def load_config():
 
 def main():
     """Main launcher function"""
-    print("Nasdaq Top-N Momentum Strategy Analysis Launcher")
+    print("Nasdaq Top-N Momentum Strategy Analysis")
+    print("=" * 50)
+    print("Using Financial Modeling Prep (FMP) API")
+    print("Features: Premium data, survivorship bias correction, accurate market cap")
     print("=" * 50)
     
     # Load configuration
     config = load_config()
     
-    # Get data source setting
-    data_source = getattr(config, 'DATA_SOURCE', 'FMP').upper()
-    
-    print(f"Data Source: {data_source}")
-    
-    if data_source == "FMP":
-        script_name = "nasdaq_fmp_analysis_corrected.py"
-        print("Running FMP analysis with corrected methodology...")
-        print("Features: Fixed survivorship bias, accurate market cap, premium data")
-        
-    elif data_source == "YAHOO":
-        script_name = "nasdaq_yahoo_analysis.py"
-        print("Running Yahoo Finance analysis for comparison...")
-        print("Features: Free data source, good for verification")
-        
-    else:
-        print(f"Error: Unknown DATA_SOURCE '{data_source}'")
-        print("Valid options: 'FMP' or 'YAHOO'")
-        sys.exit(1)
+    # Use FMP analysis (corrected methodology)
+    script_name = "nasdaq_fmp_analysis_corrected.py"
     
     print(f"Executing: {script_name}")
     print("-" * 50)

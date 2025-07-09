@@ -26,8 +26,8 @@
     "numberOfShares": 916000000,
     "marketCapitalization": 151341520000,
     "minusCashAndCashEquivalents": 3050000000,
-    "addTotalDebt": 8735000000,
-    "enterpriseValue": 157026520000
+    "addTotalDebt": 9154000000,
+    "enterpriseValue": 157445520000
   },
   {
     "symbol": "TXN",
@@ -36,8 +36,8 @@
     "numberOfShares": 923000000,
     "marketCapitalization": 173957810000,
     "minusCashAndCashEquivalents": 4631000000,
-    "addTotalDebt": 7741000000,
-    "enterpriseValue": 177067810000
+    "addTotalDebt": 8206000000,
+    "enterpriseValue": 177532810000
   },
   {
     "symbol": "TXN",
@@ -46,8 +46,8 @@
     "numberOfShares": 921000000,
     "marketCapitalization": 151163730000,
     "minusCashAndCashEquivalents": 3107000000,
-    "addTotalDebt": 6798000000,
-    "enterpriseValue": 154854730000
+    "addTotalDebt": 7119000000,
+    "enterpriseValue": 155175730000
   },
   {
     "symbol": "TXN",
@@ -56,8 +56,8 @@
     "numberOfShares": 936000000,
     "marketCapitalization": 120079440000,
     "minusCashAndCashEquivalents": 2437000000,
-    "addTotalDebt": 5803000000,
-    "enterpriseValue": 123445440000
+    "addTotalDebt": 6135000000,
+    "enterpriseValue": 123777440000
   },
   {
     "symbol": "TXN",
@@ -103,11 +103,11 @@
     "symbol": "TXN",
     "date": "2014-12-31",
     "stockPrice": 53.47,
-    "numberOfShares": 1046626812,
-    "marketCapitalization": 55963135637,
+    "numberOfShares": 1046627000,
+    "marketCapitalization": 55963145690,
     "minusCashAndCashEquivalents": 1199000000,
     "addTotalDebt": 4642000000,
-    "enterpriseValue": 59406135637
+    "enterpriseValue": 59406145690
   },
   {
     "symbol": "TXN",
@@ -196,8 +196,8 @@
     "numberOfShares": 1640000000,
     "marketCapitalization": 52594800000,
     "minusCashAndCashEquivalents": 1219000000,
-    "addTotalDebt": 661000000,
-    "enterpriseValue": 52036800000
+    "addTotalDebt": 630000000,
+    "enterpriseValue": 52005800000
   },
   {
     "symbol": "TXN",
@@ -213,11 +213,11 @@
     "symbol": "TXN",
     "date": "2003-12-31",
     "stockPrice": 29.38,
-    "numberOfShares": 1932258065,
-    "marketCapitalization": 56769741949,
+    "numberOfShares": 1932258000,
+    "marketCapitalization": 56769740040,
     "minusCashAndCashEquivalents": 1818000000,
     "addTotalDebt": 832000000,
-    "enterpriseValue": 55783741949
+    "enterpriseValue": 55783740040
   },
   {
     "symbol": "TXN",
@@ -243,21 +243,21 @@
     "symbol": "TXN",
     "date": "2000-12-31",
     "stockPrice": 47.38,
-    "numberOfShares": 1717977528,
-    "marketCapitalization": 81397775276,
+    "numberOfShares": 1717978000,
+    "marketCapitalization": 81397797640,
     "minusCashAndCashEquivalents": 745000000,
     "addTotalDebt": 1364000000,
-    "enterpriseValue": 82016775276
+    "enterpriseValue": 82016797640
   },
   {
     "symbol": "TXN",
     "date": "1999-12-31",
     "stockPrice": 48.31,
-    "numberOfShares": 1687209302,
-    "marketCapitalization": 81509081379,
+    "numberOfShares": 1687209000,
+    "marketCapitalization": 81509066790,
     "minusCashAndCashEquivalents": 662000000,
     "addTotalDebt": 1410000000,
-    "enterpriseValue": 82257081379
+    "enterpriseValue": 82257066790
   },
   {
     "symbol": "TXN",

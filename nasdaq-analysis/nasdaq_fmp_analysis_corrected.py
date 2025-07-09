@@ -25,7 +25,7 @@ import os
 import json
 import datetime as dt
 from collections import defaultdict
-from typing import Dict, List, Set, Optional
+from typing import Dict, List, Set, Optional, Tuple
 import time
 import warnings
 import csv
@@ -380,15 +380,75 @@ class CorrectedFMPDataProvider:
         print(f"Calculated corrected market cap for {symbol}: {len(market_cap)} days")
         return market_cap
 
+class SharedDataManager:
+    """Manages shared data across multiple analysis runs to avoid reloading"""
+    
+    def __init__(self):
+        self.market_cap_data = None
+        self.price_data = None
+        self.symbols_loaded = set()
+        self.data_start_date = None
+        self.data_end_date = None
+        
+    def has_data_for_period(self, start_date: str, end_date: str, symbols: List[str]) -> bool:
+        """Check if we already have data that covers the requested period"""
+        if (self.market_cap_data is None or 
+            self.price_data is None or 
+            self.data_start_date is None or 
+            self.data_end_date is None):
+            return False
+            
+        # Check if date range is covered
+        if (start_date < self.data_start_date or end_date > self.data_end_date):
+            return False
+            
+        # Check if symbols are covered
+        needed_symbols = set(symbols)
+        if not needed_symbols.issubset(self.symbols_loaded):
+            return False
+            
+        return True
+    
+    def store_data(self, market_cap_data: pd.DataFrame, price_data: Dict, 
+                   symbols: List[str], start_date: str, end_date: str):
+        """Store data for reuse"""
+        self.market_cap_data = market_cap_data.copy()
+        self.price_data = price_data.copy()
+        self.symbols_loaded = set(symbols)
+        self.data_start_date = start_date
+        self.data_end_date = end_date
+    
+    def get_data_for_period(self, start_date: str, end_date: str) -> Tuple[pd.DataFrame, Dict]:
+        """Get subset of data for a specific period"""
+        if not self.has_data_for_period(start_date, end_date, list(self.symbols_loaded)):
+            raise ValueError("Data not available for requested period")
+        
+        # Filter market cap data by date
+        market_cap_subset = self.market_cap_data.loc[start_date:end_date].copy()
+        
+        # Filter price data by date
+        price_subset = {}
+        for symbol, series in self.price_data.items():
+            if isinstance(series, pd.DataFrame):
+                price_subset[symbol] = series.loc[start_date:end_date].copy()
+            else:
+                price_subset[symbol] = series.loc[start_date:end_date].copy()
+        
+        return market_cap_subset, price_subset
+
+# Global shared data manager
+_shared_data_manager = SharedDataManager()
+
 class CorrectedMomentumAnalyzer:
     """Corrected momentum strategy analyzer"""
     
-    def __init__(self):
+    def __init__(self, use_shared_data: bool = False):
         self.fmp = CorrectedFMPDataProvider(FMP_API_KEY, CACHE_DIR + "_corrected")
         self.market_cap_data = pd.DataFrame()
         self.open_price_data = pd.DataFrame()  # For transactions
         self.close_price_data = pd.DataFrame()  # For performance calculation
         self.rebalancing_events = []  # Store all rebalancing events
+        self.use_shared_data = use_shared_data
     
     def load_market_cap_data(self, symbols: List[str], start_date: str, end_date: str):
         """Load corrected market cap data for all symbols"""
@@ -748,42 +808,113 @@ class CorrectedMomentumAnalyzer:
             print(f"Warning: Invalid portfolio calculation on {date}, using fallback value")
             return fallback_value
     
-    def run_analysis(self, start_date: str, end_date: str, portfolio_sizes: List[int]):
+    def run_analysis(self, start_date: str, end_date: str, portfolio_sizes: List[int], 
+                    enable_charts: bool = True, enable_exports: bool = True, verbose: bool = True):
         """Run the corrected momentum strategy analysis"""
         
-        print(f"\n{'='*60}")
-        print(f"CORRECTED NASDAQ MOMENTUM STRATEGY ANALYSIS")
-        print(f"{'='*60}")
-        print(f"Period: {start_date} to {end_date}")
-        print(f"Portfolio sizes: {portfolio_sizes}")
-        print(f"Fixes applied:")
-        print(f"  ✓ Survivorship bias: Using broader stock universe")
-        print(f"  ✓ Data quality: Proper historical market cap calculation")
+        if verbose:
+            print(f"\n{'='*60}")
+            print(f"CORRECTED NASDAQ MOMENTUM STRATEGY ANALYSIS")
+            print(f"{'='*60}")
+            print(f"Period: {start_date} to {end_date}")
+            print(f"Portfolio sizes: {portfolio_sizes}")
+            print(f"Charts enabled: {enable_charts}")
+            print(f"Fixes applied:")
+            print(f"  ✓ Survivorship bias: Using broader stock universe")
+            print(f"  ✓ Data quality: Proper historical market cap calculation")
+        
+    def run_analysis(self, start_date: str, end_date: str, portfolio_sizes: List[int], 
+                    enable_charts: bool = True, enable_exports: bool = True, verbose: bool = True):
+        """Run the corrected momentum strategy analysis"""
+        
+        global _shared_data_manager
+        
+        if verbose:
+            print(f"\n{'='*60}")
+            print(f"CORRECTED NASDAQ MOMENTUM STRATEGY ANALYSIS")
+            print(f"{'='*60}")
+            print(f"Period: {start_date} to {end_date}")
+            print(f"Portfolio sizes: {portfolio_sizes}")
+            print(f"Charts enabled: {enable_charts}")
+            print(f"Fixes applied:")
+            print(f"  ✓ Survivorship bias: Using broader stock universe")
+            print(f"  ✓ Data quality: Proper historical market cap calculation")
         
         # 1. Get broader stock universe (not just current constituents)
         symbols = self.fmp.get_tradeable_stocks()
         if not symbols:
             raise ValueError("Could not get stock universe!")
         
-        # 2. Load corrected market cap data
-        successful_symbols = self.load_market_cap_data(symbols, start_date, end_date)
+        # 2. Check if we can use shared data
+        if (self.use_shared_data and 
+            _shared_data_manager.has_data_for_period(start_date, end_date, symbols + BENCHMARKS)):
+            
+            if verbose:
+                print(f"✓ Using cached data for period {start_date} to {end_date}")
+            
+            # Get data from shared manager
+            self.market_cap_data, price_data = _shared_data_manager.get_data_for_period(start_date, end_date)
+            
+            # Set price data
+            self.open_price_data = pd.DataFrame()
+            self.close_price_data = pd.DataFrame()
+            for symbol, data in price_data.items():
+                if symbol.endswith('_open'):
+                    base_symbol = symbol[:-5]
+                    self.open_price_data[base_symbol] = data
+                elif symbol.endswith('_close'):
+                    base_symbol = symbol[:-6]
+                    self.close_price_data[base_symbol] = data
+                else:
+                    # Assume it's close price data
+                    self.close_price_data[symbol] = data
+            
+            successful_symbols = list(self.market_cap_data.columns)
+            
+        else:
+            # Load data normally
+            if verbose:
+                print(f"Loading fresh data for period {start_date} to {end_date}")
+            
+            # Load corrected market cap data
+            successful_symbols = self.load_market_cap_data(symbols, start_date, end_date)
+            
+            # Get symbols needed for price data
+            all_needed_symbols = set()
+            for size in portfolio_sizes:
+                compositions = self.build_top_n_compositions(size)
+                for composition in compositions.values:
+                    all_needed_symbols.update(composition)
+            
+            # Add all benchmarks
+            for benchmark in BENCHMARKS:
+                all_needed_symbols.add(benchmark)
+            
+            # Load price data
+            self.load_price_data(list(all_needed_symbols), start_date, end_date)
+            
+            # Store data in shared manager if enabled
+            if self.use_shared_data:
+                price_data_combined = {}
+                for symbol in self.open_price_data.columns:
+                    price_data_combined[f"{symbol}_open"] = self.open_price_data[symbol]
+                for symbol in self.close_price_data.columns:
+                    price_data_combined[f"{symbol}_close"] = self.close_price_data[symbol]
+                
+                _shared_data_manager.store_data(
+                    self.market_cap_data, 
+                    price_data_combined,
+                    successful_symbols + list(all_needed_symbols),
+                    start_date, 
+                    end_date
+                )
+                
+                if verbose:
+                    print(f"✓ Data cached for future periods")
         
-        # 3. Get symbols needed for price data
-        all_needed_symbols = set()
-        for size in portfolio_sizes:
-            compositions = self.build_top_n_compositions(size)
-            for composition in compositions.values:
-                all_needed_symbols.update(composition)
-        
-        # Add all benchmarks
-        for benchmark in BENCHMARKS:
-            all_needed_symbols.add(benchmark)
-        
-        # 4. Load price data
-        self.load_price_data(list(all_needed_symbols), start_date, end_date)
-        
-        # 5. Run backtests
-        print(f"\nRunning corrected backtests for {len(portfolio_sizes)} strategies...")
+        # 3. Run backtests
+        if verbose:
+            print(f"\nRunning corrected backtests for {len(portfolio_sizes)} strategies...")
         results = {}
         
         # Process benchmarks with robust data handling
@@ -828,9 +959,12 @@ class CorrectedMomentumAnalyzer:
                 print(f"Warning: No data for Top-{size} strategy")
         
         # 6. Generate results
-        self.plot_results(results)
-        self.print_performance_summary(results)
-        self.export_rebalancing_events_to_csv()
+        if enable_charts:
+            self.plot_results(results)
+        if enable_exports:
+            self.export_rebalancing_events_to_csv()
+        if verbose and enable_charts:
+            self.print_performance_summary(results)
         
         return results
     

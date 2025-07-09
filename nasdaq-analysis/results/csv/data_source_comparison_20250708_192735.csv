@@ -1,0 +1,25 @@
+Date,Time,Symbol,FMP_Adj_Open_Price,Yahoo_Adj_Open_Price,Price_Difference,Price_Pct_Difference,FMP_Shares_Outstanding,Yahoo_Shares_Outstanding,Shares_Difference,Shares_Pct_Difference
+2024-04-04,19:27:32,AAPL,170.29,169.2677258236611,1.0222741763388967,0.6039392160345302,,14935799808,,
+2024-04-04,19:27:33,MSFT,424.99,420.9970416568271,3.9929583431729156,0.948452826998188,,7432540160,,
+2024-04-04,19:27:35,GOOGL,153.5,152.58489413321703,0.9151058667829659,0.5997355583469594,,5820000256,,
+
+
+SUMMARY STATISTICS
+Metric,Value
+PRICE DIFFERENCES,
+Valid Price Comparisons,3
+Mean Price Difference ($),1.9768
+Median Price Difference ($),1.0223
+Std Dev Price Difference ($),1.7469
+Max Price Difference ($),3.9930
+Min Price Difference ($),0.9151
+Mean Price Difference (%),0.7174%
+Median Price Difference (%),0.6039%
+Std Dev Price Difference (%),0.2001%
+,
+DATA AVAILABILITY,
+Total Attempted Comparisons,3
+FMP Price Data Available,3 (100.0%)
+Yahoo Price Data Available,3 (100.0%)
+FMP Shares Data Available,0 (0.0%)
+Yahoo Shares Data Available,3 (100.0%)

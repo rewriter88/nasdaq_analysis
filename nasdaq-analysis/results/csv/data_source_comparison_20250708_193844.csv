@@ -1,0 +1,14 @@
+Date,Time,Symbol,FMP_Adj_Open_Price,Yahoo_Adj_Open_Price,Price_Difference,Price_Pct_Difference,FMP_Shares_Outstanding,Yahoo_Shares_Outstanding,Shares_Difference,Shares_Pct_Difference
+2008-12-23,19:38:42,AAPL,3.1,,,,24839052000,,,
+2008-12-23,19:38:43,MSFT,19.28,,,,9084000000,,,
+2008-12-23,19:38:44,GOOGL,7.52,,,,12569634972,,,
+
+
+SUMMARY STATISTICS
+Metric,Value
+DATA AVAILABILITY,
+Total Attempted Comparisons,3
+FMP Price Data Available,3 (100.0%)
+Yahoo Price Data Available,0 (0.0%)
+FMP Shares Data Available,3 (100.0%)
+Yahoo Shares Data Available,0 (0.0%)

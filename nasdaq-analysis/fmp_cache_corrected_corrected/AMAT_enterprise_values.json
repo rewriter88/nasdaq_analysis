@@ -6,8 +6,8 @@
     "numberOfShares": 827000000,
     "marketCapitalization": 153276180000,
     "minusCashAndCashEquivalents": 8022000000,
-    "addTotalDebt": 6259000000,
-    "enterpriseValue": 151513180000
+    "addTotalDebt": 6606000000,
+    "enterpriseValue": 151860180000
   },
   {
     "symbol": "AMAT",
@@ -273,11 +273,11 @@
     "symbol": "AMAT",
     "date": "1997-10-26",
     "stockPrice": 7.63,
-    "numberOfShares": 3022704000,
-    "marketCapitalization": 23063231520,
+    "numberOfShares": 1496787000,
+    "marketCapitalization": 11420484810,
     "minusCashAndCashEquivalents": 448000000,
     "addTotalDebt": 689600000,
-    "enterpriseValue": 23304831520
+    "enterpriseValue": 11662084810
   },
   {
     "symbol": "AMAT",
