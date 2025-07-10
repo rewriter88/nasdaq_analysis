@@ -6,12 +6,22 @@ This script implements a corrected momentum strategy that fixes:
 • Survivorship bias: Uses broader stock universe instead of only current constituents
 • Data quality: Properly calculates historical market cap with time-varying shares outstanding
 • Accurate historical data: Uses proper time-series alignment for all calculations
+• REAL-TIME EXECUTION: Market cap rankings and rebalancing decisions made at market open
 
-Key Fixes:
+Key Features:
 - Uses all major Nasdaq stocks, not just current Nasdaq 100 constituents
 - Implements proper historical shares outstanding calculation
 - Uses time-series aligned market cap data
 - Includes stocks that may have been delisted during the period
+- **REAL-TIME SIMULATION**: Portfolio decisions made using market cap rankings at market open
+- **PRECISE EXECUTION**: All buy/sell orders executed at adjusted open prices
+- **REALISTIC TIMING**: Simulates broker checking prices at market open and trading immediately
+
+Trading Logic:
+1. At market open (9:30 AM EST), calculate real-time market cap rankings using open prices
+2. Determine if portfolio rebalancing is needed based on threshold rules
+3. Execute all buy/sell orders at the exact open prices used for ranking
+4. Track portfolio performance using adjusted close prices throughout the day
 
 Dependencies:
     pip install pandas numpy matplotlib requests tqdm
@@ -534,10 +544,43 @@ class CorrectedMomentumAnalyzer:
         print(f"Successfully loaded price data: {len(self.close_price_data)} days, "
               f"{len(self.close_price_data.columns)} symbols")
     
+    def _calculate_realtime_market_caps(self, date: pd.Timestamp) -> pd.Series:
+        """Calculate real-time market cap at market open using open prices and shares outstanding"""
+        realtime_market_caps = {}
+        
+        # Get the shares outstanding data (use the closest available date)
+        if date in self.market_cap_data.index:
+            shares_data = self.market_cap_data.loc[date]
+            
+            # For each symbol, calculate market cap using open price
+            for symbol in shares_data.index:
+                if symbol in self.open_price_data.columns and date in self.open_price_data.index:
+                    open_price = self.open_price_data.loc[date, symbol]
+                    
+                    # Get shares outstanding from the pre-calculated market cap data
+                    # We need to reverse-engineer shares from market cap / close price
+                    historical_market_cap = shares_data[symbol]
+                    
+                    if not pd.isna(historical_market_cap) and not pd.isna(open_price) and open_price > 0:
+                        # Get close price for the same date to calculate shares
+                        if symbol in self.close_price_data.columns and date in self.close_price_data.index:
+                            close_price = self.close_price_data.loc[date, symbol]
+                            if not pd.isna(close_price) and close_price > 0:
+                                # Calculate shares outstanding: market_cap / close_price
+                                shares_outstanding = historical_market_cap / close_price
+                                
+                                # Calculate real-time market cap: open_price * shares_outstanding
+                                realtime_market_cap = open_price * shares_outstanding
+                                realtime_market_caps[symbol] = realtime_market_cap
+        
+        return pd.Series(realtime_market_caps).sort_values(ascending=False)
+    
     def build_top_n_compositions(self, n: int) -> pd.Series:
-        """Build Top-N portfolio compositions based on corrected market cap rankings with threshold-based rebalancing"""
+        """Build Top-N portfolio compositions based on real-time market cap rankings at market open"""
         if self.market_cap_data.empty:
             raise ValueError("No market cap data loaded!")
+        if self.open_price_data.empty:
+            raise ValueError("No open price data loaded!")
         
         compositions = {}
         current_portfolio = None  # Track current portfolio holdings
@@ -545,6 +588,7 @@ class CorrectedMomentumAnalyzer:
         threshold_blocked_count = 0  # Track how many times threshold prevented rebalancing
         
         print(f"\nBuilding Top-{n} compositions with {REBALANCING_THRESHOLD:.1%} rebalancing threshold...")
+        print(f"Using REAL-TIME market cap rankings at market open (not previous close)")
         print(f"Market cap data range: {self.market_cap_data.index[0]} to {self.market_cap_data.index[-1]}")
         print(f"Total dates with market cap data: {len(self.market_cap_data.index)}")
         
@@ -556,8 +600,8 @@ class CorrectedMomentumAnalyzer:
             sample_dates = [self.market_cap_data.index[i] for i in sample_indices if i < total_dates]
         
         for date in self.market_cap_data.index:
-            # Get market caps for this date
-            day_market_caps = self.market_cap_data.loc[date].dropna()
+            # Calculate REAL-TIME market cap at market open using open prices and shares outstanding
+            day_market_caps = self._calculate_realtime_market_caps(date)
             
             if len(day_market_caps) >= n:
                 # Get top N symbols by market cap (natural ranking)
@@ -617,11 +661,12 @@ class CorrectedMomentumAnalyzer:
                 # Sample market cap rankings for debugging
                 if date in sample_dates or (n <= 3 and date.year >= 2020 and date.month == 1 and date.day <= 7):
                     top_5_caps = day_market_caps.nlargest(5)
-                    print(f"\nTop 5 market caps on {date}:")
+                    print(f"\nTop 5 REAL-TIME market caps on {date} (at market open):")
                     for symbol, cap in top_5_caps.items():
                         in_portfolio = symbol in current_portfolio if current_portfolio else False
                         status = " (IN PORTFOLIO)" if in_portfolio else ""
-                        print(f"  {symbol}: ${cap:,.0f}{status}")
+                        open_price = self.open_price_data.loc[date, symbol] if symbol in self.open_price_data.columns else "N/A"
+                        print(f"  {symbol}: ${cap:,.0f} (open: ${open_price:.2f}){status}")
         
         print(f"Total rebalancing events for Top-{n}: {changes_count}")
         print(f"Threshold blocked potential rebalances: {threshold_blocked_count}")
@@ -630,7 +675,7 @@ class CorrectedMomentumAnalyzer:
         return pd.Series(compositions)
     
     def simulate_portfolio(self, compositions: pd.Series, initial_value: float = 100000, portfolio_name: str = "Portfolio") -> pd.Series:
-        """Simulate portfolio performance with rebalancing and track all events"""
+        """Simulate portfolio performance with real-time rebalancing at market open"""
         if self.close_price_data.empty or self.open_price_data.empty:
             raise ValueError("No price data loaded!")
         
@@ -640,6 +685,11 @@ class CorrectedMomentumAnalyzer:
         last_valid_value = initial_value  # Track last valid portfolio value
         
         rebalance_dates = []
+        
+        print(f"\nSimulating {portfolio_name} with REAL-TIME rebalancing at market open...")
+        print("- Portfolio composition decisions made using real-time market cap rankings")
+        print("- Buy/sell orders executed at market open prices")
+        print("- Performance tracked using adjusted close prices")
         
         for i, (date, symbols) in enumerate(compositions.items()):
             # Check if portfolio composition changed
@@ -658,9 +708,11 @@ class CorrectedMomentumAnalyzer:
                 if i == 0:
                     # Initial portfolio
                     portfolio_val = initial_value
+                    print(f"Initial portfolio creation at market open on {date}")
                 else:
                     # Calculate current portfolio value before rebalancing using close prices
                     portfolio_val = self._calculate_portfolio_value(current_holdings, date, last_valid_value)
+                    print(f"Rebalancing at market open on {date} (portfolio value: ${portfolio_val:,.0f})")
                 
                 # Record selling events (stocks being removed from portfolio)
                 if i > 0:  # Skip initial portfolio creation
@@ -673,10 +725,9 @@ class CorrectedMomentumAnalyzer:
                                 if open_price > 0:  # Validate price data
                                     shares = current_holdings[symbol]
                                     
-                                    # Get market cap if available (using close price for market cap)
-                                    market_cap = None
-                                    if symbol in self.market_cap_data.columns and date in self.market_cap_data.index:
-                                        market_cap = self.market_cap_data.loc[date, symbol]
+                                    # Get market cap if available (using real-time market cap)
+                                    realtime_market_caps = self._calculate_realtime_market_caps(date)
+                                    market_cap = realtime_market_caps.get(symbol, None)
                                     
                                     # Record sell event with open price
                                     self.rebalancing_events.append({
@@ -708,10 +759,9 @@ class CorrectedMomentumAnalyzer:
                                 new_holdings[symbol] = shares
                                 current_weights[symbol] = weight_per_stock
                                 
-                                # Get market cap if available
-                                market_cap = None
-                                if symbol in self.market_cap_data.columns and date in self.market_cap_data.index:
-                                    market_cap = self.market_cap_data.loc[date, symbol]
+                                # Get market cap if available (using real-time market cap)
+                                realtime_market_caps = self._calculate_realtime_market_caps(date)
+                                market_cap = realtime_market_caps.get(symbol, None)
                                 
                                 # Record buy event with open price
                                 self.rebalancing_events.append({
@@ -739,7 +789,7 @@ class CorrectedMomentumAnalyzer:
                 # Use last valid value if current calculation fails
                 portfolio_value[date] = last_valid_value
         
-        print(f"Portfolio rebalanced {len(rebalance_dates)} times")
+        print(f"{portfolio_name} rebalanced {len(rebalance_dates)} times at market open")
         return portfolio_value.fillna(method='ffill')
     
     def _validate_price_series(self, series: pd.Series, name: str) -> pd.Series:
@@ -879,18 +929,14 @@ class CorrectedMomentumAnalyzer:
             # Load corrected market cap data
             successful_symbols = self.load_market_cap_data(symbols, start_date, end_date)
             
-            # Get symbols needed for price data
-            all_needed_symbols = set()
-            for size in portfolio_sizes:
-                compositions = self.build_top_n_compositions(size)
-                for composition in compositions.values:
-                    all_needed_symbols.update(composition)
+            # Load price data for all successful symbols (we need this before building compositions)
+            all_needed_symbols = set(successful_symbols)
             
             # Add all benchmarks
             for benchmark in BENCHMARKS:
                 all_needed_symbols.add(benchmark)
             
-            # Load price data
+            # Load price data for all symbols
             self.load_price_data(list(all_needed_symbols), start_date, end_date)
             
             # Store data in shared manager if enabled

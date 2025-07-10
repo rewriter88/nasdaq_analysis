@@ -1,0 +1,12 @@
+[
+  {
+    "symbol": "AEFC",
+    "date": "2023-12-31",
+    "stockPrice": 21.74,
+    "numberOfShares": 0,
+    "marketCapitalization": 0,
+    "minusCashAndCashEquivalents": 47000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": -47000000
+  }
+]

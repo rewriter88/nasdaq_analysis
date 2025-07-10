@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "AFMBX",
+    "date": "2024-01-31",
+    "stockPrice": 32.21,
+    "numberOfShares": 17560518,
+    "marketCapitalization": 565624284,
+    "minusCashAndCashEquivalents": 223397000,
+    "addTotalDebt": 8378000,
+    "enterpriseValue": 350605284
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2023-01-31",
+    "stockPrice": 29.91,
+    "numberOfShares": 17641401,
+    "marketCapitalization": 527654303,
+    "minusCashAndCashEquivalents": 69612000,
+    "addTotalDebt": 9855000,
+    "enterpriseValue": 467897303
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2022-01-31",
+    "stockPrice": 32.34,
+    "numberOfShares": 17951698,
+    "marketCapitalization": 580557913,
+    "minusCashAndCashEquivalents": 229846000,
+    "addTotalDebt": 6390000,
+    "enterpriseValue": 357101913
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2021-01-31",
+    "stockPrice": 30.28,
+    "numberOfShares": 18502115,
+    "marketCapitalization": 560244042,
+    "minusCashAndCashEquivalents": 144501000,
+    "addTotalDebt": 7439000,
+    "enterpriseValue": 423182042
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2020-01-31",
+    "stockPrice": 28.45,
+    "numberOfShares": 18954076,
+    "marketCapitalization": 539243462,
+    "minusCashAndCashEquivalents": 179658000,
+    "addTotalDebt": 10688000,
+    "enterpriseValue": 370273462
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2019-01-31",
+    "stockPrice": 26.08,
+    "numberOfShares": 19320000,
+    "marketCapitalization": 503865599,
+    "minusCashAndCashEquivalents": 188531000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 315334599
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2018-01-31",
+    "stockPrice": 28.02,
+    "numberOfShares": 19788000,
+    "marketCapitalization": 554459760,
+    "minusCashAndCashEquivalents": 190988000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 363471760
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2017-01-31",
+    "stockPrice": 25.25,
+    "numberOfShares": 19761000,
+    "marketCapitalization": 498965250,
+    "minusCashAndCashEquivalents": 188576000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 310389250
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2016-01-31",
+    "stockPrice": 25.38,
+    "numberOfShares": 21921000,
+    "marketCapitalization": 556354980,
+    "minusCashAndCashEquivalents": 135765000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 420589980
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2015-01-31",
+    "stockPrice": 25.38,
+    "numberOfShares": 24352713,
+    "marketCapitalization": 618071855,
+    "minusCashAndCashEquivalents": 137697000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 480374855
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2014-01-31",
+    "stockPrice": 25.38,
+    "numberOfShares": 24523689,
+    "marketCapitalization": 622411226,
+    "minusCashAndCashEquivalents": 105149000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 517262226
+  },
+  {
+    "symbol": "AFMBX",
+    "date": "2013-01-31",
+    "stockPrice": 25.38,
+    "numberOfShares": 24816000,
+    "marketCapitalization": 629830080,
+    "minusCashAndCashEquivalents": 69073000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 560757080
+  }
+]

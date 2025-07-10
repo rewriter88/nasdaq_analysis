@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "AKA",
+    "date": "2024-12-31",
+    "stockPrice": 18.72,
+    "numberOfShares": 10567656,
+    "marketCapitalization": 197826520,
+    "minusCashAndCashEquivalents": 24192000,
+    "addTotalDebt": 183589000,
+    "enterpriseValue": 357223520
+  },
+  {
+    "symbol": "AKA",
+    "date": "2023-12-31",
+    "stockPrice": 8.05,
+    "numberOfShares": 10707024,
+    "marketCapitalization": 86191543,
+    "minusCashAndCashEquivalents": 21859000,
+    "addTotalDebt": 136248000,
+    "enterpriseValue": 200580543
+  },
+  {
+    "symbol": "AKA",
+    "date": "2022-12-31",
+    "stockPrice": 15.24,
+    "numberOfShares": 10726392,
+    "marketCapitalization": 163470214,
+    "minusCashAndCashEquivalents": 46319000,
+    "addTotalDebt": 184696000,
+    "enterpriseValue": 301847214
+  },
+  {
+    "symbol": "AKA",
+    "date": "2021-12-31",
+    "stockPrice": 111,
+    "numberOfShares": 10720652,
+    "marketCapitalization": 1189992372,
+    "minusCashAndCashEquivalents": 38832000,
+    "addTotalDebt": 135873000,
+    "enterpriseValue": 1287033372
+  },
+  {
+    "symbol": "AKA",
+    "date": "2020-12-31",
+    "stockPrice": 119.88,
+    "numberOfShares": 10674178,
+    "marketCapitalization": 1279620458,
+    "minusCashAndCashEquivalents": 26259000,
+    "addTotalDebt": 10849000,
+    "enterpriseValue": 1264210458
+  },
+  {
+    "symbol": "AKA",
+    "date": "2019-12-31",
+    "stockPrice": 119.88,
+    "numberOfShares": 10674178,
+    "marketCapitalization": 1279620458,
+    "minusCashAndCashEquivalents": 5472000,
+    "addTotalDebt": 7229000,
+    "enterpriseValue": 1281377458
+  }
+]

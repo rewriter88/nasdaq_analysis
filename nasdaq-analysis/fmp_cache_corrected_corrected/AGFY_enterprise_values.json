@@ -1,0 +1,72 @@
+[
+  {
+    "symbol": "AGFY",
+    "date": "2024-12-31",
+    "stockPrice": 28.99,
+    "numberOfShares": 1020185,
+    "marketCapitalization": 29575163,
+    "minusCashAndCashEquivalents": 31170000,
+    "addTotalDebt": 11041000,
+    "enterpriseValue": 9446163
+  },
+  {
+    "symbol": "AGFY",
+    "date": "2023-12-31",
+    "stockPrice": 18.84,
+    "numberOfShares": 99391,
+    "marketCapitalization": 1872526.44,
+    "minusCashAndCashEquivalents": 430000,
+    "addTotalDebt": 23250000,
+    "enterpriseValue": 24692526
+  },
+  {
+    "symbol": "AGFY",
+    "date": "2022-12-31",
+    "stockPrice": 99.9,
+    "numberOfShares": 13904,
+    "marketCapitalization": 1389009.6,
+    "minusCashAndCashEquivalents": 10457000,
+    "addTotalDebt": 31713000,
+    "enterpriseValue": 22645009
+  },
+  {
+    "symbol": "AGFY",
+    "date": "2021-12-31",
+    "stockPrice": 27600,
+    "numberOfShares": 7402.36766,
+    "marketCapitalization": 204305347,
+    "minusCashAndCashEquivalents": 12014000,
+    "addTotalDebt": 2619000,
+    "enterpriseValue": 194910347
+  },
+  {
+    "symbol": "AGFY",
+    "date": "2020-12-31",
+    "stockPrice": 38220,
+    "numberOfShares": 6765.0446600000005,
+    "marketCapitalization": 258560006,
+    "minusCashAndCashEquivalents": 8111000,
+    "addTotalDebt": 13470000,
+    "enterpriseValue": 263919006
+  },
+  {
+    "symbol": "AGFY",
+    "date": "2019-12-31",
+    "stockPrice": 38220,
+    "numberOfShares": 6765.044659902,
+    "marketCapitalization": 258560006,
+    "minusCashAndCashEquivalents": 206000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 258354006
+  },
+  {
+    "symbol": "AGFY",
+    "date": "2018-12-31",
+    "stockPrice": 38220,
+    "numberOfShares": 6765.044659902,
+    "marketCapitalization": 258560006,
+    "minusCashAndCashEquivalents": 85000,
+    "addTotalDebt": 133000,
+    "enterpriseValue": 258608006
+  }
+]

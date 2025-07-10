@@ -1,0 +1,152 @@
+[
+  {
+    "symbol": "AHH",
+    "date": "2024-12-31",
+    "stockPrice": 10.23,
+    "numberOfShares": 79926176,
+    "marketCapitalization": 817644780,
+    "minusCashAndCashEquivalents": 70642000,
+    "addTotalDebt": 1419570000,
+    "enterpriseValue": 2166572780
+  },
+  {
+    "symbol": "AHH",
+    "date": "2023-12-31",
+    "stockPrice": 12.37,
+    "numberOfShares": 66793294,
+    "marketCapitalization": 826233046,
+    "minusCashAndCashEquivalents": 27920000,
+    "addTotalDebt": 1520362000,
+    "enterpriseValue": 2318675046
+  },
+  {
+    "symbol": "AHH",
+    "date": "2022-12-31",
+    "stockPrice": 11.5,
+    "numberOfShares": 88341044,
+    "marketCapitalization": 1015922006,
+    "minusCashAndCashEquivalents": 48139000,
+    "addTotalDebt": 1213546000,
+    "enterpriseValue": 2181329006
+  },
+  {
+    "symbol": "AHH",
+    "date": "2021-12-31",
+    "stockPrice": 15.22,
+    "numberOfShares": 83645185,
+    "marketCapitalization": 1273079715,
+    "minusCashAndCashEquivalents": 35247000,
+    "addTotalDebt": 995364000,
+    "enterpriseValue": 2233196715
+  },
+  {
+    "symbol": "AHH",
+    "date": "2020-12-31",
+    "stockPrice": 11.22,
+    "numberOfShares": 57328000,
+    "marketCapitalization": 643220160,
+    "minusCashAndCashEquivalents": 40998000,
+    "addTotalDebt": 1023458000,
+    "enterpriseValue": 1625680160
+  },
+  {
+    "symbol": "AHH",
+    "date": "2019-12-31",
+    "stockPrice": 18.35,
+    "numberOfShares": 53119000,
+    "marketCapitalization": 974733650,
+    "minusCashAndCashEquivalents": 39232000,
+    "addTotalDebt": 1009914000,
+    "enterpriseValue": 1945415650
+  },
+  {
+    "symbol": "AHH",
+    "date": "2018-12-31",
+    "stockPrice": 14.06,
+    "numberOfShares": 47512000,
+    "marketCapitalization": 668018720,
+    "minusCashAndCashEquivalents": 21254000,
+    "addTotalDebt": 694239000,
+    "enterpriseValue": 1341003720
+  },
+  {
+    "symbol": "AHH",
+    "date": "2017-12-31",
+    "stockPrice": 15.53,
+    "numberOfShares": 42094000,
+    "marketCapitalization": 653719820,
+    "minusCashAndCashEquivalents": 19959000,
+    "addTotalDebt": 517272000,
+    "enterpriseValue": 1151032820
+  },
+  {
+    "symbol": "AHH",
+    "date": "2016-12-31",
+    "stockPrice": 14.57,
+    "numberOfShares": 37490361,
+    "marketCapitalization": 546234559,
+    "minusCashAndCashEquivalents": 21942000,
+    "addTotalDebt": 522180000,
+    "enterpriseValue": 1046472559
+  },
+  {
+    "symbol": "AHH",
+    "date": "2015-12-31",
+    "stockPrice": 10.48,
+    "numberOfShares": 30076359,
+    "marketCapitalization": 315200242,
+    "minusCashAndCashEquivalents": 26989000,
+    "addTotalDebt": 377593000,
+    "enterpriseValue": 665804242
+  },
+  {
+    "symbol": "AHH",
+    "date": "2014-12-31",
+    "stockPrice": 9.49,
+    "numberOfShares": 25022701,
+    "marketCapitalization": 237465432,
+    "minusCashAndCashEquivalents": 25883000,
+    "addTotalDebt": 359229000,
+    "enterpriseValue": 570811432
+  },
+  {
+    "symbol": "AHH",
+    "date": "2013-12-31",
+    "stockPrice": 9.28,
+    "numberOfShares": 19046036,
+    "marketCapitalization": 176747214,
+    "minusCashAndCashEquivalents": 18882000,
+    "addTotalDebt": 277745000,
+    "enterpriseValue": 435610214
+  },
+  {
+    "symbol": "AHH",
+    "date": "2012-12-31",
+    "stockPrice": 11.58,
+    "numberOfShares": 16699000,
+    "marketCapitalization": 193374420,
+    "minusCashAndCashEquivalents": 9400000,
+    "addTotalDebt": 335577000,
+    "enterpriseValue": 519551420
+  },
+  {
+    "symbol": "AHH",
+    "date": "2011-12-31",
+    "stockPrice": 11.58,
+    "numberOfShares": 16699000,
+    "marketCapitalization": 193374420,
+    "minusCashAndCashEquivalents": 13449000,
+    "addTotalDebt": 340137000,
+    "enterpriseValue": 520062420
+  },
+  {
+    "symbol": "AHH",
+    "date": "2010-12-31",
+    "stockPrice": 11.58,
+    "numberOfShares": 16699000,
+    "marketCapitalization": 193374420,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 193374420
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "symbol": "AMCX",
+    "date": "2024-12-31",
+    "stockPrice": 9.9,
+    "numberOfShares": 44438000,
+    "marketCapitalization": 439936200,
+    "minusCashAndCashEquivalents": 784649000,
+    "addTotalDebt": 2433239000,
+    "enterpriseValue": 2088526200
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2023-12-31",
+    "stockPrice": 18.79,
+    "numberOfShares": 43827000,
+    "marketCapitalization": 823509330,
+    "minusCashAndCashEquivalents": 570576000,
+    "addTotalDebt": 2482648000,
+    "enterpriseValue": 2735581330
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2022-12-31",
+    "stockPrice": 15.67,
+    "numberOfShares": 43135000,
+    "marketCapitalization": 675925450,
+    "minusCashAndCashEquivalents": 930002000,
+    "addTotalDebt": 2973663000,
+    "enterpriseValue": 2719586450
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2021-12-31",
+    "stockPrice": 34.44,
+    "numberOfShares": 42361000,
+    "marketCapitalization": 1458912840,
+    "minusCashAndCashEquivalents": 892221000,
+    "addTotalDebt": 3026905000,
+    "enterpriseValue": 3593596840
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2020-12-31",
+    "stockPrice": 35.77,
+    "numberOfShares": 51016000,
+    "marketCapitalization": 1824842320,
+    "minusCashAndCashEquivalents": 888526000,
+    "addTotalDebt": 3076066000,
+    "enterpriseValue": 4012382320
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2019-12-31",
+    "stockPrice": 39.5,
+    "numberOfShares": 56205000,
+    "marketCapitalization": 2220097500,
+    "minusCashAndCashEquivalents": 816170000,
+    "addTotalDebt": 3341235000,
+    "enterpriseValue": 4745162500
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2018-12-31",
+    "stockPrice": 54.88,
+    "numberOfShares": 58066000,
+    "marketCapitalization": 3186662080,
+    "minusCashAndCashEquivalents": 554886000,
+    "addTotalDebt": 3136072000,
+    "enterpriseValue": 5767848080
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2017-12-31",
+    "stockPrice": 54.08,
+    "numberOfShares": 64905000,
+    "marketCapitalization": 3510062400,
+    "minusCashAndCashEquivalents": 558783000,
+    "addTotalDebt": 3130381000,
+    "enterpriseValue": 6081660400
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2016-12-31",
+    "stockPrice": 52.34,
+    "numberOfShares": 71746000,
+    "marketCapitalization": 3755185640,
+    "minusCashAndCashEquivalents": 481389000,
+    "addTotalDebt": 2859129000,
+    "enterpriseValue": 6132925640
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2015-12-31",
+    "stockPrice": 74.68,
+    "numberOfShares": 72420000,
+    "marketCapitalization": 5408325600,
+    "minusCashAndCashEquivalents": 316321000,
+    "addTotalDebt": 2701148000,
+    "enterpriseValue": 7793152600
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2014-12-31",
+    "stockPrice": 63.77,
+    "numberOfShares": 72000000,
+    "marketCapitalization": 4591440000,
+    "minusCashAndCashEquivalents": 201367000,
+    "addTotalDebt": 2789905000,
+    "enterpriseValue": 7179978000
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2013-12-31",
+    "stockPrice": 68.11,
+    "numberOfShares": 71543000,
+    "marketCapitalization": 4872793730,
+    "minusCashAndCashEquivalents": 521951000,
+    "addTotalDebt": 2171288000,
+    "enterpriseValue": 6522130730
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2012-12-31",
+    "stockPrice": 49.5,
+    "numberOfShares": 70374000,
+    "marketCapitalization": 3483513000,
+    "minusCashAndCashEquivalents": 610970000,
+    "addTotalDebt": 2168977000,
+    "enterpriseValue": 5041520000
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2011-12-31",
+    "stockPrice": 37.58,
+    "numberOfShares": 69283000,
+    "marketCapitalization": 2603655140,
+    "minusCashAndCashEquivalents": 215836000,
+    "addTotalDebt": 2306957000,
+    "enterpriseValue": 4694776140
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2010-12-31",
+    "stockPrice": 35.49,
+    "numberOfShares": 69161000,
+    "marketCapitalization": 2454523890,
+    "minusCashAndCashEquivalents": 79960000,
+    "addTotalDebt": 1118875000,
+    "enterpriseValue": 3493438890
+  },
+  {
+    "symbol": "AMCX",
+    "date": "2009-12-31",
+    "stockPrice": 35.49,
+    "numberOfShares": 69161000,
+    "marketCapitalization": 2454523890,
+    "minusCashAndCashEquivalents": 29828000,
+    "addTotalDebt": 1417711000,
+    "enterpriseValue": 3842406890
+  }
+]

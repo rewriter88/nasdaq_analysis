@@ -1,0 +1,132 @@
+[
+  {
+    "symbol": "AFB",
+    "date": "2024-10-31",
+    "stockPrice": 11.31,
+    "numberOfShares": 28744936,
+    "marketCapitalization": 325105226,
+    "minusCashAndCashEquivalents": 113,
+    "addTotalDebt": 0,
+    "enterpriseValue": 325105113
+  },
+  {
+    "symbol": "AFB",
+    "date": "2023-10-31",
+    "stockPrice": 9.07,
+    "numberOfShares": 28745415,
+    "marketCapitalization": 260720914,
+    "minusCashAndCashEquivalents": 102,
+    "addTotalDebt": 231977976,
+    "enterpriseValue": 492698788
+  },
+  {
+    "symbol": "AFB",
+    "date": "2022-10-31",
+    "stockPrice": 10.22,
+    "numberOfShares": 28744936,
+    "marketCapitalization": 293773245,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 7900000,
+    "enterpriseValue": 301673245
+  },
+  {
+    "symbol": "AFB",
+    "date": "2021-10-31",
+    "stockPrice": 14.78,
+    "numberOfShares": 28744936,
+    "marketCapitalization": 424850154,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 26095000,
+    "enterpriseValue": 450945154
+  },
+  {
+    "symbol": "AFB",
+    "date": "2020-10-31",
+    "stockPrice": 13.58,
+    "numberOfShares": 28744936,
+    "marketCapitalization": 390356230,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 26095000,
+    "enterpriseValue": 416451230
+  },
+  {
+    "symbol": "AFB",
+    "date": "2019-10-31",
+    "stockPrice": 13.59,
+    "numberOfShares": 28744936,
+    "marketCapitalization": 390643680,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 26095000,
+    "enterpriseValue": 416738680
+  },
+  {
+    "symbol": "AFB",
+    "date": "2018-10-31",
+    "stockPrice": 11.97,
+    "numberOfShares": 28567996,
+    "marketCapitalization": 341958912,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 26095000,
+    "enterpriseValue": 368053912
+  },
+  {
+    "symbol": "AFB",
+    "date": "2017-10-31",
+    "stockPrice": 13.61,
+    "numberOfShares": 28403977,
+    "marketCapitalization": 386578126,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 26095000,
+    "enterpriseValue": 412673126
+  },
+  {
+    "symbol": "AFB",
+    "date": "2016-10-31",
+    "stockPrice": 13.86,
+    "numberOfShares": 35360790,
+    "marketCapitalization": 490100549,
+    "minusCashAndCashEquivalents": -36805,
+    "addTotalDebt": 172095000,
+    "enterpriseValue": 662232354
+  },
+  {
+    "symbol": "AFB",
+    "date": "2015-10-31",
+    "stockPrice": 13.55,
+    "numberOfShares": 28744971,
+    "marketCapitalization": 389494357,
+    "minusCashAndCashEquivalents": 24597,
+    "addTotalDebt": 183875000,
+    "enterpriseValue": 573344760
+  },
+  {
+    "symbol": "AFB",
+    "date": "2014-10-31",
+    "stockPrice": 14.04,
+    "numberOfShares": 28744941,
+    "marketCapitalization": 403578971,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 42770000,
+    "enterpriseValue": 446348971
+  },
+  {
+    "symbol": "AFB",
+    "date": "2013-10-31",
+    "stockPrice": 12.95,
+    "numberOfShares": 28744972,
+    "marketCapitalization": 372247387,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 42770000,
+    "enterpriseValue": 415017387
+  },
+  {
+    "symbol": "AFB",
+    "date": "2012-10-31",
+    "stockPrice": 16.16,
+    "numberOfShares": 28728155,
+    "marketCapitalization": 464246984,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 464246984
+  }
+]

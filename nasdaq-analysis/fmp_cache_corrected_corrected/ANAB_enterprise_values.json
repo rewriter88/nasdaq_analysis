@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "ANAB",
+    "date": "2024-12-31",
+    "stockPrice": 13.24,
+    "numberOfShares": 28382000,
+    "marketCapitalization": 375777680,
+    "minusCashAndCashEquivalents": 123080000,
+    "addTotalDebt": 16037000,
+    "enterpriseValue": 268734680
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2023-12-31",
+    "stockPrice": 21.42,
+    "numberOfShares": 26924000,
+    "marketCapitalization": 576712080,
+    "minusCashAndCashEquivalents": 35965000,
+    "addTotalDebt": 17814000,
+    "enterpriseValue": 558561080
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2022-12-31",
+    "stockPrice": 30.99,
+    "numberOfShares": 28165000,
+    "marketCapitalization": 872833350,
+    "minusCashAndCashEquivalents": 71308000,
+    "addTotalDebt": 19450000,
+    "enterpriseValue": 820975350
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2021-12-31",
+    "stockPrice": 34.75,
+    "numberOfShares": 27431000,
+    "marketCapitalization": 953227250,
+    "minusCashAndCashEquivalents": 495729000,
+    "addTotalDebt": 20955000,
+    "enterpriseValue": 478453250
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2020-12-31",
+    "stockPrice": 21.5,
+    "numberOfShares": 27302000,
+    "marketCapitalization": 586993000,
+    "minusCashAndCashEquivalents": 250456000,
+    "addTotalDebt": 342000,
+    "enterpriseValue": 336879000
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2019-12-31",
+    "stockPrice": 16.25,
+    "numberOfShares": 27059000,
+    "marketCapitalization": 439708750,
+    "minusCashAndCashEquivalents": 171017000,
+    "addTotalDebt": 2246000,
+    "enterpriseValue": 270937750
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2018-12-31",
+    "stockPrice": 63.79,
+    "numberOfShares": 24673000,
+    "marketCapitalization": 1573890670,
+    "minusCashAndCashEquivalents": 113596000,
+    "addTotalDebt": 8257000,
+    "enterpriseValue": 1468551670
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2017-12-31",
+    "stockPrice": 100.72,
+    "numberOfShares": 19782000,
+    "marketCapitalization": 1992443040,
+    "minusCashAndCashEquivalents": 81189000,
+    "addTotalDebt": 14445000,
+    "enterpriseValue": 1925699040
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2016-12-31",
+    "stockPrice": 17,
+    "numberOfShares": 18159333,
+    "marketCapitalization": 308708661,
+    "minusCashAndCashEquivalents": 51232000,
+    "addTotalDebt": 13810000,
+    "enterpriseValue": 271286661
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2015-12-31",
+    "stockPrice": 17,
+    "numberOfShares": 14154000,
+    "marketCapitalization": 240618000,
+    "minusCashAndCashEquivalents": 51684000,
+    "addTotalDebt": 4924000,
+    "enterpriseValue": 193858000
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2014-12-31",
+    "stockPrice": 17,
+    "numberOfShares": 14154000,
+    "marketCapitalization": 240618000,
+    "minusCashAndCashEquivalents": 22188000,
+    "addTotalDebt": 4922000,
+    "enterpriseValue": 223352000
+  },
+  {
+    "symbol": "ANAB",
+    "date": "2013-12-31",
+    "stockPrice": 17,
+    "numberOfShares": 5.8472999999999935,
+    "marketCapitalization": 99.4,
+    "minusCashAndCashEquivalents": 2810000,
+    "addTotalDebt": 932000,
+    "enterpriseValue": -1877900
+  }
+]

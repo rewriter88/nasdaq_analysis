@@ -1,0 +1,92 @@
+[
+  {
+    "symbol": "AHCO",
+    "date": "2024-12-31",
+    "stockPrice": 9.52,
+    "numberOfShares": 133756000,
+    "marketCapitalization": 1273357120,
+    "minusCashAndCashEquivalents": 109747000,
+    "addTotalDebt": 2130336000,
+    "enterpriseValue": 3293946120
+  },
+  {
+    "symbol": "AHCO",
+    "date": "2023-12-31",
+    "stockPrice": 7.29,
+    "numberOfShares": 134156000,
+    "marketCapitalization": 977997240,
+    "minusCashAndCashEquivalents": 77132000,
+    "addTotalDebt": 2294649000,
+    "enterpriseValue": 3195514240
+  },
+  {
+    "symbol": "AHCO",
+    "date": "2022-12-31",
+    "stockPrice": 19.22,
+    "numberOfShares": 134175000,
+    "marketCapitalization": 2578843500,
+    "minusCashAndCashEquivalents": 46272000,
+    "addTotalDebt": 2328823000,
+    "enterpriseValue": 4861394500
+  },
+  {
+    "symbol": "AHCO",
+    "date": "2021-12-31",
+    "stockPrice": 24.46,
+    "numberOfShares": 133034000,
+    "marketCapitalization": 3254011640,
+    "minusCashAndCashEquivalents": 149627000,
+    "addTotalDebt": 2370596000,
+    "enterpriseValue": 5474980640
+  },
+  {
+    "symbol": "AHCO",
+    "date": "2020-12-31",
+    "stockPrice": 37.56,
+    "numberOfShares": 52477922,
+    "marketCapitalization": 1971070750,
+    "minusCashAndCashEquivalents": 99962000,
+    "addTotalDebt": 806996000,
+    "enterpriseValue": 2678104750
+  },
+  {
+    "symbol": "AHCO",
+    "date": "2019-12-31",
+    "stockPrice": 10.98,
+    "numberOfShares": 22464210,
+    "marketCapitalization": 246657025,
+    "minusCashAndCashEquivalents": 9768000,
+    "addTotalDebt": 161368000,
+    "enterpriseValue": 398257025
+  },
+  {
+    "symbol": "AHCO",
+    "date": "2018-12-31",
+    "stockPrice": 9.83,
+    "numberOfShares": 31250000,
+    "marketCapitalization": 307187500,
+    "minusCashAndCashEquivalents": 947098,
+    "addTotalDebt": 155171570,
+    "enterpriseValue": 461411972
+  },
+  {
+    "symbol": "AHCO",
+    "date": "2017-12-31",
+    "stockPrice": 9.7,
+    "numberOfShares": 31250000,
+    "marketCapitalization": 303125000,
+    "minusCashAndCashEquivalents": 119821,
+    "addTotalDebt": 174240,
+    "enterpriseValue": 303179419
+  },
+  {
+    "symbol": "AHCO",
+    "date": "2016-12-31",
+    "stockPrice": 9.7,
+    "numberOfShares": 31250000,
+    "marketCapitalization": 303125000,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 303125000
+  }
+]

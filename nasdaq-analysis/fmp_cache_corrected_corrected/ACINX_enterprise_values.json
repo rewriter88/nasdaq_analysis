@@ -1,0 +1,72 @@
+[
+  {
+    "symbol": "ACINX",
+    "date": "2023-12-31",
+    "stockPrice": 25.12,
+    "numberOfShares": 40900454,
+    "marketCapitalization": 1027419404,
+    "minusCashAndCashEquivalents": 183674000,
+    "addTotalDebt": 459787000,
+    "enterpriseValue": 1303532404
+  },
+  {
+    "symbol": "ACINX",
+    "date": "2022-12-31",
+    "stockPrice": 21.46,
+    "numberOfShares": 36848969,
+    "marketCapitalization": 790778874,
+    "minusCashAndCashEquivalents": 86752000,
+    "addTotalDebt": 459413000,
+    "enterpriseValue": 1163439874
+  },
+  {
+    "symbol": "ACINX",
+    "date": "2021-12-31",
+    "stockPrice": 33.28,
+    "numberOfShares": 35918251,
+    "marketCapitalization": 1195359393,
+    "minusCashAndCashEquivalents": 71151000,
+    "addTotalDebt": 384828000,
+    "enterpriseValue": 1509036393
+  },
+  {
+    "symbol": "ACINX",
+    "date": "2020-12-31",
+    "stockPrice": 34.47,
+    "numberOfShares": 32323682,
+    "marketCapitalization": 1114197318,
+    "minusCashAndCashEquivalents": 268030000,
+    "addTotalDebt": 368602000,
+    "enterpriseValue": 1214769318
+  },
+  {
+    "symbol": "ACINX",
+    "date": "2019-12-31",
+    "stockPrice": 34.25,
+    "numberOfShares": 20503899,
+    "marketCapitalization": 702258540,
+    "minusCashAndCashEquivalents": 24171000,
+    "addTotalDebt": 3038000,
+    "enterpriseValue": 681125540
+  },
+  {
+    "symbol": "ACINX",
+    "date": "2018-12-31",
+    "stockPrice": 29.51,
+    "numberOfShares": 6647898,
+    "marketCapitalization": 196179469,
+    "minusCashAndCashEquivalents": 55955000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 140224469
+  },
+  {
+    "symbol": "ACINX",
+    "date": "2017-12-31",
+    "stockPrice": 46.94,
+    "numberOfShares": 6355360,
+    "marketCapitalization": 298320598,
+    "minusCashAndCashEquivalents": 27866000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 270454598
+  }
+]

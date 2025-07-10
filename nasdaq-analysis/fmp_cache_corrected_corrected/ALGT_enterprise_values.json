@@ -1,0 +1,232 @@
+[
+  {
+    "symbol": "ALGT",
+    "date": "2024-12-31",
+    "stockPrice": 94.12,
+    "numberOfShares": 17852000,
+    "marketCapitalization": 1680230240,
+    "minusCashAndCashEquivalents": 285892000,
+    "addTotalDebt": 2149610000,
+    "enterpriseValue": 3543948240
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2023-12-31",
+    "stockPrice": 82.61,
+    "numberOfShares": 17945000,
+    "marketCapitalization": 1482436450,
+    "minusCashAndCashEquivalents": 143259000,
+    "addTotalDebt": 2362937000,
+    "enterpriseValue": 3702114450
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2022-12-31",
+    "stockPrice": 67.99,
+    "numberOfShares": 17959000,
+    "marketCapitalization": 1221032410,
+    "minusCashAndCashEquivalents": 230000000,
+    "addTotalDebt": 2211923000,
+    "enterpriseValue": 3202955410
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2021-12-31",
+    "stockPrice": 187.04,
+    "numberOfShares": 17212000,
+    "marketCapitalization": 3219332480,
+    "minusCashAndCashEquivalents": 365600000,
+    "addTotalDebt": 1876687000,
+    "enterpriseValue": 4730419480
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2020-12-31",
+    "stockPrice": 189.24,
+    "numberOfShares": 15986903,
+    "marketCapitalization": 3025361523,
+    "minusCashAndCashEquivalents": 152800000,
+    "addTotalDebt": 1775613000,
+    "enterpriseValue": 4648174523
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2019-12-31",
+    "stockPrice": 174.04,
+    "numberOfShares": 16027000,
+    "marketCapitalization": 2789339080,
+    "minusCashAndCashEquivalents": 121900000,
+    "addTotalDebt": 1421853000,
+    "enterpriseValue": 4089292080
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2018-12-31",
+    "stockPrice": 100.22,
+    "numberOfShares": 15941000,
+    "marketCapitalization": 1597607020,
+    "minusCashAndCashEquivalents": 81500000,
+    "addTotalDebt": 1271733000,
+    "enterpriseValue": 2787840020
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2017-12-31",
+    "stockPrice": 154.75,
+    "numberOfShares": 16073000,
+    "marketCapitalization": 2487296750,
+    "minusCashAndCashEquivalents": 59449000,
+    "addTotalDebt": 1164892000,
+    "enterpriseValue": 3592739750
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2016-12-31",
+    "stockPrice": 166.4,
+    "numberOfShares": 16465000,
+    "marketCapitalization": 2739776000,
+    "minusCashAndCashEquivalents": 64711000,
+    "addTotalDebt": 808274000,
+    "enterpriseValue": 3483339000
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2015-12-31",
+    "stockPrice": 167.83,
+    "numberOfShares": 16923000,
+    "marketCapitalization": 2840187090,
+    "minusCashAndCashEquivalents": 87112000,
+    "addTotalDebt": 641678000,
+    "enterpriseValue": 3394753090
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2014-12-31",
+    "stockPrice": 150.33,
+    "numberOfShares": 17729000,
+    "marketCapitalization": 2665200570,
+    "minusCashAndCashEquivalents": 89610000,
+    "addTotalDebt": 593099000,
+    "enterpriseValue": 3168689570
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2013-12-31",
+    "stockPrice": 105.44,
+    "numberOfShares": 18936000,
+    "marketCapitalization": 1996611840,
+    "minusCashAndCashEquivalents": 97711000,
+    "addTotalDebt": 234300000,
+    "enterpriseValue": 2133200840
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2012-12-31",
+    "stockPrice": 73.41,
+    "numberOfShares": 19079000,
+    "marketCapitalization": 1400589390,
+    "minusCashAndCashEquivalents": 89557000,
+    "addTotalDebt": 150852000,
+    "enterpriseValue": 1461884390
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2011-12-31",
+    "stockPrice": 53.34,
+    "numberOfShares": 18935000,
+    "marketCapitalization": 1009992900,
+    "minusCashAndCashEquivalents": 150740000,
+    "addTotalDebt": 146069000,
+    "enterpriseValue": 1005321900
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2010-12-31",
+    "stockPrice": 49.24,
+    "numberOfShares": 19407000,
+    "marketCapitalization": 955600680,
+    "minusCashAndCashEquivalents": 113293000,
+    "addTotalDebt": 28136000,
+    "enterpriseValue": 870443680
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2009-12-31",
+    "stockPrice": 47.17,
+    "numberOfShares": 19982000,
+    "marketCapitalization": 942550940,
+    "minusCashAndCashEquivalents": 90239000,
+    "addTotalDebt": 45807000,
+    "enterpriseValue": 898118940
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2008-12-31",
+    "stockPrice": 48.57,
+    "numberOfShares": 20289000,
+    "marketCapitalization": 985436730,
+    "minusCashAndCashEquivalents": 97153000,
+    "addTotalDebt": 64725000,
+    "enterpriseValue": 953008730
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2007-12-31",
+    "stockPrice": 32.14,
+    "numberOfShares": 20243000,
+    "marketCapitalization": 650610020,
+    "minusCashAndCashEquivalents": 144269000,
+    "addTotalDebt": 85311000,
+    "enterpriseValue": 591652020
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2006-12-31",
+    "stockPrice": 28.06,
+    "numberOfShares": 7092000,
+    "marketCapitalization": 199001520,
+    "minusCashAndCashEquivalents": 130273000,
+    "addTotalDebt": 79321000,
+    "enterpriseValue": 148049520
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2005-12-31",
+    "stockPrice": 25.1,
+    "numberOfShares": 6569369,
+    "marketCapitalization": 164891161,
+    "minusCashAndCashEquivalents": 21259000,
+    "addTotalDebt": 58463000,
+    "enterpriseValue": 202095161
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2004-12-31",
+    "stockPrice": 25.1,
+    "numberOfShares": 6716912,
+    "marketCapitalization": 168594491,
+    "minusCashAndCashEquivalents": 1569000,
+    "addTotalDebt": 31992000,
+    "enterpriseValue": 199017491
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2003-12-31",
+    "stockPrice": 25.1,
+    "numberOfShares": 6742857,
+    "marketCapitalization": 169245710,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 169245710
+  },
+  {
+    "symbol": "ALGT",
+    "date": "2002-12-31",
+    "stockPrice": 25.1,
+    "numberOfShares": 9214286,
+    "marketCapitalization": 231278578,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 231278578
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "ACSNX",
+    "date": "2023-12-31",
+    "stockPrice": 9.79,
+    "numberOfShares": 4024999999,
+    "marketCapitalization": 39404749990,
+    "minusCashAndCashEquivalents": 14204000000,
+    "addTotalDebt": 21307000000,
+    "enterpriseValue": 46507749990
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2022-12-31",
+    "stockPrice": 9.73,
+    "numberOfShares": 4014005454,
+    "marketCapitalization": 39056273067,
+    "minusCashAndCashEquivalents": 14741000000,
+    "addTotalDebt": 20945000000,
+    "enterpriseValue": 45260273067
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2021-12-31",
+    "stockPrice": 10.37,
+    "numberOfShares": 4030786516,
+    "marketCapitalization": 41799256170,
+    "minusCashAndCashEquivalents": 9577000000,
+    "addTotalDebt": 21347000000,
+    "enterpriseValue": 53569256170
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2020-12-31",
+    "stockPrice": 10.45,
+    "numberOfShares": 3973012096,
+    "marketCapitalization": 41517976403,
+    "minusCashAndCashEquivalents": 10894000000,
+    "addTotalDebt": 24952000000,
+    "enterpriseValue": 55575976403
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2019-12-31",
+    "stockPrice": 10.2,
+    "numberOfShares": 4700000000,
+    "marketCapitalization": 47940000000,
+    "minusCashAndCashEquivalents": 8437000000,
+    "addTotalDebt": 16103000000,
+    "enterpriseValue": 55606000000
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2018-12-31",
+    "stockPrice": 10.07,
+    "numberOfShares": 3996739130,
+    "marketCapitalization": 40247163039,
+    "minusCashAndCashEquivalents": 7111000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 33136163039
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2017-12-31",
+    "stockPrice": 10.19,
+    "numberOfShares": 3998000000,
+    "marketCapitalization": 40739620000,
+    "minusCashAndCashEquivalents": 8934000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 31805620000
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2016-12-31",
+    "stockPrice": 10.24,
+    "numberOfShares": 3990434782,
+    "marketCapitalization": 40862052167,
+    "minusCashAndCashEquivalents": 7828000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 33034052167
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2015-12-31",
+    "stockPrice": 10.21,
+    "numberOfShares": 4002000000,
+    "marketCapitalization": 40860420000,
+    "minusCashAndCashEquivalents": 5386000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 35474420000
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2014-12-31",
+    "stockPrice": 10.3,
+    "numberOfShares": 3958000000,
+    "marketCapitalization": 40767400000,
+    "minusCashAndCashEquivalents": 4567000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 36200400000
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2013-12-31",
+    "stockPrice": 10.43,
+    "numberOfShares": 4071332275,
+    "marketCapitalization": 42463995628,
+    "minusCashAndCashEquivalents": 4959000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 37504995628
+  },
+  {
+    "symbol": "ACSNX",
+    "date": "2012-12-31",
+    "stockPrice": 10.54,
+    "numberOfShares": 3980958352,
+    "marketCapitalization": 41959301030,
+    "minusCashAndCashEquivalents": 6247000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 35712301030
+  }
+]

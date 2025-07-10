@@ -1,0 +1,192 @@
+[
+  {
+    "symbol": "ACCS",
+    "date": "2024-12-31",
+    "stockPrice": 8.94,
+    "numberOfShares": 3827000,
+    "marketCapitalization": 34213380,
+    "minusCashAndCashEquivalents": 4103000,
+    "addTotalDebt": 16598000,
+    "enterpriseValue": 46708380
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2023-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 3802000,
+    "marketCapitalization": 33039379,
+    "minusCashAndCashEquivalents": 5714000,
+    "addTotalDebt": 20922000,
+    "enterpriseValue": 48247379
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2022-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 3720000,
+    "marketCapitalization": 32326800,
+    "minusCashAndCashEquivalents": 4832000,
+    "addTotalDebt": 23339000,
+    "enterpriseValue": 50833800
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2021-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 3780000,
+    "marketCapitalization": 32848199,
+    "minusCashAndCashEquivalents": 23852000,
+    "addTotalDebt": 1659000,
+    "enterpriseValue": 10655199
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2020-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 3755000,
+    "marketCapitalization": 32630949,
+    "minusCashAndCashEquivalents": 19556000,
+    "addTotalDebt": 1971000,
+    "enterpriseValue": 15045949
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2019-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 3839000,
+    "marketCapitalization": 33360909,
+    "minusCashAndCashEquivalents": 15766000,
+    "addTotalDebt": 2610000,
+    "enterpriseValue": 20204909
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2018-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 3415000,
+    "marketCapitalization": 29676350,
+    "minusCashAndCashEquivalents": 17222000,
+    "addTotalDebt": 596000,
+    "enterpriseValue": 13050350
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2017-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 2947000,
+    "marketCapitalization": 25609430,
+    "minusCashAndCashEquivalents": 4917000,
+    "addTotalDebt": 858000,
+    "enterpriseValue": 21550430
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2016-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 2819720,
+    "marketCapitalization": 24503366,
+    "minusCashAndCashEquivalents": 5339000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 19164366
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2015-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 2486684,
+    "marketCapitalization": 21609283,
+    "minusCashAndCashEquivalents": 4215145,
+    "addTotalDebt": 0,
+    "enterpriseValue": 17394138
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2014-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 2082941,
+    "marketCapitalization": 18100757,
+    "minusCashAndCashEquivalents": 1721343,
+    "addTotalDebt": 1131276,
+    "enterpriseValue": 17510690
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2013-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 1964303,
+    "marketCapitalization": 17069793,
+    "minusCashAndCashEquivalents": 1713479,
+    "addTotalDebt": 446909,
+    "enterpriseValue": 15803223
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2012-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 1910825,
+    "marketCapitalization": 16605069,
+    "minusCashAndCashEquivalents": 1250643,
+    "addTotalDebt": 150000,
+    "enterpriseValue": 15504426
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2011-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 1757329,
+    "marketCapitalization": 15271189,
+    "minusCashAndCashEquivalents": 862386,
+    "addTotalDebt": 0,
+    "enterpriseValue": 14408803
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2010-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 1740709,
+    "marketCapitalization": 15126761,
+    "minusCashAndCashEquivalents": 504713,
+    "addTotalDebt": 0,
+    "enterpriseValue": 14622048
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2009-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 1701471,
+    "marketCapitalization": 14785782,
+    "minusCashAndCashEquivalents": 146043,
+    "addTotalDebt": 73525,
+    "enterpriseValue": 14713264
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2008-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 1783410,
+    "marketCapitalization": 15497832,
+    "minusCashAndCashEquivalents": 50367,
+    "addTotalDebt": 138353,
+    "enterpriseValue": 15585818
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2007-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 1403961,
+    "marketCapitalization": 12200421,
+    "minusCashAndCashEquivalents": 39318,
+    "addTotalDebt": 195317,
+    "enterpriseValue": 12356420
+  },
+  {
+    "symbol": "ACCS",
+    "date": "2006-12-31",
+    "stockPrice": 8.69,
+    "numberOfShares": 24391,
+    "marketCapitalization": 211957.79,
+    "minusCashAndCashEquivalents": 8401,
+    "addTotalDebt": 110000,
+    "enterpriseValue": 313556
+  }
+]

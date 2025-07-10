@@ -1,0 +1,32 @@
+[
+  {
+    "symbol": "AACIU",
+    "date": "2023-09-30",
+    "stockPrice": 10.7,
+    "numberOfShares": 12968000,
+    "marketCapitalization": 138757600,
+    "minusCashAndCashEquivalents": 60284,
+    "addTotalDebt": 2564439,
+    "enterpriseValue": 141261755
+  },
+  {
+    "symbol": "AACIU",
+    "date": "2022-09-30",
+    "stockPrice": 9.92,
+    "numberOfShares": 20709000,
+    "marketCapitalization": 205433280,
+    "minusCashAndCashEquivalents": 177578,
+    "addTotalDebt": 251754,
+    "enterpriseValue": 205507456
+  },
+  {
+    "symbol": "AACIU",
+    "date": "2021-09-30",
+    "stockPrice": 9.75,
+    "numberOfShares": 5993985,
+    "marketCapitalization": 58441353,
+    "minusCashAndCashEquivalents": 657590,
+    "addTotalDebt": 0,
+    "enterpriseValue": 57783763
+  }
+]

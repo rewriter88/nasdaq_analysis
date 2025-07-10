@@ -1,0 +1,92 @@
+[
+  {
+    "symbol": "AAPG",
+    "date": "2024-12-31",
+    "stockPrice": 126.85,
+    "numberOfShares": 75515526,
+    "marketCapitalization": 9579381893,
+    "minusCashAndCashEquivalents": 1236578000,
+    "addTotalDebt": 1668497000,
+    "enterpriseValue": 10011300893
+  },
+  {
+    "symbol": "AAPG",
+    "date": "2023-12-31",
+    "stockPrice": 123.35,
+    "numberOfShares": 70574817,
+    "marketCapitalization": 8705479474,
+    "minusCashAndCashEquivalents": 1069296000,
+    "addTotalDebt": 1795595000,
+    "enterpriseValue": 9431778474
+  },
+  {
+    "symbol": "AAPG",
+    "date": "2022-12-31",
+    "stockPrice": 119.87,
+    "numberOfShares": 65917206,
+    "marketCapitalization": 7901715383,
+    "minusCashAndCashEquivalents": 1475639000,
+    "addTotalDebt": 1792727000,
+    "enterpriseValue": 8218803383
+  },
+  {
+    "symbol": "AAPG",
+    "date": "2021-12-31",
+    "stockPrice": 110.4,
+    "numberOfShares": 63653830,
+    "marketCapitalization": 7027350877,
+    "minusCashAndCashEquivalents": 1706886000,
+    "addTotalDebt": 1084290000,
+    "enterpriseValue": 6404754877
+  },
+  {
+    "symbol": "AAPG",
+    "date": "2020-12-31",
+    "stockPrice": 113.4,
+    "numberOfShares": 53977287,
+    "marketCapitalization": 6121267243,
+    "minusCashAndCashEquivalents": 1019979000,
+    "addTotalDebt": 529695000,
+    "enterpriseValue": 5630983243
+  },
+  {
+    "symbol": "AAPG",
+    "date": "2019-12-31",
+    "stockPrice": 120.99,
+    "numberOfShares": 29181844,
+    "marketCapitalization": 3530838129,
+    "minusCashAndCashEquivalents": 878510000,
+    "addTotalDebt": 101405000,
+    "enterpriseValue": 2753733129
+  },
+  {
+    "symbol": "AAPG",
+    "date": "2018-12-31",
+    "stockPrice": 119.49,
+    "numberOfShares": 51768657,
+    "marketCapitalization": 6186067298,
+    "minusCashAndCashEquivalents": 957088000,
+    "addTotalDebt": 42044000,
+    "enterpriseValue": 5271023298
+  },
+  {
+    "symbol": "AAPG",
+    "date": "2017-12-31",
+    "stockPrice": 113.08,
+    "numberOfShares": 51768657,
+    "marketCapitalization": 5853883564,
+    "minusCashAndCashEquivalents": 14821000,
+    "addTotalDebt": 4898000,
+    "enterpriseValue": 5843960564
+  },
+  {
+    "symbol": "AAPG",
+    "date": "2016-12-31",
+    "stockPrice": 120.67,
+    "numberOfShares": 51768657,
+    "marketCapitalization": 6246799698,
+    "minusCashAndCashEquivalents": 294529000,
+    "addTotalDebt": 830000,
+    "enterpriseValue": 5953100698
+  }
+]

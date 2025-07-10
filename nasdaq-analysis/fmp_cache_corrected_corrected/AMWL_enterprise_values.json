@@ -1,0 +1,72 @@
+[
+  {
+    "symbol": "AMWL",
+    "date": "2024-12-31",
+    "stockPrice": 7.25,
+    "numberOfShares": 14999590,
+    "marketCapitalization": 108747027,
+    "minusCashAndCashEquivalents": 228316000,
+    "addTotalDebt": 8201000,
+    "enterpriseValue": -111367973
+  },
+  {
+    "symbol": "AMWL",
+    "date": "2023-12-31",
+    "stockPrice": 29.8,
+    "numberOfShares": 14212837,
+    "marketCapitalization": 423542542,
+    "minusCashAndCashEquivalents": 372038000,
+    "addTotalDebt": 11786000,
+    "enterpriseValue": 63290542
+  },
+  {
+    "symbol": "AMWL",
+    "date": "2022-12-31",
+    "stockPrice": 56.6,
+    "numberOfShares": 13712487,
+    "marketCapitalization": 776126764,
+    "minusCashAndCashEquivalents": 538546000,
+    "addTotalDebt": 14844000,
+    "enterpriseValue": 252424764
+  },
+  {
+    "symbol": "AMWL",
+    "date": "2021-12-31",
+    "stockPrice": 120.8,
+    "numberOfShares": 12703447,
+    "marketCapitalization": 1534576397,
+    "minusCashAndCashEquivalents": 746416000,
+    "addTotalDebt": 16612000,
+    "enterpriseValue": 804772397
+  },
+  {
+    "symbol": "AMWL",
+    "date": "2020-12-31",
+    "stockPrice": 506.6,
+    "numberOfShares": 4952216,
+    "marketCapitalization": 2508792625,
+    "minusCashAndCashEquivalents": 941616000,
+    "addTotalDebt": 7653000,
+    "enterpriseValue": 1574829625
+  },
+  {
+    "symbol": "AMWL",
+    "date": "2019-12-31",
+    "stockPrice": 461.4,
+    "numberOfShares": 2056940,
+    "marketCapitalization": 949072116,
+    "minusCashAndCashEquivalents": 137673000,
+    "addTotalDebt": 13396000,
+    "enterpriseValue": 824795116
+  },
+  {
+    "symbol": "AMWL",
+    "date": "2018-12-31",
+    "stockPrice": 461.4,
+    "numberOfShares": 2029191,
+    "marketCapitalization": 936268727,
+    "minusCashAndCashEquivalents": 47975000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 888293727
+  }
+]

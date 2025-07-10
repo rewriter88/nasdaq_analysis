@@ -1,0 +1,262 @@
+[
+  {
+    "symbol": "AHT",
+    "date": "2024-12-31",
+    "stockPrice": 7.19,
+    "numberOfShares": 4706000,
+    "marketCapitalization": 33836140,
+    "minusCashAndCashEquivalents": 112907000,
+    "addTotalDebt": 2691650000,
+    "enterpriseValue": 2612579140
+  },
+  {
+    "symbol": "AHT",
+    "date": "2023-12-31",
+    "stockPrice": 19.4,
+    "numberOfShares": 3463850,
+    "marketCapitalization": 67198690,
+    "minusCashAndCashEquivalents": 165231000,
+    "addTotalDebt": 3459305000,
+    "enterpriseValue": 3361272690
+  },
+  {
+    "symbol": "AHT",
+    "date": "2022-12-31",
+    "stockPrice": 44.7,
+    "numberOfShares": 3433900,
+    "marketCapitalization": 153495330,
+    "minusCashAndCashEquivalents": 417064000,
+    "addTotalDebt": 3902051000,
+    "enterpriseValue": 3638482330
+  },
+  {
+    "symbol": "AHT",
+    "date": "2021-12-31",
+    "stockPrice": 96,
+    "numberOfShares": 3401591,
+    "marketCapitalization": 326552736,
+    "minusCashAndCashEquivalents": 592110000,
+    "addTotalDebt": 3932928000,
+    "enterpriseValue": 3667370736
+  },
+  {
+    "symbol": "AHT",
+    "date": "2020-12-31",
+    "stockPrice": 259,
+    "numberOfShares": 157560,
+    "marketCapitalization": 40808040,
+    "minusCashAndCashEquivalents": 92905000,
+    "addTotalDebt": 3774220000,
+    "enterpriseValue": 3722123040
+  },
+  {
+    "symbol": "AHT",
+    "date": "2019-12-31",
+    "stockPrice": 2790,
+    "numberOfShares": 99837,
+    "marketCapitalization": 278545230,
+    "minusCashAndCashEquivalents": 262636000,
+    "addTotalDebt": 4159788000,
+    "enterpriseValue": 4175697230
+  },
+  {
+    "symbol": "AHT",
+    "date": "2018-12-31",
+    "stockPrice": 3948.82,
+    "numberOfShares": 97280,
+    "marketCapitalization": 384141209,
+    "minusCashAndCashEquivalents": 319210000,
+    "addTotalDebt": 3927266000,
+    "enterpriseValue": 3992197209
+  },
+  {
+    "symbol": "AHT",
+    "date": "2017-12-31",
+    "stockPrice": 6643.89,
+    "numberOfShares": 95207,
+    "marketCapitalization": 632544835,
+    "minusCashAndCashEquivalents": 354805000,
+    "addTotalDebt": 3696300000,
+    "enterpriseValue": 3974039835
+  },
+  {
+    "symbol": "AHT",
+    "date": "2016-12-31",
+    "stockPrice": 7660.71,
+    "numberOfShares": 94300,
+    "marketCapitalization": 722404953,
+    "minusCashAndCashEquivalents": 347091000,
+    "addTotalDebt": 3723559000,
+    "enterpriseValue": 4098872953
+  },
+  {
+    "symbol": "AHT",
+    "date": "2015-12-31",
+    "stockPrice": 6229.26,
+    "numberOfShares": 96290,
+    "marketCapitalization": 599815445,
+    "minusCashAndCashEquivalents": 215078000,
+    "addTotalDebt": 3840617000,
+    "enterpriseValue": 4225354445
+  },
+  {
+    "symbol": "AHT",
+    "date": "2014-12-31",
+    "stockPrice": 9651.69,
+    "numberOfShares": 87597,
+    "marketCapitalization": 845459088,
+    "minusCashAndCashEquivalents": 215063000,
+    "addTotalDebt": 1954103000,
+    "enterpriseValue": 2584499088
+  },
+  {
+    "symbol": "AHT",
+    "date": "2013-12-31",
+    "stockPrice": 7198.16,
+    "numberOfShares": 75155,
+    "marketCapitalization": 540977714,
+    "minusCashAndCashEquivalents": 128780000,
+    "addTotalDebt": 1818957000,
+    "enterpriseValue": 2231154714
+  },
+  {
+    "symbol": "AHT",
+    "date": "2012-12-31",
+    "stockPrice": 6194.92,
+    "numberOfShares": 67533,
+    "marketCapitalization": 418361532,
+    "minusCashAndCashEquivalents": 185935000,
+    "addTotalDebt": 2339410000,
+    "enterpriseValue": 2571836532
+  },
+  {
+    "symbol": "AHT",
+    "date": "2011-12-31",
+    "stockPrice": 4715.45,
+    "numberOfShares": 61954,
+    "marketCapitalization": 292140989,
+    "minusCashAndCashEquivalents": 167609000,
+    "addTotalDebt": 2362458000,
+    "enterpriseValue": 2486989989
+  },
+  {
+    "symbol": "AHT",
+    "date": "2010-12-31",
+    "stockPrice": 5688.01,
+    "numberOfShares": 51159,
+    "marketCapitalization": 290992903,
+    "minusCashAndCashEquivalents": 217690000,
+    "addTotalDebt": 2568819000,
+    "enterpriseValue": 2642121903
+  },
+  {
+    "symbol": "AHT",
+    "date": "2009-12-31",
+    "stockPrice": 2734.96,
+    "numberOfShares": 68597,
+    "marketCapitalization": 187610051,
+    "minusCashAndCashEquivalents": 165168000,
+    "addTotalDebt": 2772479000,
+    "enterpriseValue": 2794921051
+  },
+  {
+    "symbol": "AHT",
+    "date": "2008-12-31",
+    "stockPrice": 677.85,
+    "numberOfShares": 111295,
+    "marketCapitalization": 75441315,
+    "minusCashAndCashEquivalents": 241597000,
+    "addTotalDebt": 2790571000,
+    "enterpriseValue": 2624415315
+  },
+  {
+    "symbol": "AHT",
+    "date": "2007-12-31",
+    "stockPrice": 4238.01,
+    "numberOfShares": 105787,
+    "marketCapitalization": 448326363,
+    "minusCashAndCashEquivalents": 92271000,
+    "addTotalDebt": 2701273000,
+    "enterpriseValue": 3057328363
+  },
+  {
+    "symbol": "AHT",
+    "date": "2006-12-31",
+    "stockPrice": 7338.41,
+    "numberOfShares": 61713,
+    "marketCapitalization": 452875296,
+    "minusCashAndCashEquivalents": 73343000,
+    "addTotalDebt": 1095479000,
+    "enterpriseValue": 1475011296
+  },
+  {
+    "symbol": "AHT",
+    "date": "2005-12-31",
+    "stockPrice": 6183.13,
+    "numberOfShares": 40194,
+    "marketCapitalization": 248524727,
+    "minusCashAndCashEquivalents": 57995000,
+    "addTotalDebt": 914730000,
+    "enterpriseValue": 1105259727
+  },
+  {
+    "symbol": "AHT",
+    "date": "2004-12-31",
+    "stockPrice": 6407.11,
+    "numberOfShares": 25120,
+    "marketCapitalization": 160946603,
+    "minusCashAndCashEquivalents": 47108957,
+    "addTotalDebt": 302973835,
+    "enterpriseValue": 416811481
+  },
+  {
+    "symbol": "AHT",
+    "date": "2003-12-31",
+    "stockPrice": 5534.76,
+    "numberOfShares": 24627,
+    "marketCapitalization": 136304534,
+    "minusCashAndCashEquivalents": 76254052,
+    "addTotalDebt": 51243291,
+    "enterpriseValue": 111293773
+  },
+  {
+    "symbol": "AHT",
+    "date": "2002-12-31",
+    "stockPrice": 5304.88,
+    "numberOfShares": 25733,
+    "marketCapitalization": 136510477,
+    "minusCashAndCashEquivalents": -621000,
+    "addTotalDebt": 82747000,
+    "enterpriseValue": 219878477
+  },
+  {
+    "symbol": "AHT",
+    "date": "2001-12-31",
+    "stockPrice": 5304.88,
+    "numberOfShares": 25733,
+    "marketCapitalization": 136510477,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 80411000,
+    "enterpriseValue": 216921477
+  },
+  {
+    "symbol": "AHT",
+    "date": "2000-12-31",
+    "stockPrice": 5304.88,
+    "numberOfShares": 25733,
+    "marketCapitalization": 136510477,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 136510477
+  },
+  {
+    "symbol": "AHT",
+    "date": "1999-12-31",
+    "stockPrice": 5304.88,
+    "numberOfShares": 25733,
+    "marketCapitalization": 136510477,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 136510477
+  }
+]

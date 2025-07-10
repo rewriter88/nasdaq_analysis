@@ -1,0 +1,392 @@
+[
+  {
+    "symbol": "MSFT",
+    "date": "2024-06-30",
+    "stockPrice": 456.73,
+    "numberOfShares": 7431000000,
+    "marketCapitalization": 3393960630000,
+    "minusCashAndCashEquivalents": 18315000000,
+    "addTotalDebt": 67127000000,
+    "enterpriseValue": 3442772630000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2023-06-30",
+    "stockPrice": 340.54,
+    "numberOfShares": 7446000000,
+    "marketCapitalization": 2535660840000,
+    "minusCashAndCashEquivalents": 34704000000,
+    "addTotalDebt": 59965000000,
+    "enterpriseValue": 2560921840000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2022-06-30",
+    "stockPrice": 256.83,
+    "numberOfShares": 7496000000,
+    "marketCapitalization": 1925197680000,
+    "minusCashAndCashEquivalents": 13931000000,
+    "addTotalDebt": 61270000000,
+    "enterpriseValue": 1972536680000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2021-06-30",
+    "stockPrice": 270.9,
+    "numberOfShares": 7547000000,
+    "marketCapitalization": 2044482299999,
+    "minusCashAndCashEquivalents": 14224000000,
+    "addTotalDebt": 67775000000,
+    "enterpriseValue": 2098033299999
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2020-06-30",
+    "stockPrice": 203.51,
+    "numberOfShares": 7610000000,
+    "marketCapitalization": 1548711100000,
+    "minusCashAndCashEquivalents": 13576000000,
+    "addTotalDebt": 70998000000,
+    "enterpriseValue": 1606133100000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2019-06-30",
+    "stockPrice": 135.68,
+    "numberOfShares": 7673000000,
+    "marketCapitalization": 1041072640000,
+    "minusCashAndCashEquivalents": 11356000000,
+    "addTotalDebt": 78366000000,
+    "enterpriseValue": 1108082640000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2018-06-30",
+    "stockPrice": 98.61,
+    "numberOfShares": 7700000000,
+    "marketCapitalization": 759297000000,
+    "minusCashAndCashEquivalents": 11946000000,
+    "addTotalDebt": 81808000000,
+    "enterpriseValue": 829159000000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2017-06-30",
+    "stockPrice": 68.93,
+    "numberOfShares": 7746000000,
+    "marketCapitalization": 533931780000,
+    "minusCashAndCashEquivalents": 7663000000,
+    "addTotalDebt": 91566000000,
+    "enterpriseValue": 617834780000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2016-06-30",
+    "stockPrice": 51.17,
+    "numberOfShares": 7925000000,
+    "marketCapitalization": 405522250000,
+    "minusCashAndCashEquivalents": 6510000000,
+    "addTotalDebt": 53461000000,
+    "enterpriseValue": 452473250000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2015-06-30",
+    "stockPrice": 44.15,
+    "numberOfShares": 8177000000,
+    "marketCapitalization": 361014550000,
+    "minusCashAndCashEquivalents": 5595000000,
+    "addTotalDebt": 35292000000,
+    "enterpriseValue": 390711550000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2014-06-30",
+    "stockPrice": 41.7,
+    "numberOfShares": 8299000000,
+    "marketCapitalization": 346068300000,
+    "minusCashAndCashEquivalents": 8669000000,
+    "addTotalDebt": 22645000000,
+    "enterpriseValue": 360044300000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2013-06-30",
+    "stockPrice": 34.36,
+    "numberOfShares": 8375000000,
+    "marketCapitalization": 287765000000,
+    "minusCashAndCashEquivalents": 3804000000,
+    "addTotalDebt": 15600000000,
+    "enterpriseValue": 299561000000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2012-06-30",
+    "stockPrice": 30.59,
+    "numberOfShares": 8396000000,
+    "marketCapitalization": 256833640000,
+    "minusCashAndCashEquivalents": 6938000000,
+    "addTotalDebt": 11944000000,
+    "enterpriseValue": 261839640000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2011-06-30",
+    "stockPrice": 26,
+    "numberOfShares": 8490000000,
+    "marketCapitalization": 220740000000,
+    "minusCashAndCashEquivalents": 9610000000,
+    "addTotalDebt": 11921000000,
+    "enterpriseValue": 223051000000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2010-06-30",
+    "stockPrice": 23.01,
+    "numberOfShares": 8813000000,
+    "marketCapitalization": 202787130000,
+    "minusCashAndCashEquivalents": 5505000000,
+    "addTotalDebt": 5939000000,
+    "enterpriseValue": 203221130000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2009-06-30",
+    "stockPrice": 23.77,
+    "numberOfShares": 8945000000,
+    "marketCapitalization": 212622650000,
+    "minusCashAndCashEquivalents": 6076000000,
+    "addTotalDebt": 5746000000,
+    "enterpriseValue": 212292650000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2008-06-30",
+    "stockPrice": 27.51,
+    "numberOfShares": 9328000000,
+    "marketCapitalization": 256613280000,
+    "minusCashAndCashEquivalents": 10339000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 246274280000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2007-06-30",
+    "stockPrice": 29.47,
+    "numberOfShares": 9742000000,
+    "marketCapitalization": 287096740000,
+    "minusCashAndCashEquivalents": 6111000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 280985740000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2006-06-30",
+    "stockPrice": 23.3,
+    "numberOfShares": 10438000000,
+    "marketCapitalization": 243205400000,
+    "minusCashAndCashEquivalents": 6714000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 236491400000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2005-06-30",
+    "stockPrice": 24.84,
+    "numberOfShares": 10839000000,
+    "marketCapitalization": 269240760000,
+    "minusCashAndCashEquivalents": 4851000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 264389760000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2004-06-30",
+    "stockPrice": 28.56,
+    "numberOfShares": 10803000000,
+    "marketCapitalization": 308533680000,
+    "minusCashAndCashEquivalents": 14304000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 294229680000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2003-06-30",
+    "stockPrice": 25.64,
+    "numberOfShares": 10723000000,
+    "marketCapitalization": 274937720000,
+    "minusCashAndCashEquivalents": 6438000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 268499720000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2002-06-30",
+    "stockPrice": 26.33,
+    "numberOfShares": 10811000000,
+    "marketCapitalization": 284653630000,
+    "minusCashAndCashEquivalents": 3016000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 281637630000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2001-06-30",
+    "stockPrice": 36.5,
+    "numberOfShares": 10682000000,
+    "marketCapitalization": 389893000000,
+    "minusCashAndCashEquivalents": 3922000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 385971000000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "2000-06-30",
+    "stockPrice": 40,
+    "numberOfShares": 10334000000,
+    "marketCapitalization": 413360000000,
+    "minusCashAndCashEquivalents": 4846000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 408514000000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1999-06-30",
+    "stockPrice": 45.09,
+    "numberOfShares": 10056000000,
+    "marketCapitalization": 453425040000,
+    "minusCashAndCashEquivalents": 4975000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 448450040000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1998-06-30",
+    "stockPrice": 27.09,
+    "numberOfShares": 9728000000,
+    "marketCapitalization": 263531520000,
+    "minusCashAndCashEquivalents": 3839000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 259692520000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1997-06-30",
+    "stockPrice": 15.8,
+    "numberOfShares": 9552777778,
+    "marketCapitalization": 150933888892,
+    "minusCashAndCashEquivalents": 3706000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 147227888892
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1996-06-30",
+    "stockPrice": 7.64,
+    "numberOfShares": 9340425532,
+    "marketCapitalization": 71360851064,
+    "minusCashAndCashEquivalents": 2601000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 68759851064
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1995-06-30",
+    "stockPrice": 5.65,
+    "numberOfShares": 10032000000,
+    "marketCapitalization": 56680800000,
+    "minusCashAndCashEquivalents": 1962000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 54718800000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1994-06-30",
+    "stockPrice": 3.23,
+    "numberOfShares": 9760000000,
+    "marketCapitalization": 31524800000,
+    "minusCashAndCashEquivalents": 1477000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 30047800000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1993-06-30",
+    "stockPrice": 2.75,
+    "numberOfShares": 9530000000,
+    "marketCapitalization": 26207500000,
+    "minusCashAndCashEquivalents": 1013000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 25194500000
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1992-06-30",
+    "stockPrice": 2.19,
+    "numberOfShares": 8851250000,
+    "marketCapitalization": 19384237500,
+    "minusCashAndCashEquivalents": 791400000,
+    "addTotalDebt": 8300000,
+    "enterpriseValue": 18601137500
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1991-06-30",
+    "stockPrice": 1.49,
+    "numberOfShares": 8412727273,
+    "marketCapitalization": 12534963636,
+    "minusCashAndCashEquivalents": 417200000,
+    "addTotalDebt": 19500000,
+    "enterpriseValue": 12137263636
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1990-06-30",
+    "stockPrice": 1.06,
+    "numberOfShares": 7977142857,
+    "marketCapitalization": 8455771428,
+    "minusCashAndCashEquivalents": 246300000,
+    "addTotalDebt": 6500000,
+    "enterpriseValue": 8215971428
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1989-06-30",
+    "stockPrice": 0.36806,
+    "numberOfShares": 6820000000,
+    "marketCapitalization": 2510169200,
+    "minusCashAndCashEquivalents": 192400000,
+    "addTotalDebt": 25400000,
+    "enterpriseValue": 2343169200
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1988-06-30",
+    "stockPrice": 0.46528,
+    "numberOfShares": 6195000000,
+    "marketCapitalization": 2882409600,
+    "minusCashAndCashEquivalents": 183200000,
+    "addTotalDebt": 20300000,
+    "enterpriseValue": 2719509600
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1987-06-30",
+    "stockPrice": 0.35417,
+    "numberOfShares": 7190000000,
+    "marketCapitalization": 2546482300,
+    "minusCashAndCashEquivalents": 132500000,
+    "addTotalDebt": 7100000,
+    "enterpriseValue": 2421082300
+  },
+  {
+    "symbol": "MSFT",
+    "date": "1986-06-30",
+    "stockPrice": 0.10677,
+    "numberOfShares": 7342400000,
+    "marketCapitalization": 783948048,
+    "minusCashAndCashEquivalents": 102700000,
+    "addTotalDebt": 1900000,
+    "enterpriseValue": 683148048
+  }
+]

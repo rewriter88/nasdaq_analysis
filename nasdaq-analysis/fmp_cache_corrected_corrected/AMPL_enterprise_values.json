@@ -1,0 +1,62 @@
+[
+  {
+    "symbol": "AMPL",
+    "date": "2024-12-31",
+    "stockPrice": 10.55,
+    "numberOfShares": 123900000,
+    "marketCapitalization": 1307145000,
+    "minusCashAndCashEquivalents": 171678000,
+    "addTotalDebt": 5584000,
+    "enterpriseValue": 1141051000
+  },
+  {
+    "symbol": "AMPL",
+    "date": "2023-12-31",
+    "stockPrice": 12.72,
+    "numberOfShares": 116938000,
+    "marketCapitalization": 1487451360,
+    "minusCashAndCashEquivalents": 248491000,
+    "addTotalDebt": 8175000,
+    "enterpriseValue": 1247135360
+  },
+  {
+    "symbol": "AMPL",
+    "date": "2022-12-31",
+    "stockPrice": 12.08,
+    "numberOfShares": 111437000,
+    "marketCapitalization": 1346158960,
+    "minusCashAndCashEquivalents": 218494000,
+    "addTotalDebt": 11090000,
+    "enterpriseValue": 1138754960
+  },
+  {
+    "symbol": "AMPL",
+    "date": "2021-12-31",
+    "stockPrice": 52.94,
+    "numberOfShares": 109876000,
+    "marketCapitalization": 5816835440,
+    "minusCashAndCashEquivalents": 307445000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 5509390440
+  },
+  {
+    "symbol": "AMPL",
+    "date": "2020-12-31",
+    "stockPrice": 54.8,
+    "numberOfShares": 102444655,
+    "marketCapitalization": 5613967094,
+    "minusCashAndCashEquivalents": 117783000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 5496184094
+  },
+  {
+    "symbol": "AMPL",
+    "date": "2019-12-31",
+    "stockPrice": 54.8,
+    "numberOfShares": 102444655,
+    "marketCapitalization": 5613967094,
+    "minusCashAndCashEquivalents": 79839000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 5534128094
+  }
+]

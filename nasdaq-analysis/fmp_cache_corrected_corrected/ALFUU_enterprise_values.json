@@ -1,0 +1,42 @@
+[
+  {
+    "symbol": "ALFUU",
+    "date": "2024-12-31",
+    "stockPrice": 10.1,
+    "numberOfShares": 16722779,
+    "marketCapitalization": 168900067,
+    "minusCashAndCashEquivalents": 665430,
+    "addTotalDebt": 0,
+    "enterpriseValue": 168234637
+  },
+  {
+    "symbol": "ALFUU",
+    "date": "2021-12-31",
+    "stockPrice": 10,
+    "numberOfShares": 11795493,
+    "marketCapitalization": 117954930,
+    "minusCashAndCashEquivalents": 4391816,
+    "addTotalDebt": 98175,
+    "enterpriseValue": 113661289
+  },
+  {
+    "symbol": "ALFUU",
+    "date": "2020-12-31",
+    "stockPrice": 10,
+    "numberOfShares": 11795493,
+    "marketCapitalization": 117954930,
+    "minusCashAndCashEquivalents": 8335,
+    "addTotalDebt": 5558808,
+    "enterpriseValue": 123505403
+  },
+  {
+    "symbol": "ALFUU",
+    "date": "2019-12-31",
+    "stockPrice": 10,
+    "numberOfShares": 11795493,
+    "marketCapitalization": 117954930,
+    "minusCashAndCashEquivalents": 38890,
+    "addTotalDebt": 759090,
+    "enterpriseValue": 118675130
+  }
+]

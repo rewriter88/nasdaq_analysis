@@ -1,0 +1,52 @@
+[
+  {
+    "symbol": "ABL",
+    "date": "2024-12-31",
+    "stockPrice": 7.83,
+    "numberOfShares": 70762000,
+    "marketCapitalization": 554066460,
+    "minusCashAndCashEquivalents": 131944000,
+    "addTotalDebt": 385914000,
+    "enterpriseValue": 808036460
+  },
+  {
+    "symbol": "ABL",
+    "date": "2023-12-31",
+    "stockPrice": 10.27,
+    "numberOfShares": 56951414,
+    "marketCapitalization": 584891021,
+    "minusCashAndCashEquivalents": 25588668,
+    "addTotalDebt": 141735299,
+    "enterpriseValue": 701037652
+  },
+  {
+    "symbol": "ABL",
+    "date": "2022-12-31",
+    "stockPrice": 10.16,
+    "numberOfShares": 50369350,
+    "marketCapitalization": 511752596,
+    "minusCashAndCashEquivalents": 30052823,
+    "addTotalDebt": 28327048,
+    "enterpriseValue": 510026821
+  },
+  {
+    "symbol": "ABL",
+    "date": "2021-12-31",
+    "stockPrice": 9.87,
+    "numberOfShares": 50369350,
+    "marketCapitalization": 497145484,
+    "minusCashAndCashEquivalents": 2599302,
+    "addTotalDebt": 367508,
+    "enterpriseValue": 494913690
+  },
+  {
+    "symbol": "ABL",
+    "date": "2020-12-31",
+    "stockPrice": 10.15,
+    "numberOfShares": 50369350,
+    "marketCapitalization": 511248902,
+    "minusCashAndCashEquivalents": 1852644,
+    "addTotalDebt": 65614,
+    "enterpriseValue": 509461872
+  }
+]

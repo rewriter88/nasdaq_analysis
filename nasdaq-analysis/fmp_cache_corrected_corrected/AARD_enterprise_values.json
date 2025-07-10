@@ -1,0 +1,32 @@
+[
+  {
+    "symbol": "AARD",
+    "date": "2024-12-31",
+    "stockPrice": 14.31,
+    "numberOfShares": 12909267,
+    "marketCapitalization": 184731610,
+    "minusCashAndCashEquivalents": 61641000,
+    "addTotalDebt": 779000,
+    "enterpriseValue": 123869610
+  },
+  {
+    "symbol": "AARD",
+    "date": "2023-12-31",
+    "stockPrice": 14.31,
+    "numberOfShares": 12909267,
+    "marketCapitalization": 184731610,
+    "minusCashAndCashEquivalents": 9735000,
+    "addTotalDebt": 162000,
+    "enterpriseValue": 175158610
+  },
+  {
+    "symbol": "AARD",
+    "date": "2022-12-31",
+    "stockPrice": 14.31,
+    "numberOfShares": 9732784,
+    "marketCapitalization": 139276139,
+    "minusCashAndCashEquivalents": 15559000,
+    "addTotalDebt": 262000,
+    "enterpriseValue": 123979139
+  }
+]

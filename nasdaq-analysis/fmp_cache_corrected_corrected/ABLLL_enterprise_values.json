@@ -1,0 +1,52 @@
+[
+  {
+    "symbol": "ABLLL",
+    "date": "2024-12-31",
+    "stockPrice": 33.66,
+    "numberOfShares": 70761830,
+    "marketCapitalization": 2381843197,
+    "minusCashAndCashEquivalents": 131944282,
+    "addTotalDebt": 385913855,
+    "enterpriseValue": 2635812770
+  },
+  {
+    "symbol": "ABLLL",
+    "date": "2023-12-31",
+    "stockPrice": 25.26,
+    "numberOfShares": 56951414,
+    "marketCapitalization": 1438592717,
+    "minusCashAndCashEquivalents": 25588668,
+    "addTotalDebt": 141735299,
+    "enterpriseValue": 1554739348
+  },
+  {
+    "symbol": "ABLLL",
+    "date": "2022-12-31",
+    "stockPrice": 24.9,
+    "numberOfShares": 29553950,
+    "marketCapitalization": 735893355,
+    "minusCashAndCashEquivalents": 86572,
+    "addTotalDebt": 28327048,
+    "enterpriseValue": 764133831
+  },
+  {
+    "symbol": "ABLLL",
+    "date": "2021-12-31",
+    "stockPrice": 24.9,
+    "numberOfShares": 43125000,
+    "marketCapitalization": 1073812500,
+    "minusCashAndCashEquivalents": 853130,
+    "addTotalDebt": 367508,
+    "enterpriseValue": 1073326878
+  },
+  {
+    "symbol": "ABLLL",
+    "date": "2020-12-31",
+    "stockPrice": 24.9,
+    "numberOfShares": 43130079,
+    "marketCapitalization": 1073938967,
+    "minusCashAndCashEquivalents": 589685,
+    "addTotalDebt": 65614,
+    "enterpriseValue": 1073414896
+  }
+]

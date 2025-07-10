@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "ACTIX",
+    "date": "2023-10-31",
+    "stockPrice": 8.94,
+    "numberOfShares": 207541758,
+    "marketCapitalization": 1855423316,
+    "minusCashAndCashEquivalents": 12245560,
+    "addTotalDebt": 21480000,
+    "enterpriseValue": 1864657756
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2022-10-31",
+    "stockPrice": 8.87,
+    "numberOfShares": 207541731,
+    "marketCapitalization": 1840895153,
+    "minusCashAndCashEquivalents": 398638,
+    "addTotalDebt": 21480000,
+    "enterpriseValue": 1861976515
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2021-10-31",
+    "stockPrice": 10.13,
+    "numberOfShares": 207509388,
+    "marketCapitalization": 2102070100,
+    "minusCashAndCashEquivalents": 965494,
+    "addTotalDebt": 29705000,
+    "enterpriseValue": 2130809606
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2020-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 207075386,
+    "marketCapitalization": 2070753860,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 29982542,
+    "enterpriseValue": 2100736402
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2019-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 206875556,
+    "marketCapitalization": 2068755560,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 37670272,
+    "enterpriseValue": 2106425832
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2018-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 206875449,
+    "marketCapitalization": 2068754490,
+    "minusCashAndCashEquivalents": 1439498,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2067314992
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2017-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 206875449,
+    "marketCapitalization": 2068754490,
+    "minusCashAndCashEquivalents": 37048040,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2031706450
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2016-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 206875449,
+    "marketCapitalization": 2068754490,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2068754490
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2015-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 205627646,
+    "marketCapitalization": 2056276460,
+    "minusCashAndCashEquivalents": 11650577,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2044625883
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2014-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 205627646,
+    "marketCapitalization": 2056276460,
+    "minusCashAndCashEquivalents": 16483833,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2039792627
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2013-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 205627650,
+    "marketCapitalization": 2056276500,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2056276500
+  },
+  {
+    "symbol": "ACTIX",
+    "date": "2012-10-31",
+    "stockPrice": 10,
+    "numberOfShares": 204219607,
+    "marketCapitalization": 2042196070,
+    "minusCashAndCashEquivalents": 4731111,
+    "addTotalDebt": 0,
+    "enterpriseValue": 2037464959
+  }
+]

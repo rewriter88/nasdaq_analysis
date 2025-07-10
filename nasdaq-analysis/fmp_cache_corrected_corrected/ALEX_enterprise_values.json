@@ -1,0 +1,162 @@
+[
+  {
+    "symbol": "ALEX",
+    "date": "2024-12-31",
+    "stockPrice": 17.74,
+    "numberOfShares": 72606000,
+    "marketCapitalization": 1288030440,
+    "minusCashAndCashEquivalents": 33436000,
+    "addTotalDebt": 474837000,
+    "enterpriseValue": 1729431440
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2023-12-31",
+    "stockPrice": 19.02,
+    "numberOfShares": 72600000,
+    "marketCapitalization": 1380852000,
+    "minusCashAndCashEquivalents": 13500000,
+    "addTotalDebt": 465100000,
+    "enterpriseValue": 1832452000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2022-12-31",
+    "stockPrice": 18.73,
+    "numberOfShares": 72600000,
+    "marketCapitalization": 1359798000,
+    "minusCashAndCashEquivalents": 33300000,
+    "addTotalDebt": 477100000,
+    "enterpriseValue": 1803598000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2021-12-31",
+    "stockPrice": 25.09,
+    "numberOfShares": 72500000,
+    "marketCapitalization": 1819025000,
+    "minusCashAndCashEquivalents": 70000000,
+    "addTotalDebt": 552100000,
+    "enterpriseValue": 2301125000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2020-12-31",
+    "stockPrice": 17.18,
+    "numberOfShares": 72300000,
+    "marketCapitalization": 1242114000,
+    "minusCashAndCashEquivalents": 57200000,
+    "addTotalDebt": 705500000,
+    "enterpriseValue": 1890414000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2019-12-31",
+    "stockPrice": 20.96,
+    "numberOfShares": 72200000,
+    "marketCapitalization": 1513312000,
+    "minusCashAndCashEquivalents": 15200000,
+    "addTotalDebt": 704600000,
+    "enterpriseValue": 2202712000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2018-12-31",
+    "stockPrice": 18.38,
+    "numberOfShares": 70600000,
+    "marketCapitalization": 1297628000,
+    "minusCashAndCashEquivalents": 11400000,
+    "addTotalDebt": 778100000,
+    "enterpriseValue": 2064328000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2017-12-31",
+    "stockPrice": 27.74,
+    "numberOfShares": 49200000,
+    "marketCapitalization": 1364808000,
+    "minusCashAndCashEquivalents": 68900000,
+    "addTotalDebt": 631200000,
+    "enterpriseValue": 1927108000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2016-12-31",
+    "stockPrice": 29.93,
+    "numberOfShares": 49000000,
+    "marketCapitalization": 1466570000,
+    "minusCashAndCashEquivalents": 2200000,
+    "addTotalDebt": 515100000,
+    "enterpriseValue": 1979470000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2015-12-31",
+    "stockPrice": 23.55,
+    "numberOfShares": 48900000,
+    "marketCapitalization": 1151595000,
+    "minusCashAndCashEquivalents": 1300000,
+    "addTotalDebt": 497800000,
+    "enterpriseValue": 1648095000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2014-12-31",
+    "stockPrice": 26.19,
+    "numberOfShares": 48700000,
+    "marketCapitalization": 1275453000,
+    "minusCashAndCashEquivalents": 2800000,
+    "addTotalDebt": 706000000,
+    "enterpriseValue": 1978653000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2013-12-31",
+    "stockPrice": 27.83,
+    "numberOfShares": 44400000,
+    "marketCapitalization": 1235652000,
+    "minusCashAndCashEquivalents": 3300000,
+    "addTotalDebt": 605500000,
+    "enterpriseValue": 1837852000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2012-12-31",
+    "stockPrice": 19.59,
+    "numberOfShares": 42600000,
+    "marketCapitalization": 834534000,
+    "minusCashAndCashEquivalents": 1100000,
+    "addTotalDebt": 235500000,
+    "enterpriseValue": 1068934000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2011-12-31",
+    "stockPrice": 17.5,
+    "numberOfShares": 39200000,
+    "marketCapitalization": 686000000,
+    "minusCashAndCashEquivalents": 22000000,
+    "addTotalDebt": 559000000,
+    "enterpriseValue": 1223000000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2010-12-31",
+    "stockPrice": 17.5,
+    "numberOfShares": 41600000,
+    "marketCapitalization": 728000000,
+    "minusCashAndCashEquivalents": 14000000,
+    "addTotalDebt": 522000000,
+    "enterpriseValue": 1236000000
+  },
+  {
+    "symbol": "ALEX",
+    "date": "2009-12-31",
+    "stockPrice": 17.5,
+    "numberOfShares": 41000000,
+    "marketCapitalization": 717500000,
+    "minusCashAndCashEquivalents": 16000000,
+    "addTotalDebt": 471000000,
+    "enterpriseValue": 1172500000
+  }
+]

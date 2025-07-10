@@ -1,0 +1,112 @@
+[
+  {
+    "symbol": "ACEIX",
+    "date": "2022-10-31",
+    "stockPrice": 10.29,
+    "numberOfShares": 34593,
+    "marketCapitalization": 355961.97,
+    "minusCashAndCashEquivalents": 7.367,
+    "addTotalDebt": 349015,
+    "enterpriseValue": 704969
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2021-10-31",
+    "stockPrice": 12.76,
+    "numberOfShares": 34525,
+    "marketCapitalization": 440539,
+    "minusCashAndCashEquivalents": 661.4250000000001,
+    "addTotalDebt": 324029,
+    "enterpriseValue": 763906
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2020-10-31",
+    "stockPrice": 9.57,
+    "numberOfShares": 34525,
+    "marketCapitalization": 330404.25,
+    "minusCashAndCashEquivalents": 368.43,
+    "addTotalDebt": 324028,
+    "enterpriseValue": 654063
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2019-10-31",
+    "stockPrice": 10.33,
+    "numberOfShares": 34525,
+    "marketCapitalization": 356643.25,
+    "minusCashAndCashEquivalents": 656,
+    "addTotalDebt": 387016,
+    "enterpriseValue": 743003
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2018-10-31",
+    "stockPrice": 10.51,
+    "numberOfShares": 34525222,
+    "marketCapitalization": 362860083,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 362860083
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2017-10-31",
+    "stockPrice": 11.24,
+    "numberOfShares": 20043745,
+    "marketCapitalization": 225291693,
+    "minusCashAndCashEquivalents": 6491,
+    "addTotalDebt": 0,
+    "enterpriseValue": 225285202
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2016-10-31",
+    "stockPrice": 10.19,
+    "numberOfShares": 23580877,
+    "marketCapitalization": 240289136,
+    "minusCashAndCashEquivalents": 1340724,
+    "addTotalDebt": 0,
+    "enterpriseValue": 238948412
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2015-10-31",
+    "stockPrice": 10.19,
+    "numberOfShares": 23580877,
+    "marketCapitalization": 240289136,
+    "minusCashAndCashEquivalents": 1391110,
+    "addTotalDebt": 0,
+    "enterpriseValue": 238898026
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2014-10-31",
+    "stockPrice": 11.27,
+    "numberOfShares": 23580877,
+    "marketCapitalization": 265756483,
+    "minusCashAndCashEquivalents": 33904,
+    "addTotalDebt": 0,
+    "enterpriseValue": 265722579
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2013-10-31",
+    "stockPrice": 10.91,
+    "numberOfShares": 23580877,
+    "marketCapitalization": 257267368,
+    "minusCashAndCashEquivalents": 4749113,
+    "addTotalDebt": 0,
+    "enterpriseValue": 252518255
+  },
+  {
+    "symbol": "ACEIX",
+    "date": "2012-10-31",
+    "stockPrice": 9.18,
+    "numberOfShares": 23580877,
+    "marketCapitalization": 216472450,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 216472450
+  }
+]

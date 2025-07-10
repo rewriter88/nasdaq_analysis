@@ -1,0 +1,252 @@
+[
+  {
+    "symbol": "AMSF",
+    "date": "2024-12-31",
+    "stockPrice": 51.54,
+    "numberOfShares": 19070717,
+    "marketCapitalization": 982904754,
+    "minusCashAndCashEquivalents": 44045000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 938859754
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2023-12-31",
+    "stockPrice": 47,
+    "numberOfShares": 19149080,
+    "marketCapitalization": 900006760,
+    "minusCashAndCashEquivalents": 38682000,
+    "addTotalDebt": 267000,
+    "enterpriseValue": 861591760
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2022-12-31",
+    "stockPrice": 51.97,
+    "numberOfShares": 19233241,
+    "marketCapitalization": 999551534,
+    "minusCashAndCashEquivalents": 61469000,
+    "addTotalDebt": 336000,
+    "enterpriseValue": 938418534
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2021-12-31",
+    "stockPrice": 53.83,
+    "numberOfShares": 19332391,
+    "marketCapitalization": 1040662607,
+    "minusCashAndCashEquivalents": 70722000,
+    "addTotalDebt": 395000,
+    "enterpriseValue": 970335607
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2020-12-31",
+    "stockPrice": 57.43,
+    "numberOfShares": 19288996,
+    "marketCapitalization": 1107767040,
+    "minusCashAndCashEquivalents": 61757000,
+    "addTotalDebt": 499000,
+    "enterpriseValue": 1046509040
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2019-12-31",
+    "stockPrice": 66.03,
+    "numberOfShares": 19248657,
+    "marketCapitalization": 1270988821,
+    "minusCashAndCashEquivalents": 43813000,
+    "addTotalDebt": 484000,
+    "enterpriseValue": 1227659821
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2018-12-31",
+    "stockPrice": 56.69,
+    "numberOfShares": 19208978,
+    "marketCapitalization": 1088956962,
+    "minusCashAndCashEquivalents": 40344000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1048612962
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2017-12-31",
+    "stockPrice": 61.6,
+    "numberOfShares": 19165489,
+    "marketCapitalization": 1180594122,
+    "minusCashAndCashEquivalents": 55559000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1125035122
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2016-12-31",
+    "stockPrice": 62.35,
+    "numberOfShares": 19105806,
+    "marketCapitalization": 1191247004,
+    "minusCashAndCashEquivalents": 58936000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1132311004
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2015-12-31",
+    "stockPrice": 50.9,
+    "numberOfShares": 18941077,
+    "marketCapitalization": 964100819,
+    "minusCashAndCashEquivalents": 69481000,
+    "addTotalDebt": 67000,
+    "enterpriseValue": 894686819
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2014-12-31",
+    "stockPrice": 42.36,
+    "numberOfShares": 18646128,
+    "marketCapitalization": 789849982,
+    "minusCashAndCashEquivalents": 90956000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 698893982
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2013-12-31",
+    "stockPrice": 42.24,
+    "numberOfShares": 18373033,
+    "marketCapitalization": 776076913,
+    "minusCashAndCashEquivalents": 123077000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 652999913
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2012-12-31",
+    "stockPrice": 27.25,
+    "numberOfShares": 18166261,
+    "marketCapitalization": 495030612,
+    "minusCashAndCashEquivalents": 92676000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 402354612
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2011-12-31",
+    "stockPrice": 23.25,
+    "numberOfShares": 18249583,
+    "marketCapitalization": 424302804,
+    "minusCashAndCashEquivalents": 45536000,
+    "addTotalDebt": 25780000,
+    "enterpriseValue": 404546804
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2010-12-31",
+    "stockPrice": 17.5,
+    "numberOfShares": 18637167,
+    "marketCapitalization": 326150422,
+    "minusCashAndCashEquivalents": 60966000,
+    "addTotalDebt": 36090000,
+    "enterpriseValue": 301274422
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2009-12-31",
+    "stockPrice": 17.97,
+    "numberOfShares": 18860197,
+    "marketCapitalization": 338917740,
+    "minusCashAndCashEquivalents": 63188000,
+    "addTotalDebt": 36090000,
+    "enterpriseValue": 311819740
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2008-12-31",
+    "stockPrice": 20.53,
+    "numberOfShares": 18814508,
+    "marketCapitalization": 386261849,
+    "minusCashAndCashEquivalents": 95266000,
+    "addTotalDebt": 36090000,
+    "enterpriseValue": 327085849
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2007-12-31",
+    "stockPrice": 15.51,
+    "numberOfShares": 18767210,
+    "marketCapitalization": 291079427,
+    "minusCashAndCashEquivalents": 47329000,
+    "addTotalDebt": 36090000,
+    "enterpriseValue": 279840427
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2006-12-31",
+    "stockPrice": 15.46,
+    "numberOfShares": 17579829,
+    "marketCapitalization": 271784156,
+    "minusCashAndCashEquivalents": 26748000,
+    "addTotalDebt": 36090000,
+    "enterpriseValue": 281126156
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2005-12-31",
+    "stockPrice": 10.07,
+    "numberOfShares": 2129492,
+    "marketCapitalization": 21443984,
+    "minusCashAndCashEquivalents": 49286000,
+    "addTotalDebt": 36090000,
+    "enterpriseValue": 8247984
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2004-12-31",
+    "stockPrice": 9,
+    "numberOfShares": 225367,
+    "marketCapitalization": 2028303,
+    "minusCashAndCashEquivalents": 25421000,
+    "addTotalDebt": 36090000,
+    "enterpriseValue": 12697303
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2003-12-31",
+    "stockPrice": 9,
+    "numberOfShares": 180125,
+    "marketCapitalization": 1621125,
+    "minusCashAndCashEquivalents": 49815000,
+    "addTotalDebt": 16310000,
+    "enterpriseValue": -31883875
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2002-12-31",
+    "stockPrice": 9,
+    "numberOfShares": 299774,
+    "marketCapitalization": 2697966,
+    "minusCashAndCashEquivalents": 44677000,
+    "addTotalDebt": 8000000,
+    "enterpriseValue": -33979034
+  },
+  {
+    "symbol": "AMSF",
+    "date": "2000-12-31",
+    "stockPrice": 9,
+    "numberOfShares": 299774,
+    "marketCapitalization": 2697966,
+    "minusCashAndCashEquivalents": 44914000,
+    "addTotalDebt": 9500000,
+    "enterpriseValue": -32716034
+  },
+  {
+    "symbol": "AMSF",
+    "date": "1995-12-31",
+    "stockPrice": 9,
+    "numberOfShares": 22142857,
+    "marketCapitalization": 199285713,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 10100000,
+    "enterpriseValue": 209385713
+  }
+]

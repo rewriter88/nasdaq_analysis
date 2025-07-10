@@ -1,0 +1,132 @@
+[
+  {
+    "symbol": "ACI",
+    "date": "2025-02-22",
+    "stockPrice": 20.55,
+    "numberOfShares": 580100000,
+    "marketCapitalization": 11921055000,
+    "minusCashAndCashEquivalents": 293600000,
+    "addTotalDebt": 14182800000,
+    "enterpriseValue": 25810255000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2024-02-24",
+    "stockPrice": 21.44,
+    "numberOfShares": 575400000,
+    "marketCapitalization": 12336576000,
+    "minusCashAndCashEquivalents": 188700000,
+    "addTotalDebt": 14239400000,
+    "enterpriseValue": 26387276000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2023-02-25",
+    "stockPrice": 20.54,
+    "numberOfShares": 529000000,
+    "marketCapitalization": 10865660000,
+    "minusCashAndCashEquivalents": 455800000,
+    "addTotalDebt": 14961100000,
+    "enterpriseValue": 25370960000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2022-02-26",
+    "stockPrice": 29.72,
+    "numberOfShares": 469600000,
+    "marketCapitalization": 13956512000,
+    "minusCashAndCashEquivalents": 2902000000,
+    "addTotalDebt": 14025600000,
+    "enterpriseValue": 25080112000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2021-02-27",
+    "stockPrice": 16.17,
+    "numberOfShares": 500300000,
+    "marketCapitalization": 8089851000,
+    "minusCashAndCashEquivalents": 1717000000,
+    "addTotalDebt": 14466900000,
+    "enterpriseValue": 20839751000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2020-02-29",
+    "stockPrice": 15.45,
+    "numberOfShares": 579400000,
+    "marketCapitalization": 8951730000,
+    "minusCashAndCashEquivalents": 470700000,
+    "addTotalDebt": 14680600000,
+    "enterpriseValue": 23161630000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2019-02-23",
+    "stockPrice": 15.45,
+    "numberOfShares": 580500000,
+    "marketCapitalization": 8968725000,
+    "minusCashAndCashEquivalents": 926100000,
+    "addTotalDebt": 10586400000,
+    "enterpriseValue": 18629025000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2018-02-24",
+    "stockPrice": 15.45,
+    "numberOfShares": 568000000,
+    "marketCapitalization": 8775600000,
+    "minusCashAndCashEquivalents": 670300000,
+    "addTotalDebt": 11875800000,
+    "enterpriseValue": 19981100000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2017-02-28",
+    "stockPrice": 15.45,
+    "numberOfShares": 568000000,
+    "marketCapitalization": 8775600000,
+    "minusCashAndCashEquivalents": 1219200000,
+    "addTotalDebt": 12337900000,
+    "enterpriseValue": 19894300000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2016-02-29",
+    "stockPrice": 15.45,
+    "numberOfShares": 568000000,
+    "marketCapitalization": 8775600000,
+    "minusCashAndCashEquivalents": 579700000,
+    "addTotalDebt": 12226300000,
+    "enterpriseValue": 20422200000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2015-02-28",
+    "stockPrice": 15.45,
+    "numberOfShares": 568000000,
+    "marketCapitalization": 8775600000,
+    "minusCashAndCashEquivalents": 1125800000,
+    "addTotalDebt": 12569000000,
+    "enterpriseValue": 20218800000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2014-02-28",
+    "stockPrice": 15.45,
+    "numberOfShares": 568000000,
+    "marketCapitalization": 8775600000,
+    "minusCashAndCashEquivalents": 307000000,
+    "addTotalDebt": 3694200000,
+    "enterpriseValue": 12162800000
+  },
+  {
+    "symbol": "ACI",
+    "date": "2013-02-28",
+    "stockPrice": 15.45,
+    "numberOfShares": 568000000,
+    "marketCapitalization": 8775600000,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 8775600000
+  }
+]

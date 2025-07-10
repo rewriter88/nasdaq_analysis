@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "ALTEX",
+    "date": "2023-11-30",
+    "stockPrice": 9.56,
+    "numberOfShares": 137758679,
+    "marketCapitalization": 1316972971,
+    "minusCashAndCashEquivalents": 589000,
+    "addTotalDebt": 495783000,
+    "enterpriseValue": 1812166971
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2022-11-30",
+    "stockPrice": 12.02,
+    "numberOfShares": 133664121,
+    "marketCapitalization": 1606642734,
+    "minusCashAndCashEquivalents": 505000,
+    "addTotalDebt": 419563000,
+    "enterpriseValue": 2025700734
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2021-11-30",
+    "stockPrice": 14.82,
+    "numberOfShares": 126447581,
+    "marketCapitalization": 1873953150,
+    "minusCashAndCashEquivalents": 1153000,
+    "addTotalDebt": 422063000,
+    "enterpriseValue": 2294863150
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2020-11-30",
+    "stockPrice": 13.01,
+    "numberOfShares": 126420711,
+    "marketCapitalization": 1644733450,
+    "minusCashAndCashEquivalents": 171000,
+    "addTotalDebt": 369716000,
+    "enterpriseValue": 2014278450
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2019-11-30",
+    "stockPrice": 6.64,
+    "numberOfShares": 126326203,
+    "marketCapitalization": 839209570,
+    "minusCashAndCashEquivalents": 2000000,
+    "addTotalDebt": 1005478000,
+    "enterpriseValue": 1842687570
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2018-11-30",
+    "stockPrice": 5.51,
+    "numberOfShares": 118725060,
+    "marketCapitalization": 654747634,
+    "minusCashAndCashEquivalents": 2000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 652747634
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2017-11-30",
+    "stockPrice": 6.05,
+    "numberOfShares": 114292056,
+    "marketCapitalization": 691288641,
+    "minusCashAndCashEquivalents": 2000000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 689288641
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2016-11-30",
+    "stockPrice": 4.68,
+    "numberOfShares": 112967480,
+    "marketCapitalization": 528689460,
+    "minusCashAndCashEquivalents": 1095000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 527594460
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2015-11-30",
+    "stockPrice": 5.06,
+    "numberOfShares": 110809350,
+    "marketCapitalization": 561046991,
+    "minusCashAndCashEquivalents": 147737000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 413309991
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2014-11-30",
+    "stockPrice": 5.88,
+    "numberOfShares": 107305514,
+    "marketCapitalization": 630431280,
+    "minusCashAndCashEquivalents": 1515000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 628916280
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2013-11-30",
+    "stockPrice": 5.92,
+    "numberOfShares": 94658194,
+    "marketCapitalization": 560444689,
+    "minusCashAndCashEquivalents": 257000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 560187689
+  },
+  {
+    "symbol": "ALTEX",
+    "date": "2012-11-30",
+    "stockPrice": 2.8,
+    "numberOfShares": 82800000,
+    "marketCapitalization": 231898830,
+    "minusCashAndCashEquivalents": 6118000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 225780830
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "symbol": "ACU",
+    "date": "2024-12-31",
+    "stockPrice": 37.33,
+    "numberOfShares": 3700568,
+    "marketCapitalization": 138142203,
+    "minusCashAndCashEquivalents": 6398692,
+    "addTotalDebt": 32404582,
+    "enterpriseValue": 164148093
+  },
+  {
+    "symbol": "ACU",
+    "date": "2023-12-31",
+    "stockPrice": 42.86,
+    "numberOfShares": 3661144,
+    "marketCapitalization": 156916631,
+    "minusCashAndCashEquivalents": 4795953,
+    "addTotalDebt": 25933281,
+    "enterpriseValue": 178053959
+  },
+  {
+    "symbol": "ACU",
+    "date": "2022-12-31",
+    "stockPrice": 21.9,
+    "numberOfShares": 3527626,
+    "marketCapitalization": 77255009,
+    "minusCashAndCashEquivalents": 6100000,
+    "addTotalDebt": 63828000,
+    "enterpriseValue": 134983009
+  },
+  {
+    "symbol": "ACU",
+    "date": "2021-12-31",
+    "stockPrice": 33.7,
+    "numberOfShares": 3471374,
+    "marketCapitalization": 116985303,
+    "minusCashAndCashEquivalents": 4843000,
+    "addTotalDebt": 48500000,
+    "enterpriseValue": 160642303
+  },
+  {
+    "symbol": "ACU",
+    "date": "2020-12-31",
+    "stockPrice": 30.13,
+    "numberOfShares": 3342630,
+    "marketCapitalization": 100713441,
+    "minusCashAndCashEquivalents": 4167376,
+    "addTotalDebt": 47979925,
+    "enterpriseValue": 144525990
+  },
+  {
+    "symbol": "ACU",
+    "date": "2019-12-31",
+    "stockPrice": 23.79,
+    "numberOfShares": 3351731,
+    "marketCapitalization": 79737680,
+    "minusCashAndCashEquivalents": 6822000,
+    "addTotalDebt": 39693000,
+    "enterpriseValue": 112608680
+  },
+  {
+    "symbol": "ACU",
+    "date": "2018-12-31",
+    "stockPrice": 14.25,
+    "numberOfShares": 3371000,
+    "marketCapitalization": 48036750,
+    "minusCashAndCashEquivalents": 4409000,
+    "addTotalDebt": 43727000,
+    "enterpriseValue": 87354750
+  },
+  {
+    "symbol": "ACU",
+    "date": "2017-12-31",
+    "stockPrice": 23.4,
+    "numberOfShares": 3356000,
+    "marketCapitalization": 78530400,
+    "minusCashAndCashEquivalents": 9338000,
+    "addTotalDebt": 47161000,
+    "enterpriseValue": 116353400
+  },
+  {
+    "symbol": "ACU",
+    "date": "2016-12-31",
+    "stockPrice": 25.57,
+    "numberOfShares": 3328000,
+    "marketCapitalization": 85096960,
+    "minusCashAndCashEquivalents": 5911000,
+    "addTotalDebt": 32936000,
+    "enterpriseValue": 112121960
+  },
+  {
+    "symbol": "ACU",
+    "date": "2015-12-31",
+    "stockPrice": 17.4,
+    "numberOfShares": 3335000,
+    "marketCapitalization": 58028999,
+    "minusCashAndCashEquivalents": 2426000,
+    "addTotalDebt": 25913000,
+    "enterpriseValue": 81515999
+  },
+  {
+    "symbol": "ACU",
+    "date": "2014-12-31",
+    "stockPrice": 19.99,
+    "numberOfShares": 3240000,
+    "marketCapitalization": 64767599,
+    "minusCashAndCashEquivalents": 2286000,
+    "addTotalDebt": 24147000,
+    "enterpriseValue": 86628599
+  },
+  {
+    "symbol": "ACU",
+    "date": "2013-12-31",
+    "stockPrice": 14.9,
+    "numberOfShares": 3168000,
+    "marketCapitalization": 47203200,
+    "minusCashAndCashEquivalents": 11644000,
+    "addTotalDebt": 22912000,
+    "enterpriseValue": 58471200
+  },
+  {
+    "symbol": "ACU",
+    "date": "2012-12-31",
+    "stockPrice": 11.04,
+    "numberOfShares": 3116000,
+    "marketCapitalization": 34400640,
+    "minusCashAndCashEquivalents": 9750000,
+    "addTotalDebt": 24320000,
+    "enterpriseValue": 48970640
+  },
+  {
+    "symbol": "ACU",
+    "date": "2011-12-31",
+    "stockPrice": 9.5,
+    "numberOfShares": 3099982,
+    "marketCapitalization": 29449829,
+    "minusCashAndCashEquivalents": 7853343,
+    "addTotalDebt": 17568484,
+    "enterpriseValue": 39164970
+  },
+  {
+    "symbol": "ACU",
+    "date": "2010-12-31",
+    "stockPrice": 9.52,
+    "numberOfShares": 3128509,
+    "marketCapitalization": 29783405,
+    "minusCashAndCashEquivalents": 6601416,
+    "addTotalDebt": 13522000,
+    "enterpriseValue": 36703989
+  },
+  {
+    "symbol": "ACU",
+    "date": "2009-12-31",
+    "stockPrice": 9.2,
+    "numberOfShares": 3289000,
+    "marketCapitalization": 30258799,
+    "minusCashAndCashEquivalents": 6519000,
+    "addTotalDebt": 9154000,
+    "enterpriseValue": 32893799
+  },
+  {
+    "symbol": "ACU",
+    "date": "2008-12-31",
+    "stockPrice": 7.05,
+    "numberOfShares": 3486370,
+    "marketCapitalization": 24578908,
+    "minusCashAndCashEquivalents": 5224564,
+    "addTotalDebt": 11749191,
+    "enterpriseValue": 31103535
+  },
+  {
+    "symbol": "ACU",
+    "date": "2007-12-31",
+    "stockPrice": 14.25,
+    "numberOfShares": 3535687,
+    "marketCapitalization": 50383539,
+    "minusCashAndCashEquivalents": 4987991,
+    "addTotalDebt": 10186721,
+    "enterpriseValue": 55582269
+  },
+  {
+    "symbol": "ACU",
+    "date": "2006-12-31",
+    "stockPrice": 14.41,
+    "numberOfShares": 3500596,
+    "marketCapitalization": 50443588,
+    "minusCashAndCashEquivalents": 3838172,
+    "addTotalDebt": 10217931,
+    "enterpriseValue": 56823347
+  },
+  {
+    "symbol": "ACU",
+    "date": "2005-12-31",
+    "stockPrice": 13.96,
+    "numberOfShares": 3496798,
+    "marketCapitalization": 48815300,
+    "minusCashAndCashEquivalents": 1076489,
+    "addTotalDebt": 5587382,
+    "enterpriseValue": 53326193
+  },
+  {
+    "symbol": "ACU",
+    "date": "2004-12-31",
+    "stockPrice": 15.7,
+    "numberOfShares": 3373339,
+    "marketCapitalization": 52961422,
+    "minusCashAndCashEquivalents": 1930394,
+    "addTotalDebt": 1475820,
+    "enterpriseValue": 52506848
+  },
+  {
+    "symbol": "ACU",
+    "date": "2003-12-31",
+    "stockPrice": 5.4,
+    "numberOfShares": 3302246,
+    "marketCapitalization": 17832128,
+    "minusCashAndCashEquivalents": 1390641,
+    "addTotalDebt": 4928422,
+    "enterpriseValue": 21369909
+  },
+  {
+    "symbol": "ACU",
+    "date": "2002-12-31",
+    "stockPrice": 3.76,
+    "numberOfShares": 3471021,
+    "marketCapitalization": 13051038,
+    "minusCashAndCashEquivalents": 597670,
+    "addTotalDebt": 5125673,
+    "enterpriseValue": 17579041
+  },
+  {
+    "symbol": "ACU",
+    "date": "2001-12-31",
+    "stockPrice": 3.9,
+    "numberOfShares": 3459459,
+    "marketCapitalization": 13491890,
+    "minusCashAndCashEquivalents": 171536,
+    "addTotalDebt": 5715582,
+    "enterpriseValue": 19035936
+  },
+  {
+    "symbol": "ACU",
+    "date": "2000-12-31",
+    "stockPrice": 2.81,
+    "numberOfShares": 3536667,
+    "marketCapitalization": 9938034.27,
+    "minusCashAndCashEquivalents": 21510,
+    "addTotalDebt": 7513888,
+    "enterpriseValue": 17430412
+  },
+  {
+    "symbol": "ACU",
+    "date": "1999-12-31",
+    "stockPrice": 1.13,
+    "numberOfShares": 3281250,
+    "marketCapitalization": 3707812.5,
+    "minusCashAndCashEquivalents": 88468,
+    "addTotalDebt": 7735465,
+    "enterpriseValue": 11354809
+  },
+  {
+    "symbol": "ACU",
+    "date": "1998-12-31",
+    "stockPrice": 2.25,
+    "numberOfShares": 3469388,
+    "marketCapitalization": 7806123,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 16200000,
+    "enterpriseValue": 24006123
+  },
+  {
+    "symbol": "ACU",
+    "date": "1997-12-31",
+    "stockPrice": 6,
+    "numberOfShares": 3351000,
+    "marketCapitalization": 20106000,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 15600000,
+    "enterpriseValue": 35706000
+  },
+  {
+    "symbol": "ACU",
+    "date": "1996-12-31",
+    "stockPrice": 5.5,
+    "numberOfShares": 3263158,
+    "marketCapitalization": 17947369,
+    "minusCashAndCashEquivalents": 400000,
+    "addTotalDebt": 13700000,
+    "enterpriseValue": 31247369
+  },
+  {
+    "symbol": "ACU",
+    "date": "1995-12-31",
+    "stockPrice": 3.88,
+    "numberOfShares": 3384620,
+    "marketCapitalization": 13132325,
+    "minusCashAndCashEquivalents": 500000,
+    "addTotalDebt": 18600000,
+    "enterpriseValue": 31232325
+  },
+  {
+    "symbol": "ACU",
+    "date": "1994-12-31",
+    "stockPrice": 3.25,
+    "numberOfShares": 2500000,
+    "marketCapitalization": 8125000,
+    "minusCashAndCashEquivalents": 500000,
+    "addTotalDebt": 18400000,
+    "enterpriseValue": 26025000
+  },
+  {
+    "symbol": "ACU",
+    "date": "1993-12-31",
+    "stockPrice": 4.25,
+    "numberOfShares": 3333333,
+    "marketCapitalization": 14166665,
+    "minusCashAndCashEquivalents": 300000,
+    "addTotalDebt": 17100000,
+    "enterpriseValue": 30966665
+  },
+  {
+    "symbol": "ACU",
+    "date": "1992-12-31",
+    "stockPrice": 5.75,
+    "numberOfShares": 3125000,
+    "marketCapitalization": 17968750,
+    "minusCashAndCashEquivalents": 900000,
+    "addTotalDebt": 19000000,
+    "enterpriseValue": 36068750
+  },
+  {
+    "symbol": "ACU",
+    "date": "1991-12-31",
+    "stockPrice": 7.25,
+    "numberOfShares": 3170732,
+    "marketCapitalization": 22987807,
+    "minusCashAndCashEquivalents": 1400000,
+    "addTotalDebt": 14200000,
+    "enterpriseValue": 35787807
+  },
+  {
+    "symbol": "ACU",
+    "date": "1990-12-31",
+    "stockPrice": 5.25,
+    "numberOfShares": 3250000,
+    "marketCapitalization": 17062500,
+    "minusCashAndCashEquivalents": 1600000,
+    "addTotalDebt": 12100000,
+    "enterpriseValue": 27562500
+  },
+  {
+    "symbol": "ACU",
+    "date": "1989-12-31",
+    "stockPrice": 4.25,
+    "numberOfShares": 3260870,
+    "marketCapitalization": 13858697,
+    "minusCashAndCashEquivalents": 500000,
+    "addTotalDebt": 6300000,
+    "enterpriseValue": 19658697
+  },
+  {
+    "symbol": "ACU",
+    "date": "1988-12-31",
+    "stockPrice": 6,
+    "numberOfShares": 3173000,
+    "marketCapitalization": 19038000,
+    "minusCashAndCashEquivalents": 300000,
+    "addTotalDebt": 8700000,
+    "enterpriseValue": 27438000
+  },
+  {
+    "symbol": "ACU",
+    "date": "1987-12-31",
+    "stockPrice": 5.5,
+    "numberOfShares": 3125000,
+    "marketCapitalization": 17187500,
+    "minusCashAndCashEquivalents": 200000,
+    "addTotalDebt": 6900000,
+    "enterpriseValue": 23887500
+  },
+  {
+    "symbol": "ACU",
+    "date": "1986-12-31",
+    "stockPrice": 8.25,
+    "numberOfShares": 3571429,
+    "marketCapitalization": 29464289,
+    "minusCashAndCashEquivalents": 800000,
+    "addTotalDebt": 6700000,
+    "enterpriseValue": 35364289
+  },
+  {
+    "symbol": "ACU",
+    "date": "1985-12-31",
+    "stockPrice": 11.5,
+    "numberOfShares": 3157895,
+    "marketCapitalization": 36315792,
+    "minusCashAndCashEquivalents": 400000,
+    "addTotalDebt": 6100000,
+    "enterpriseValue": 42015792
+  }
+]

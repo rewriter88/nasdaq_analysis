@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "ABALX",
+    "date": "2024-01-31",
+    "stockPrice": 32.22,
+    "numberOfShares": 17560518,
+    "marketCapitalization": 565799889,
+    "minusCashAndCashEquivalents": 223397000,
+    "addTotalDebt": 8378000,
+    "enterpriseValue": 350780889
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2023-01-31",
+    "stockPrice": 29.92,
+    "numberOfShares": 17641401,
+    "marketCapitalization": 527830717,
+    "minusCashAndCashEquivalents": 69612000,
+    "addTotalDebt": 9855000,
+    "enterpriseValue": 468073717
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2022-01-31",
+    "stockPrice": 32.35,
+    "numberOfShares": 17951698,
+    "marketCapitalization": 580737430,
+    "minusCashAndCashEquivalents": 229846000,
+    "addTotalDebt": 6390000,
+    "enterpriseValue": 357281430
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2021-01-31",
+    "stockPrice": 30.28,
+    "numberOfShares": 18502115,
+    "marketCapitalization": 560244042,
+    "minusCashAndCashEquivalents": 144501000,
+    "addTotalDebt": 7439000,
+    "enterpriseValue": 423182042
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2020-01-31",
+    "stockPrice": 28.45,
+    "numberOfShares": 18954076,
+    "marketCapitalization": 539243462,
+    "minusCashAndCashEquivalents": 179658000,
+    "addTotalDebt": 10688000,
+    "enterpriseValue": 370273462
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2019-01-31",
+    "stockPrice": 26.09,
+    "numberOfShares": 19320000,
+    "marketCapitalization": 504058800,
+    "minusCashAndCashEquivalents": 188531000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 315527800
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2018-01-31",
+    "stockPrice": 28.02,
+    "numberOfShares": 19788000,
+    "marketCapitalization": 554459760,
+    "minusCashAndCashEquivalents": 190988000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 363471760
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2017-01-31",
+    "stockPrice": 25.26,
+    "numberOfShares": 19761000,
+    "marketCapitalization": 499162860,
+    "minusCashAndCashEquivalents": 188576000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 310586860
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2016-01-31",
+    "stockPrice": 23.19,
+    "numberOfShares": 21921000,
+    "marketCapitalization": 508347990,
+    "minusCashAndCashEquivalents": 135765000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 372582990
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2015-01-31",
+    "stockPrice": 24.42,
+    "numberOfShares": 24352713,
+    "marketCapitalization": 594693251,
+    "minusCashAndCashEquivalents": 137697000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 456996251
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2014-01-31",
+    "stockPrice": 23.85,
+    "numberOfShares": 24523689,
+    "marketCapitalization": 584889982,
+    "minusCashAndCashEquivalents": 105149000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 479740982
+  },
+  {
+    "symbol": "ABALX",
+    "date": "2013-01-31",
+    "stockPrice": 21.13,
+    "numberOfShares": 24816000,
+    "marketCapitalization": 524362080,
+    "minusCashAndCashEquivalents": 69073000,
+    "addTotalDebt": 0,
+    "enterpriseValue": 455289080
+  }
+]

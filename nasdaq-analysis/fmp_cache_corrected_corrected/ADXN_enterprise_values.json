@@ -1,0 +1,192 @@
+[
+  {
+    "symbol": "ADXN",
+    "date": "2024-12-31",
+    "stockPrice": 6.35,
+    "numberOfShares": 817607,
+    "marketCapitalization": 5195222.05,
+    "minusCashAndCashEquivalents": 3341738,
+    "addTotalDebt": 41994,
+    "enterpriseValue": 1895478
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2023-12-31",
+    "stockPrice": 5.09,
+    "numberOfShares": 619230,
+    "marketCapitalization": 3149774.08,
+    "minusCashAndCashEquivalents": 3865481,
+    "addTotalDebt": 344336,
+    "enterpriseValue": -371370
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2022-12-31",
+    "stockPrice": 11.64,
+    "numberOfShares": 376540,
+    "marketCapitalization": 4384540.96,
+    "minusCashAndCashEquivalents": 6957086,
+    "addTotalDebt": 373135,
+    "enterpriseValue": -2199410
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2021-12-31",
+    "stockPrice": 114.69,
+    "numberOfShares": 284330,
+    "marketCapitalization": 32609263,
+    "minusCashAndCashEquivalents": 20484836,
+    "addTotalDebt": 482014,
+    "enterpriseValue": 12606441
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2020-12-31",
+    "stockPrice": 237.34,
+    "numberOfShares": 222348,
+    "marketCapitalization": 52771060,
+    "minusCashAndCashEquivalents": 18695040,
+    "addTotalDebt": 567396,
+    "enterpriseValue": 34643416
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2019-12-31",
+    "stockPrice": 218.57,
+    "numberOfShares": 220235,
+    "marketCapitalization": 48137067,
+    "minusCashAndCashEquivalents": 31536803,
+    "addTotalDebt": 550245,
+    "enterpriseValue": 17150509
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2018-12-31",
+    "stockPrice": 222.35,
+    "numberOfShares": 194110,
+    "marketCapitalization": 43160377,
+    "minusCashAndCashEquivalents": 41670158,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1490219
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2017-12-31",
+    "stockPrice": 220.06,
+    "numberOfShares": 107845,
+    "marketCapitalization": 23732692,
+    "minusCashAndCashEquivalents": 2590539,
+    "addTotalDebt": 0,
+    "enterpriseValue": 21142153
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2016-12-31",
+    "stockPrice": 229.98,
+    "numberOfShares": 95102,
+    "marketCapitalization": 21871114,
+    "minusCashAndCashEquivalents": 1416364,
+    "addTotalDebt": 0,
+    "enterpriseValue": 20454750
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2015-12-31",
+    "stockPrice": 225.88,
+    "numberOfShares": 90433,
+    "marketCapitalization": 20426821,
+    "minusCashAndCashEquivalents": 2633601,
+    "addTotalDebt": 0,
+    "enterpriseValue": 17793220
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2014-12-31",
+    "stockPrice": 224.59,
+    "numberOfShares": 83207,
+    "marketCapitalization": 18687816,
+    "minusCashAndCashEquivalents": 1979609,
+    "addTotalDebt": 0,
+    "enterpriseValue": 16708207
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2013-12-31",
+    "stockPrice": 201.23,
+    "numberOfShares": 75550,
+    "marketCapitalization": 15203127,
+    "minusCashAndCashEquivalents": 2913396,
+    "addTotalDebt": 0,
+    "enterpriseValue": 12289731
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2012-12-31",
+    "stockPrice": 206.92,
+    "numberOfShares": 65932,
+    "marketCapitalization": 13642720,
+    "minusCashAndCashEquivalents": 15256707,
+    "addTotalDebt": 0,
+    "enterpriseValue": -1613987
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2011-12-31",
+    "stockPrice": 212.13,
+    "numberOfShares": 10320,
+    "marketCapitalization": 2189185.52,
+    "minusCashAndCashEquivalents": 36065379,
+    "addTotalDebt": 0,
+    "enterpriseValue": -33876193
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2010-12-31",
+    "stockPrice": 211.15,
+    "numberOfShares": 8217,
+    "marketCapitalization": 1734978.63,
+    "minusCashAndCashEquivalents": 63797325,
+    "addTotalDebt": 0,
+    "enterpriseValue": -62062346
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2009-12-31",
+    "stockPrice": 234.1,
+    "numberOfShares": 7964,
+    "marketCapitalization": 1864407.12,
+    "minusCashAndCashEquivalents": 76560104,
+    "addTotalDebt": 0,
+    "enterpriseValue": -74695696
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2008-12-31",
+    "stockPrice": 242.1,
+    "numberOfShares": 7966,
+    "marketCapitalization": 1928534.51,
+    "minusCashAndCashEquivalents": 119470604,
+    "addTotalDebt": 0,
+    "enterpriseValue": -117542069
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2007-12-31",
+    "stockPrice": 256.12,
+    "numberOfShares": 6967,
+    "marketCapitalization": 1784412.7,
+    "minusCashAndCashEquivalents": 140044690,
+    "addTotalDebt": 0,
+    "enterpriseValue": -138260277
+  },
+  {
+    "symbol": "ADXN",
+    "date": "2006-12-31",
+    "stockPrice": 274.95,
+    "numberOfShares": 3971,
+    "marketCapitalization": 1091832.8,
+    "minusCashAndCashEquivalents": 40946680,
+    "addTotalDebt": 126570,
+    "enterpriseValue": -39728277
+  }
+]

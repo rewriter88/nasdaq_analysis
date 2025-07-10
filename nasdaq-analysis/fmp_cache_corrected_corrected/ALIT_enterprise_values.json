@@ -1,0 +1,92 @@
+[
+  {
+    "symbol": "ALIT",
+    "date": "2024-12-31",
+    "stockPrice": 6.92,
+    "numberOfShares": 546174400,
+    "marketCapitalization": 3779526848,
+    "minusCashAndCashEquivalents": 343000000,
+    "addTotalDebt": 2156000000,
+    "enterpriseValue": 5592526848
+  },
+  {
+    "symbol": "ALIT",
+    "date": "2023-12-31",
+    "stockPrice": 8.53,
+    "numberOfShares": 489461259,
+    "marketCapitalization": 4175104539,
+    "minusCashAndCashEquivalents": 358000000,
+    "addTotalDebt": 2918000000,
+    "enterpriseValue": 6735104539
+  },
+  {
+    "symbol": "ALIT",
+    "date": "2022-12-31",
+    "stockPrice": 8.36,
+    "numberOfShares": 458558192,
+    "marketCapitalization": 3833546485,
+    "minusCashAndCashEquivalents": 250000000,
+    "addTotalDebt": 3003000000,
+    "enterpriseValue": 6586546485
+  },
+  {
+    "symbol": "ALIT",
+    "date": "2021-12-31",
+    "stockPrice": 10.81,
+    "numberOfShares": 460471094,
+    "marketCapitalization": 4977692526,
+    "minusCashAndCashEquivalents": 372000000,
+    "addTotalDebt": 3112000000,
+    "enterpriseValue": 7717692526
+  },
+  {
+    "symbol": "ALIT",
+    "date": "2020-12-31",
+    "stockPrice": 11.18,
+    "numberOfShares": 446790011,
+    "marketCapitalization": 4995112322,
+    "minusCashAndCashEquivalents": 506000000,
+    "addTotalDebt": 4361000000,
+    "enterpriseValue": 8850112322
+  },
+  {
+    "symbol": "ALIT",
+    "date": "2019-12-31",
+    "stockPrice": 10.4,
+    "numberOfShares": 446790011,
+    "marketCapitalization": 4646616114,
+    "minusCashAndCashEquivalents": 218000000,
+    "addTotalDebt": 4059000000,
+    "enterpriseValue": 8487616114
+  },
+  {
+    "symbol": "ALIT",
+    "date": "2018-12-31",
+    "stockPrice": 10.4,
+    "numberOfShares": 446790011,
+    "marketCapitalization": 4646616114,
+    "minusCashAndCashEquivalents": 220000000,
+    "addTotalDebt": 3464000000,
+    "enterpriseValue": 7890616114
+  },
+  {
+    "symbol": "ALIT",
+    "date": "2017-12-31",
+    "stockPrice": 10.4,
+    "numberOfShares": 124442000,
+    "marketCapitalization": 1294196800,
+    "minusCashAndCashEquivalents": 196000000,
+    "addTotalDebt": 3455000000,
+    "enterpriseValue": 4553196800
+  },
+  {
+    "symbol": "ALIT",
+    "date": "2016-12-31",
+    "stockPrice": 10.4,
+    "numberOfShares": 124442000,
+    "marketCapitalization": 1294196800,
+    "minusCashAndCashEquivalents": 0,
+    "addTotalDebt": 0,
+    "enterpriseValue": 1294196800
+  }
+]
