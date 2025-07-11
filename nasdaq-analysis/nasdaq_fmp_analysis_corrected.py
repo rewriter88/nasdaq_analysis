@@ -39,6 +39,7 @@ from typing import Dict, List, Set, Optional, Tuple
 import time
 import warnings
 import csv
+import glob
 
 import numpy as np
 import pandas as pd
@@ -123,7 +124,7 @@ class CorrectedFMPDataProvider:
         os.makedirs(cache_dir, exist_ok=True)
         
     def _make_request(self, endpoint: str, params: Dict = None) -> Dict:
-        """Make API request with caching and rate limiting"""
+        """Make API request with intelligent caching and rate limiting"""
         # Rate limiting
         time_since_last = time.time() - self.last_request_time
         if time_since_last < REQUEST_DELAY:
@@ -139,7 +140,23 @@ class CorrectedFMPDataProvider:
         cache_key = self._generate_cache_key(endpoint, params)
         cache_file = os.path.join(self.cache_dir, f"{cache_key}.json")
         
-        # Try cache first
+        # For historical price requests, check if we can reuse existing cache with broader date range
+        if 'historical-price-full' in endpoint:
+            existing_cache = self._find_suitable_price_cache(endpoint, params)
+            if existing_cache:
+                print(f"♻️  Reusing existing cache for {endpoint.split('/')[-1]} (intelligent cache reuse)")
+                return existing_cache
+        
+        # For enterprise values and key metrics, check for any existing cache (no date dependency)
+        elif ('enterprise-values' in endpoint or 'key-metrics' in endpoint):
+            existing_cache = self._find_suitable_non_date_cache(endpoint)
+            if existing_cache:
+                symbol = endpoint.split('/')[-1]
+                cache_type = "enterprise values" if 'enterprise-values' in endpoint else "key metrics"
+                print(f"♻️  Reusing existing {cache_type} cache for {symbol}")
+                return existing_cache
+        
+        # Try exact cache match first
         if os.path.exists(cache_file):
             try:
                 with open(cache_file, 'r') as f:
@@ -182,6 +199,111 @@ class CorrectedFMPDataProvider:
         else:
             return endpoint.replace('/', '_')
     
+    def _find_suitable_price_cache(self, endpoint: str, params: Dict) -> Optional[Dict]:
+        """Find existing cache file that contains the requested date range"""
+        symbol = endpoint.split('/')[-1]
+        requested_start = params.get('from', '')
+        requested_end = params.get('to', '')
+        
+        if not requested_start or not requested_end:
+            return None
+        
+        # Look for any existing price cache files for this symbol
+        existing_files = glob.glob(os.path.join(self.cache_dir, f"{symbol}_prices_*.json"))
+        
+        for cache_file in existing_files:
+            try:
+                # Extract date range from filename
+                filename = os.path.basename(cache_file)
+                # Format: SYMBOL_prices_START_END.json
+                parts = filename.replace('.json', '').split('_')
+                if len(parts) >= 4:
+                    cached_start = parts[-2]  # Second to last part
+                    cached_end = parts[-1]    # Last part
+                    
+                    # Check if cached range covers requested range
+                    if (cached_start <= requested_start and 
+                        cached_end >= requested_end):
+                        
+                        # Load and filter the cached data
+                        with open(cache_file, 'r') as f:
+                            cached_data = json.load(f)
+                        
+                        # Filter to requested date range
+                        filtered_data = self._filter_price_data_by_date(
+                            cached_data, requested_start, requested_end)
+                        
+                        if filtered_data and 'historical' in filtered_data:
+                            print(f"♻️  Cache reuse: Found {len(filtered_data['historical'])} days of data")
+                            print(f"    Requested: {requested_start} to {requested_end}")
+                            print(f"    From cache: {cached_start} to {cached_end}")
+                            return filtered_data
+                            
+            except (json.JSONDecodeError, IOError, IndexError) as e:
+                continue  # Skip corrupted or incorrectly named files
+        
+        return None
+    
+    def _filter_price_data_by_date(self, data: Dict, start_date: str, end_date: str) -> Dict:
+        """Filter historical price data to only include the requested date range"""
+        if not data or 'historical' not in data:
+            return data
+        
+        # Convert dates to datetime for comparison
+        from datetime import datetime
+        try:
+            start_dt = datetime.strptime(start_date, '%Y-%m-%d')
+            end_dt = datetime.strptime(end_date, '%Y-%m-%d')
+        except ValueError:
+            return data  # Return original if date parsing fails
+        
+        # Filter historical data
+        filtered_historical = []
+        for record in data['historical']:
+            try:
+                record_date = datetime.strptime(record['date'], '%Y-%m-%d')
+                if start_dt <= record_date <= end_dt:
+                    filtered_historical.append(record)
+            except (ValueError, KeyError):
+                continue  # Skip invalid records
+        
+        # Create filtered response
+        filtered_data = data.copy()
+        filtered_data['historical'] = filtered_historical
+        
+        return filtered_data
+    
+    def _find_suitable_non_date_cache(self, endpoint: str) -> Optional[Dict]:
+        """Find existing cache file for non-date-ranged endpoints (enterprise values, key metrics)"""
+        # Create cache filename based on endpoint
+        if 'enterprise-values' in endpoint:
+            symbol = endpoint.split('/')[-1]
+            cache_filename = f"{symbol}_enterprise_values.json"
+        elif 'key-metrics' in endpoint:
+            symbol = endpoint.split('/')[-1]
+            cache_filename = f"{symbol}_key_metrics.json"
+        elif 'available-traded' in endpoint:
+            cache_filename = "available_traded_list.json"
+        else:
+            cache_filename = endpoint.replace('/', '_') + ".json"
+            
+        cache_path = os.path.join(self.cache_dir, cache_filename)
+        
+        if os.path.exists(cache_path):
+            try:
+                with open(cache_path, 'r') as f:
+                    cached_data = json.load(f)
+                
+                # Check if cache is not empty and has valid data
+                if cached_data:
+                    print(f"♻️  Reusing existing cache for {endpoint.split('/')[-1]} (intelligent cache reuse)")
+                    return cached_data
+                    
+            except (json.JSONDecodeError, IOError):
+                pass  # Skip corrupted cache files
+        
+        return None
+
     def get_tradeable_stocks(self) -> List[str]:
         """Get a comprehensive list of tradeable stocks, focusing on larger cap names"""
         
@@ -457,6 +579,7 @@ class CorrectedMomentumAnalyzer:
         self.market_cap_data = pd.DataFrame()
         self.open_price_data = pd.DataFrame()  # For transactions
         self.close_price_data = pd.DataFrame()  # For performance calculation
+        self.shares_outstanding_data = pd.DataFrame()  # Pre-calculated shares outstanding
         self.rebalancing_events = []  # Store all rebalancing events
         self.use_shared_data = use_shared_data
     
@@ -543,35 +666,65 @@ class CorrectedMomentumAnalyzer:
         
         print(f"Successfully loaded price data: {len(self.close_price_data)} days, "
               f"{len(self.close_price_data.columns)} symbols")
+              
+        # Pre-calculate shares outstanding data for speed optimization
+        self._precalculate_shares_outstanding()
+
+    def _precalculate_shares_outstanding(self):
+        """Pre-calculate shares outstanding for all symbols and dates to optimize real-time market cap calculations"""
+        print("Pre-calculating shares outstanding data for speed optimization...")
+        
+        if self.market_cap_data.empty or self.close_price_data.empty:
+            return
+            
+        # Calculate shares outstanding = market_cap / close_price for all symbols and dates
+        shares_data = {}
+        
+        for symbol in self.market_cap_data.columns:
+            if symbol in self.close_price_data.columns:
+                # Get overlapping dates
+                common_dates = self.market_cap_data.index.intersection(self.close_price_data.index)
+                
+                shares_series = []
+                for date in common_dates:
+                    market_cap = self.market_cap_data.loc[date, symbol]
+                    close_price = self.close_price_data.loc[date, symbol]
+                    
+                    if not pd.isna(market_cap) and not pd.isna(close_price) and close_price > 0:
+                        shares_outstanding = market_cap / close_price
+                        shares_series.append((date, shares_outstanding))
+                
+                if shares_series:
+                    dates, shares = zip(*shares_series)
+                    shares_data[symbol] = pd.Series(shares, index=dates)
+        
+        # Convert to DataFrame
+        self.shares_outstanding_data = pd.DataFrame(shares_data)
+        
+        # Forward fill any missing values
+        self.shares_outstanding_data = self.shares_outstanding_data.fillna(method='ffill')
+        
+        print(f"Pre-calculated shares outstanding for {len(self.shares_outstanding_data.columns)} symbols, "
+              f"{len(self.shares_outstanding_data)} dates")
     
     def _calculate_realtime_market_caps(self, date: pd.Timestamp) -> pd.Series:
-        """Calculate real-time market cap at market open using open prices and shares outstanding"""
+        """Calculate real-time market cap at market open using open prices and pre-calculated shares outstanding"""
         realtime_market_caps = {}
         
-        # Get the shares outstanding data (use the closest available date)
-        if date in self.market_cap_data.index:
-            shares_data = self.market_cap_data.loc[date]
+        # Use pre-calculated shares outstanding data for speed
+        if date in self.shares_outstanding_data.index and date in self.open_price_data.index:
             
-            # For each symbol, calculate market cap using open price
-            for symbol in shares_data.index:
-                if symbol in self.open_price_data.columns and date in self.open_price_data.index:
-                    open_price = self.open_price_data.loc[date, symbol]
-                    
-                    # Get shares outstanding from the pre-calculated market cap data
-                    # We need to reverse-engineer shares from market cap / close price
-                    historical_market_cap = shares_data[symbol]
-                    
-                    if not pd.isna(historical_market_cap) and not pd.isna(open_price) and open_price > 0:
-                        # Get close price for the same date to calculate shares
-                        if symbol in self.close_price_data.columns and date in self.close_price_data.index:
-                            close_price = self.close_price_data.loc[date, symbol]
-                            if not pd.isna(close_price) and close_price > 0:
-                                # Calculate shares outstanding: market_cap / close_price
-                                shares_outstanding = historical_market_cap / close_price
-                                
-                                # Calculate real-time market cap: open_price * shares_outstanding
-                                realtime_market_cap = open_price * shares_outstanding
-                                realtime_market_caps[symbol] = realtime_market_cap
+            # Get available symbols for this date
+            available_symbols = self.shares_outstanding_data.columns.intersection(self.open_price_data.columns)
+            
+            for symbol in available_symbols:
+                open_price = self.open_price_data.loc[date, symbol]
+                shares_outstanding = self.shares_outstanding_data.loc[date, symbol]
+                
+                if not pd.isna(open_price) and not pd.isna(shares_outstanding) and open_price > 0 and shares_outstanding > 0:
+                    # Calculate real-time market cap: open_price * shares_outstanding
+                    realtime_market_cap = open_price * shares_outstanding
+                    realtime_market_caps[symbol] = realtime_market_cap
         
         return pd.Series(realtime_market_caps).sort_values(ascending=False)
     
