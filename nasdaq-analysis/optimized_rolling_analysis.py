@@ -286,20 +286,66 @@ def create_tables(results: List[Dict]) -> Tuple[pd.DataFrame, pd.DataFrame]:
     
     return table1_df, table2_df
 
-def save_tables(table1_df: pd.DataFrame, table2_df: pd.DataFrame) -> str:
-    """Save both tables to a CSV file"""
+def save_tables(table1_df: pd.DataFrame, table2_df: pd.DataFrame, config) -> str:
+    """Save both tables to a CSV file with comprehensive experiment configuration"""
     
+    # Extract key parameters for filename
+    start_year = int(config.START_DATE.split("-")[0])
+    end_year = int(config.END_DATE.split("-")[0])
+    threshold_pct = int(config.REBALANCING_THRESHOLD * 100)
+    min_portfolio = min(config.PORTFOLIO_SIZES)
+    max_portfolio = max(config.PORTFOLIO_SIZES)
+    data_source = config.DATA_SOURCE.lower()
+    
+    # Create descriptive filename with key experiment parameters
     timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"optimized_rolling_analysis_{timestamp}.csv"
+    filename = f"rolling_analysis_{start_year}-{end_year}_{min_portfolio}-{max_portfolio}portfolios_{threshold_pct}pct_thresh_{data_source}_{timestamp}.csv"
     filepath = os.path.join("results", "csv", filename)
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
     
     with open(filepath, 'w', newline='', encoding='utf-8') as f:
-        # Write optimization note
+        # Write comprehensive experiment configuration header
         f.write("OPTIMIZED ROLLING PERIOD ANALYSIS RESULTS\n")
         f.write("Generated using 'calculate once, slice many' optimization\n")
         f.write("Provides ~17x speed improvement with 100% accuracy\n")
-        f.write("="*60 + "\n\n")
+        f.write("="*80 + "\n\n")
+        
+        # Write complete experiment configuration
+        f.write("EXPERIMENT CONFIGURATION\n")
+        f.write("="*50 + "\n")
+        f.write(f"Analysis Date: {dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write(f"Data Source: {config.DATA_SOURCE}\n")
+        f.write(f"Analysis Period: {config.START_DATE} to {config.END_DATE}\n")
+        f.write(f"Years Analyzed: {end_year - start_year + 1} years\n")
+        f.write(f"Portfolio Sizes Tested: {config.PORTFOLIO_SIZES}\n")
+        f.write(f"Rebalancing Threshold: {config.REBALANCING_THRESHOLD:.1%}\n")
+        f.write(f"Benchmarks: {config.BENCHMARKS}\n")
+        f.write(f"Cache Directory: {getattr(config, 'CACHE_DIR', 'N/A')}\n")
+        f.write(f"Request Delay: {getattr(config, 'REQUEST_DELAY', 'N/A')} seconds\n")
+        f.write(f"Chart Display Mode: {getattr(config, 'CHART_DISPLAY_MODE', 'N/A')}\n")
+        f.write(f"Rolling Analysis Enabled: {getattr(config, 'ENABLE_ROLLING_ANALYSIS', 'N/A')}\n")
+        f.write(f"Rolling Charts Disabled: {getattr(config, 'ROLLING_DISABLE_CHARTS', 'N/A')}\n")
+        f.write(f"Rolling Data Reuse: {getattr(config, 'ROLLING_REUSE_DATA', 'N/A')}\n")
+        
+        # Add methodology details
+        f.write("\nMETHODOLOGY\n")
+        f.write("="*30 + "\n")
+        f.write("• Real-time market cap calculations using open prices\n")
+        f.write("• Portfolio decisions made at market open using live rankings\n")
+        f.write("• Buy/sell orders executed at market open prices\n")
+        f.write("• Performance tracking using adjusted close prices\n")
+        f.write("• Survivorship bias correction applied\n")
+        f.write("• Historical shares outstanding data for accurate market caps\n")
+        
+        # Add rebalancing logic explanation
+        f.write("\nREBALANCING LOGIC\n")
+        f.write("="*35 + "\n")
+        f.write(f"Threshold: {config.REBALANCING_THRESHOLD:.1%}\n")
+        f.write("Trigger: Stock outside portfolio exceeds threshold vs lowest in portfolio\n")
+        f.write("Example: If stock #3 (outside) has >5% higher market cap than stock in portfolio\n")
+        f.write("Result: Rebalancing event triggered to maintain top-N momentum strategy\n")
+        
+        f.write("\n" + "="*80 + "\n\n")
         
         # Write Table 1
         f.write("TABLE 1: PERFORMANCE BY TIME PERIOD\n")
@@ -318,6 +364,15 @@ def save_tables(table1_df: pd.DataFrame, table2_df: pd.DataFrame) -> str:
         f.write("Sorted by: (1) Number of wins, (2) Total profit\n\n")
         
         table2_df.to_csv(f, index=False)
+        
+        # Add footer with analysis summary
+        f.write(f"\n\nANALYSIS SUMMARY\n")
+        f.write("="*30 + "\n")
+        f.write(f"Total time periods analyzed: {len(table1_df)}\n")
+        f.write(f"Portfolio strategies tested: {len(config.PORTFOLIO_SIZES)}\n")
+        f.write(f"Benchmarks compared: {len(config.BENCHMARKS)}\n")
+        f.write(f"Optimization: Pre-calculation enabled for ~17x speed improvement\n")
+        f.write(f"Data quality: Premium {config.DATA_SOURCE} API with survivorship bias correction\n")
     
     return filepath
 
@@ -397,7 +452,7 @@ def main():
     table1_df, table2_df = create_tables(results)
     
     # Save results
-    filepath = save_tables(table1_df, table2_df)
+    filepath = save_tables(table1_df, table2_df, config)
     
     # Calculate execution time
     end_time = dt.datetime.now()
