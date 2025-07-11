@@ -68,19 +68,31 @@ python nasdaq_fmp_analysis.py
 ```
 📊 Analysis Scripts
 ├── nasdaq_fmp_analysis_corrected.py    # ✅ Fixed methodology
+├── optimized_rolling_analysis.py       # Rolling window analysis
 ├── nasdaq_fmp_analysis.py              # ❌ Original flawed version
-├── nasdaq_yahoo_analysis.py            # Yahoo Finance version
-└── comparison_summary.py               # Side-by-side comparison
+└── run_analysis.py                     # Main analysis runner
 
 ⚙️ Configuration
 ├── config.py                           # Your API keys & settings
 ├── config_template.py                  # Template for setup
 └── requirements.txt                    # Python dependencies
 
-📈 Results & Documentation
-├── ANALYSIS_RESULTS.md                 # Detailed methodology analysis
-├── CORRECTED_RESULTS_SUMMARY.md        # Before/after comparison
-└── README_FMP_Analysis.md              # Technical documentation
+📈 Results & Data
+├── results/                            # Analysis outputs
+│   ├── charts/                         # Generated charts
+│   └── csv/                           # CSV data exports
+├── fmp_cache_corrected/               # Cached API data
+└── archive/                           # Historical files
+
+📚 Documentation
+├── Documents/                          # All documentation files
+│   ├── SPEED_OPTIMIZATION_CHAT.md     # Performance optimization guide
+│   ├── ENHANCED_CHART_CONFIGURATION_SUMMARY.md # Chart enhancements
+│   ├── OPTIMIZED_ROLLING_ANALYSIS_SUMMARY.md   # Rolling analysis guide
+│   ├── DATA_SOURCE_GUIDE.md           # Data source documentation
+│   ├── NASDAQ_MOMENTUM_STRATEGY_GUIDE.md       # Strategy guide
+│   └── WORKSPACE_ORGANIZATION.md      # Workspace structure
+└── README.md                          # This file
 ```
 
 ## 🔬 Methodology Fixes

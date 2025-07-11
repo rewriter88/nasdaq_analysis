@@ -52,7 +52,7 @@ warnings.filterwarnings('ignore')
 
 # ========================== CHART FILENAME HELPER ==========================
 def generate_chart_filename(chart_type="performance", config_params=None):
-    """Generate descriptive filename for charts with timestamp and config params"""
+    """Generate descriptive filename for charts with timestamp and key config params"""
     import os
     
     # Create timestamp
@@ -61,20 +61,26 @@ def generate_chart_filename(chart_type="performance", config_params=None):
     # Extract key config parameters
     if config_params is None:
         config_params = {
+            'start_date': START_DATE,
+            'end_date': END_DATE,
             'threshold': REBALANCING_THRESHOLD,
+            'min_top_n': min(PORTFOLIO_SIZES),
             'max_top_n': max(PORTFOLIO_SIZES),
             'data_source': DATA_SOURCE,
             'chart_mode': CHART_DISPLAY_MODE
         }
     
     # Create descriptive filename components
-    threshold_pct = f"{config_params['threshold']:.0%}"
+    start_year = config_params['start_date'].split('-')[0]
+    end_year = config_params['end_date'].split('-')[0]
+    threshold_pct = int(config_params['threshold'] * 100)
+    min_n = config_params['min_top_n']
     max_n = config_params['max_top_n']
     source = config_params['data_source'].lower()
     mode = config_params['chart_mode']
     
-    # Build filename
-    filename = f"nasdaq_{chart_type}_{timestamp}_top{max_n}_{threshold_pct}thresh_{source}_{mode}.png"
+    # Build comprehensive filename with key parameters
+    filename = f"nasdaq_{chart_type}_{start_year}-{end_year}_{min_n}-{max_n}portfolios_{threshold_pct}pct_thresh_{source}_{mode}_{timestamp}.png"
     
     # Ensure results/charts directory exists
     results_dir = "results/charts"
@@ -1179,8 +1185,8 @@ class CorrectedMomentumAnalyzer:
             self._plot_simple_chart(results)
     
     def _plot_simple_chart(self, results: Dict[str, pd.Series]):
-        """Plot simple single performance chart"""
-        plt.figure(figsize=(16, 10))
+        """Plot simple single performance chart with compact configuration info"""
+        plt.figure(figsize=(16, 10))  # Original size
         
         # Define colors: dark colors for benchmarks, bright colors for strategies
         benchmark_colors = ['#000000', '#333333', '#1a1a1a', '#2d2d2d']  # Black and dark colors for benchmarks
@@ -1228,23 +1234,43 @@ class CorrectedMomentumAnalyzer:
         plt.yscale('log')
         plt.grid(True, alpha=0.3)
         
-        # Improve legend formatting
+        # Position main legend
         legend = plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=10)
         legend.set_title('Strategy (Final Value)', prop={'size': 11, 'weight': 'bold'})
         
-        # Add text box with key statistics
+        # Add compact configuration info beneath the legend
+        years_analyzed = (pd.to_datetime(END_DATE) - pd.to_datetime(START_DATE)).days / 365.25
+        portfolio_range = f"{min(PORTFOLIO_SIZES)}-{max(PORTFOLIO_SIZES)}"
+        
+        config_summary = f"""Configuration:
+Data: {DATA_SOURCE} | {years_analyzed:.1f} years
+Portfolios: Top-{portfolio_range} 
+Threshold: {REBALANCING_THRESHOLD:.1%}
+Real-time rankings at open"""
+        
+        plt.text(1.05, 0.65, config_summary, transform=plt.gca().transAxes, fontsize=9,
+                verticalalignment='top', horizontalalignment='left',
+                bbox=dict(boxstyle='round,pad=0.3', facecolor='lightblue', alpha=0.7),
+                family='monospace')
+        
+        # Add quick stats box on the chart
         total_strategies = len(strategy_results)
-        total_benchmarks = len(benchmark_results)
-        textstr = f'Initial Investment: $100,000\nRebalancing Threshold: {REBALANCING_THRESHOLD:.1%}\nStrategies: {total_strategies}\nBenchmarks: {total_benchmarks}\nPeriod: 20 years'
-        props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
-        plt.text(0.02, 0.98, textstr, transform=plt.gca().transAxes, fontsize=10,
-                verticalalignment='top', bbox=props)
+        best_strategy = max(results.keys(), key=lambda x: results[x].iloc[-1] if not results[x].empty else 0)
+        best_final = results[best_strategy].iloc[-1] if not results[best_strategy].empty else 0
+        best_profit = best_final - 100000
+        
+        stats_text = f'Initial Investment: $100,000\nBest Performer: {best_strategy}\nBest Final Value: ${best_final:,.0f}\nBest Profit: ${best_profit:,.0f}'
+        plt.text(0.02, 0.98, stats_text, transform=plt.gca().transAxes, fontsize=10,
+                verticalalignment='top', bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.8))
         
         plt.tight_layout()
         
         # Save plot with descriptive filename in results folder
         chart_filename = generate_chart_filename("simple", {
+            'start_date': START_DATE,
+            'end_date': END_DATE,
             'threshold': REBALANCING_THRESHOLD,
+            'min_top_n': min(PORTFOLIO_SIZES),
             'max_top_n': max(PORTFOLIO_SIZES),
             'data_source': DATA_SOURCE,
             'chart_mode': 'simple'
@@ -1257,7 +1283,7 @@ class CorrectedMomentumAnalyzer:
         plt.show()
     
     def _plot_full_analysis(self, results: Dict[str, pd.Series]):
-        """Plot comprehensive 4-chart analysis layout"""
+        """Plot comprehensive 4-chart analysis layout with compact configuration info"""
         # Define colors for consistency
         colors = {
             "QQQ": "#000000",      # Black
@@ -1294,11 +1320,11 @@ class CorrectedMomentumAnalyzer:
                     'Total_Return': (series.iloc[-1] / series.iloc[0] - 1) * 100
                 }
         
-        # Main performance chart
+        # Create figure with original layout (2x2)
         plt.figure(figsize=(18, 12))
         
         # Subplot 1: Portfolio Value Growth
-        plt.subplot(2, 2, 1)
+        ax1 = plt.subplot(2, 2, 1)
         
         final_values = {}
         for strategy, series in results.items():
@@ -1324,7 +1350,27 @@ class CorrectedMomentumAnalyzer:
         plt.title(f'Portfolio Value Growth - Initial Investment: $100,000\nRebalancing Threshold: {REBALANCING_THRESHOLD:.1%} | {START_DATE} to {END_DATE}', 
                  fontsize=14, fontweight='bold')
         plt.ylabel('Portfolio Value (USD)', fontsize=12)
-        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=10)
+        
+        # Position legend and add compact config info beneath it
+        legend = plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=10)
+        
+        # Create compact configuration summary
+        years_analyzed = (pd.to_datetime(END_DATE) - pd.to_datetime(START_DATE)).days / 365.25
+        portfolio_range = f"{min(PORTFOLIO_SIZES)}-{max(PORTFOLIO_SIZES)}"
+        
+        config_summary = f"""Configuration Summary:
+Data: {DATA_SOURCE} | Period: {years_analyzed:.1f} years
+Portfolios: Top-{portfolio_range} | Threshold: {REBALANCING_THRESHOLD:.1%}
+Benchmarks: {', '.join(BENCHMARKS)}
+Real-time market cap rankings at open
+Survivorship bias correction applied"""
+        
+        # Position config summary beneath the legend
+        plt.text(1.05, 0.6, config_summary, transform=ax1.transAxes, fontsize=9,
+                verticalalignment='top', horizontalalignment='left',
+                bbox=dict(boxstyle='round,pad=0.3', facecolor='lightblue', alpha=0.7),
+                family='monospace')
+        
         plt.grid(True, alpha=0.3)
         
         # Add text showing best performer
@@ -1332,7 +1378,7 @@ class CorrectedMomentumAnalyzer:
             best_strategy = max(final_values.keys(), key=lambda x: final_values[x]['final_value'])
             best_profit = final_values[best_strategy]['profit']
             plt.text(0.02, 0.98, f"Best Performer: {best_strategy}\nProfit: +${best_profit:,.0f}", 
-                    transform=plt.gca().transAxes, fontsize=11, fontweight='bold',
+                    transform=ax1.transAxes, fontsize=11, fontweight='bold',
                     verticalalignment='top', bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8))
         
         # Subplot 2: Rolling 252-day (1-year) returns
@@ -1348,7 +1394,7 @@ class CorrectedMomentumAnalyzer:
         
         plt.title('Rolling 1-Year Annualized Returns', fontsize=14, fontweight='bold')
         plt.ylabel('Annualized Return (%)', fontsize=12)
-        plt.legend()
+        plt.legend(fontsize=10)
         plt.grid(True, alpha=0.3)
         
         # Subplot 3: Drawdown analysis
@@ -1363,7 +1409,7 @@ class CorrectedMomentumAnalyzer:
         
         plt.title('Drawdown Analysis', fontsize=14, fontweight='bold')
         plt.ylabel('Drawdown (%)', fontsize=12)
-        plt.legend()
+        plt.legend(fontsize=10)
         plt.grid(True, alpha=0.3)
         
         # Subplot 4: Risk-Return scatter
@@ -1395,7 +1441,10 @@ class CorrectedMomentumAnalyzer:
         
         # Save plot with descriptive filename in results folder
         chart_filename = generate_chart_filename("full_analysis", {
+            'start_date': START_DATE,
+            'end_date': END_DATE,
             'threshold': REBALANCING_THRESHOLD,
+            'min_top_n': min(PORTFOLIO_SIZES),
             'max_top_n': max(PORTFOLIO_SIZES),
             'data_source': DATA_SOURCE,
             'chart_mode': 'full'
@@ -1428,18 +1477,21 @@ class CorrectedMomentumAnalyzer:
                 print(f"{strategy:<12} ${final_value:>13,.0f} {total_return:>13.1f}% {cagr:>8.1f}%")
 
     def export_rebalancing_events_to_csv(self):
-        """Export all rebalancing events to a timestamped CSV file"""
+        """Export all rebalancing events to a timestamped CSV file with enhanced filename"""
         if not self.rebalancing_events:
             print("No rebalancing events to export.")
             return
         
-        # Generate descriptive filename with config params
+        # Generate descriptive filename with comprehensive config params
         timestamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
-        threshold_pct = f"{REBALANCING_THRESHOLD:.0%}"
+        start_year = START_DATE.split('-')[0]
+        end_year = END_DATE.split('-')[0]
+        threshold_pct = int(REBALANCING_THRESHOLD * 100)
+        min_n = min(PORTFOLIO_SIZES)
         max_n = max(PORTFOLIO_SIZES)
         source = DATA_SOURCE.lower()
         
-        filename = f"rebalancing_events_{timestamp}_top{max_n}_{threshold_pct}thresh_{source}.csv"
+        filename = f"rebalancing_events_{start_year}-{end_year}_{min_n}-{max_n}portfolios_{threshold_pct}pct_thresh_{source}_{timestamp}.csv"
         
         # Ensure results/csv directory exists
         import os
@@ -1496,6 +1548,35 @@ class CorrectedMomentumAnalyzer:
             print(f"❌ Error exporting rebalancing events: {e}")
             import traceback
             traceback.print_exc()
+
+def create_config_text_panel():
+    """Create comprehensive configuration text panel for charts"""
+    # Calculate derived values
+    years_analyzed = (pd.to_datetime(END_DATE) - pd.to_datetime(START_DATE)).days / 365.25
+    num_portfolios = len(PORTFOLIO_SIZES)
+    portfolio_range = f"{min(PORTFOLIO_SIZES)}-{max(PORTFOLIO_SIZES)}"
+    
+    config_text = f"""EXPERIMENT CONFIGURATION
+{'-'*30}
+Data Source: {DATA_SOURCE}
+Analysis Period: {START_DATE} to {END_DATE}
+Years Analyzed: {years_analyzed:.1f} years
+Portfolio Range: Top-{portfolio_range}
+Strategies Tested: {num_portfolios}
+Rebalancing Threshold: {REBALANCING_THRESHOLD:.1%}
+Benchmarks: {', '.join(BENCHMARKS)}
+Chart Mode: {CHART_DISPLAY_MODE}
+
+METHODOLOGY
+{'-'*15}
+• Real-time market cap rankings at open
+• Portfolio decisions at market open
+• Orders executed at open prices
+• Performance tracked using adj. close
+• Survivorship bias correction applied
+• Historical shares outstanding data"""
+    
+    return config_text
 
 def main():
     """Main execution function"""
